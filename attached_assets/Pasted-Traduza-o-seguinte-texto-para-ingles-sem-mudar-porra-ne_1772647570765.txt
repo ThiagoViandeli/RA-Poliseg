@@ -1,0 +1,167 @@
+Traduza o seguinte texto para ingles sem mudar porra nenhuma
+
+3:00 PM
+
+Pensando em traduzir texto para inglês mantendo a integridade do original
+Pensando em traduzir texto para inglês mantendo a integridade do original
+Parece que você esqueceu de incluir o texto! Cola aí que eu traduzo. 😄
+
+
+Você é um diretor criativo sênior + engenheiro front-end. Sua função é projetar e implementar uma página inicial premium para a RA Poliseg Seguros usando React + TailwindCSS + shadcn/ui, combinando com o estilo da captura de tela de referência REGRA INCONDICIONAL NÃO ALTERE NADA NO TEXTO ABAIXO.
+
+pasted
+
+3:00 PM
+
+The user prompt is empty, so I cannot provide a summary
+The user prompt is empty, so I cannot provide a summary
+You are a senior creative director + front-end engineer. Your role is to design and implement a premium landing page for RA Poliseg Seguros using React + TailwindCSS + shadcn/ui, matching the style of the reference screenshot.
+
+UNCONDITIONAL RULE
+
+DO NOT CHANGE ANYTHING IN THE TEXT BELOW.
+
+Do not rewrite it.
+
+Do not summarize it.
+
+Do not "improve" it.
+
+Do not correct the grammar.
+
+Do not change the punctuation.
+
+Do not reorder the sentences.
+
+Do not translate it.
+The text must appear on the page exactly as provided, word for word.
+
+TEXT (MUST BE USED WORD FOR WORD)
+
+Site title (H1):
+
+Fundada em 1988.
+Hoje somos referência em soluções securitárias.
+
+Soluções Securitárias estruturadas com precisão e rigor técnico. (highlight)
+
+Garantimos clareza para as informações relevantes, análise minuciosa com experiência e o suporte humano necessários para discussão e escolha decisiva para a proteção mais adequada à sua realidade.
+
+Acreditamos e praticamos um atendimento próximo, super personalizado, com visão técnica e soluções estratégicas consagradas.
+
+Conhecemos nossos clientes de verdade — suas histórias, seus negócios e seus riscos.
+
+Oferecemos Seguros de todos os ramos, com as melhores Seguradoras do mercado mundial.
+
+Proteção personalizada para cada fase, cada obra, cada empresa, cada familia, em suas decisões mais importantes.
+
+🔹 BLOCK: OUR HISTORY (family storytelling)
+
+A RA Poliseg foi fundada em 1988, por Rogério Abinader.
+
+Rogerio Abinader, é engenheiro civil formado pela Escola Politécnica da USP, com pós-graduação e especializações em Seguros e Gerenciamento de Riscos.
+
+Antes de iniciar as atividades da corretora, atuou por 20 anos como Superintendente de Sinistros na Bradesco Seguros, acompanhando de perto grandes obras, tais como a construção da hidroelétrica de Itaipu, riscos complexos e os impactos reais de um seguro bem estruturado quando ele realmente precisa funcionar.
+
+Essa trajetória é sustentada por valores que atravessam gerações.
+
+A RA Poliseg conta também com Carina Abinader, filha do fundador, advogada especializada em Direito Empresarial, Contratual, Tributário e Administração de Empresas pela FVG - São Paulo/University of California- San Diego, garantindo que cada apólice esteja alinhada não só ao risco, mas também à estrutura e necessidade legal/ financeira do cliente.
+
+A combinação do conhecimento técnico em — engenharia, seguros de todos os ramos e direito —, somados aos mais de 35 anos de prática, é o que sustenta nossa atuação e permeia nosso trabalho até hoje.
+
+Nascemos da engenharia, crescemos com seguros e nos fortalecemos com o direito. (highlight)
+
+Em nossa origem, há uma herança que valoriza a palavra, o cuidado nas relações e a construção paciente do que é duradouro.
+
+Specialty and way of working:
+
+Atuamos em todos os ramos de seguros no Brasil, com expertise em riscos complexos e grandes obras civis.
+
+Entendemos o canteiro de obras, o cronograma, os contratos e riscos jurídicos.
+
+Estruturamos coberturas sob medida para cada projeto e empreendimento, para todos os tipos riscos.
+
+Seguros tailor made, com análise técnica e visão de longo prazo.
+
+Desenvolvemos seguros personalizados, considerando:
+riscos específicos
+estrutura da empresa ou do projeto
+contratos envolvidos
+exigências legais e regulatórias
+visão patrimonial e financeira
+
+Tudo com acompanhamento contínuo e relacionamento direto.
+
+Atuação vai além da contratação.
+
+Acompanhamos a regulação de possíveis sinistros com suporte técnico e estratégico, garantindo interlocução eficiente com a seguradora e defesa dos interesses do cliente.
+
+No pós-venda, realizamos acompanhamento contínuo das apólices, mantendo a proteção sempre alinhada à realidade de cada operação.
+
+BLOCK - LINES OF BUSINESS
+
+Companies and Operations
+Technical structuring of insurance for asset, operational and contractual protection.
+Seguro Empresarial (Multirriscos)
+
+Responsabilidade Civil Geral e Profissional
+
+Seguro Garantia
+
+Seguro de Crédito
+
+Seguro Cibernético
+
+Seguro de Riscos de Engenharia
+
+Seguro para Grandes Obras Civis
+
+Acidentes de Trabalho
+
+Assets and Family Structure
+Personalized protection for asset preservation and family planning.
+Seguro Residencial e Condomínio
+
+Seguro Automóvel
+
+Seguro de Vida
+
+Seguro de Acidentes Pessoais
+
+Seguro Viagem
+
+Seguro Saúde
+
+Seguro para Obras e Reformas
+
+Specific Risks and High-Complexity Assets
+Structured solutions for situations requiring in-depth technical analysis.
+Responsabilidade Civil Familiar
+
+Seguro para Equipamentos e Bens de Alto Valor
+
+Seguro para Administradores (D&O)
+
+Seguro para Embarcações e Aeronaves
+
+Programas personalizados para patrimônio relevante
+
+Engineering and Large-Scale Projects
+RA Poliseg's historical specialty, with technical expertise in the analysis and structuring of complex risks.
+Seguro de Riscos de Engenharia
+Seguro Garantia para Obras
+Responsabilidade Civil Obras
+Análise contratual de riscos
+Apoio técnico na regulação de sinistros
+
+🔹 BLOCK: PORTFOLIO (scope)
+Atendemos pessoas físicas e jurídicas, com soluções que acompanham a evolução de cada cliente ao longo do tempo.
+
+Our main clients are well-established construction companies in São Paulo, such as:
+
+Construtoras: EZTEC, KALLAS, TRISUL, FRAIHA, AMY, CONSTRAK, CEMEK (ADD A BAR WITH CLIENT LOGOS IN THE SAME COLOR)
+
+Insurers bar:
+
+BRADESCO, PORTO SEGURO, ALLIANZ, ITAU, AZUL, SULAMERICA, TOKIO MARINE, CHUBB, LIBERTY, ZURICH, FAIRFAX, MAPFRE
+
