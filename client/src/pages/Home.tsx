@@ -160,7 +160,7 @@ export default function Home() {
           </div>
 
           {/* Right Column */}
-          <div className="space-y-6 max-w-2xl">
+          <div className="space-y-6 max-w-2xl text-[18px]">
             <p className="text-black font-medium text-2xl lg:text-3xl leading-snug pb-4 border-b border-[#d4d4d8]">
               Atuação vai além da contratação.
             </p>
