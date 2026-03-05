@@ -190,14 +190,14 @@ export default function Home() {
 </h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Estruturação técnica de seguros para proteção patrimonial, operacional e contratual.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 font-extrabold text-[16px]">
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro Empresarial (Multirriscos)</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Responsabilidade Civil Geral e Profissional</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro Garantia</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro de Crédito</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro Cibernético</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro de Riscos de Engenharia</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro para Grandes Obras Civis</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Acidentes de Trabalho</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Empresarial (Multirriscos)</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Responsabilidade Civil Geral e Profissional</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Garantia</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro de Crédito</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Cibernético</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro de Riscos de Engenharia</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro para Grandes Obras Civis</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Acidentes de Trabalho</li>
             </ul>
           </div>
 
@@ -209,13 +209,13 @@ export default function Home() {
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Proteção personalizada para preservação patrimonial e planejamento familiar.
 </p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 font-extrabold text-[16px]">
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro Residencial e Condomínio</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro Automóvel</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro de Vida</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro de Acidentes Pessoais</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro Viagem</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro Saúde</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro para Obras e Reformas</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Residencial e Condomínio</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Automóvel</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro de Vida</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro de Acidentes Pessoais</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Viagem</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Saúde</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro para Obras e Reformas</li>
             </ul>
           </div>
 
@@ -226,11 +226,11 @@ export default function Home() {
 </h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Soluções estruturadas para situações que exigem análise técnica aprofundada.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 font-extrabold text-[16px]">
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Responsabilidade Civil Familiar</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro para Equipamentos e Bens de Alto Valor</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro para Administradores (D&O)</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro para Embarcações e Aeronaves</li>
-              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Programas personalizados para patrimônio relevante</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Responsabilidade Civil Familiar</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro para Equipamentos e Bens de Alto Valor</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro para Administradores (D&O)</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro para Embarcações e Aeronaves</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Programas personalizados para patrimônio relevante</li>
             </ul>
           </div>
 
