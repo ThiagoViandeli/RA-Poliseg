@@ -276,7 +276,7 @@ export default function Home() {
                   <img src="/kallas_logo.png" alt="Kallas" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
                   <img src="/trisul_logo.png" alt="Trisul" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
                   <img src="/fraiha_logo.png" alt="Fraiha" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                  <span>AMY</span>
+                  <img src="/amy_logo.png" alt="Amy" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
                   <span>CONSTRAK</span>
                   <span>CEMEK</span>
                 </div>
