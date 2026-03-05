@@ -241,11 +241,11 @@ export default function Home() {
 </h4>
             <p className="text-zinc-600 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Especialização histórica da RA Poliseg, com atuação técnica na análise e estruturação de riscos complexos.</p>
             <ul className="space-y-3 border-t border-[#d97706]/40 pt-4 text-black font-extrabold text-[16px]">
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[6px]">■</span> Seguro de Riscos de Engenharia</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[6px]">■</span> Seguro Garantia para Obras</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[6px]">■</span> Responsabilidade Civil Obras</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[6px]">■</span> Análise contratual de riscos</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[6px]">■</span> Apoio técnico na regulação de sinistros</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro de Riscos de Engenharia</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Garantia para Obras</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Responsabilidade Civil Obras</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Análise contratual de riscos</li>
+              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Apoio técnico na regulação de sinistros</li>
             </ul>
           </div>
         </div>
