@@ -9,7 +9,7 @@ export default function Home() {
       */}
       <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 border-b border-[#d4d4d8]">
         <header className="mb-auto">
-          <div className="font-semibold tracking-[0.2em] text-xs">RA POLISEG</div>
+          <img src="/ra_poliseg_logo.png" alt="RA Poliseg" className="h-8 md:h-10 object-contain" />
         </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-12">
@@ -52,7 +52,7 @@ export default function Home() {
       */}
       <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#e4e9dc] border-b border-[#d4d4d8]">
         <header className="mb-auto">
-          <div className="font-semibold tracking-[0.2em] text-xs">RA POLISEG</div>
+          <img src="/ra_poliseg_logo.png" alt="RA Poliseg" className="h-8 md:h-10 object-contain" />
         </header>
 
         <div className="mb-16">
@@ -102,7 +102,7 @@ export default function Home() {
       */}
       <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#edf1e6] border-b border-[#d4d4d8]">
         <header className="mb-auto">
-          <div className="font-semibold tracking-[0.2em] text-xs">RA POLISEG</div>
+          <img src="/ra_poliseg_logo.png" alt="RA Poliseg" className="h-8 md:h-10 object-contain" />
         </header>
 
         <div className="mb-12">
@@ -180,7 +180,7 @@ export default function Home() {
       */}
       <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#e4e9dc]">
         <header className="mb-12">
-          <div className="font-semibold tracking-[0.2em] text-xs">RA POLISEG</div>
+          <img src="/ra_poliseg_logo.png" alt="RA Poliseg" className="h-8 md:h-10 object-contain" />
         </header>
 
         <div className="mb-16">
