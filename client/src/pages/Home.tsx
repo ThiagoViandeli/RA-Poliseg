@@ -190,14 +190,14 @@ export default function Home() {
 </h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Estruturação técnica de seguros para proteção patrimonial, operacional e contratual.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 font-extrabold text-[16px]">
-              <li>Seguro Empresarial (Multirriscos)</li>
-              <li>Responsabilidade Civil Geral e Profissional</li>
-              <li>Seguro Garantia</li>
-              <li>Seguro de Crédito</li>
-              <li>Seguro Cibernético</li>
-              <li>Seguro de Riscos de Engenharia</li>
-              <li>Seguro para Grandes Obras Civis</li>
-              <li>Acidentes de Trabalho</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro Empresarial (Multirriscos)</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Responsabilidade Civil Geral e Profissional</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro Garantia</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro de Crédito</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro Cibernético</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro de Riscos de Engenharia</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro para Grandes Obras Civis</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Acidentes de Trabalho</li>
             </ul>
           </div>
 
@@ -209,13 +209,13 @@ export default function Home() {
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Proteção personalizada para preservação patrimonial e planejamento familiar.
 </p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 font-extrabold text-[16px]">
-              <li>Seguro Residencial e Condomínio</li>
-              <li>Seguro Automóvel</li>
-              <li>Seguro de Vida</li>
-              <li>Seguro de Acidentes Pessoais</li>
-              <li>Seguro Viagem</li>
-              <li>Seguro Saúde</li>
-              <li>Seguro para Obras e Reformas</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro Residencial e Condomínio</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro Automóvel</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro de Vida</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro de Acidentes Pessoais</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro Viagem</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro Saúde</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro para Obras e Reformas</li>
             </ul>
           </div>
 
