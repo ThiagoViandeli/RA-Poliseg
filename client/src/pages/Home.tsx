@@ -53,7 +53,7 @@ export default function Home() {
             <p className="text-[22px]">
               Garantimos clareza para as informações relevantes, análise minuciosa com experiência e o suporte humano necessários para discussão e escolha decisiva para a proteção mais adequada à sua realidade.
             </p>
-            <p>
+            <p className="text-[22px]">
               Acreditamos e praticamos um atendimento próximo, super personalizado, com visão técnica e soluções estratégicas consagradas.
             </p>
             <p className="text-black font-normal">
