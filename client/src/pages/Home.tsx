@@ -296,7 +296,7 @@ export default function Home() {
                   <img src="/liberty_logo.png" alt="Liberty" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
                   <img src="/zurich_logo.png" alt="Zurich" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
                   <img src="/fairfax_logo.png" alt="Fairfax" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  <span>MAPFRE</span>
+                  <img src="/mapfre_logo.png" alt="Mapfre" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
                 </div>
               </div>
             </div>
