@@ -114,7 +114,7 @@ export default function Home() {
 
         <div className="mb-24">
           <h3 className="text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">
-            Atuamos em todos os ramos de seguros no Brasil, com expertise em riscos complexos e grandes obras civis.
+            Atuamos em <span className="underline decoration-[#d97706] underline-offset-[8px] decoration-4">todos os ramos de seguros no Brasil</span>, com expertise em riscos complexos e grandes obras civis.
           </h3>
         </div>
 
