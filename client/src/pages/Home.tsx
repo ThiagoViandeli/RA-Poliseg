@@ -50,7 +50,7 @@ export default function Home() {
 
           {/* Right Column */}
           <div className="lg:col-span-6 flex flex-col justify-end space-y-6 text-zinc-800 md:text-[17px] font-light max-w-2xl text-[22px]" style={{ fontSynthesis: "weight style" }}>
-            <p>
+            <p className="text-[22px]">
               Garantimos clareza para as informações relevantes, análise minuciosa com experiência e o suporte humano necessários para discussão e escolha decisiva para a proteção mais adequada à sua realidade.
             </p>
             <p>
