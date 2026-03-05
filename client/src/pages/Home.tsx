@@ -206,7 +206,7 @@ export default function Home() {
 </h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Proteção personalizada para preservação patrimonial e planejamento familiar.
 </p>
-            <ul className="space-y-3 border-t border-[#d4d4d8] pt-4">
+            <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 font-extrabold">
               <li>Seguro Residencial e Condomínio</li>
               <li>Seguro Automóvel</li>
               <li>Seguro de Vida</li>
