@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#edf1e6] text-black font-sans selection:bg-[#FACC15] selection:text-black">
@@ -44,6 +42,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* 
         Slide 2: History
       */}
@@ -92,8 +91,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* 
-        Slide 3: Portfolio & Specialty
+        Slide 3: Specialty & Seguradoras Parceiras
       */}
       <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#edf1e6] border-b border-[#d4d4d8]">
         <header className="mb-auto">
@@ -168,61 +168,35 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Portfolio Section Moved Here */}
+        {/* Seguradoras Parceiras Moved Here */}
         <div className="pt-16 border-t border-[#d4d4d8]">
-          
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-16">
-            <div className="lg:col-span-6">
-              <p className="text-black lg:text-2xl mb-6 text-[21px] font-medium leading-relaxed">
-                Atendemos pessoas físicas e jurídicas, com soluções que acompanham a evolução de cada cliente ao longo do tempo.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
-            <div className="space-y-8">
-              <div>
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d97706] mb-2 block">Construtoras</span>
-                <p className="text-zinc-500 text-sm font-light mb-8">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-12 items-center">
-                  <img src="/eztec_logo.png" alt="Eztec" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                  <img src="/kallas_logo.png" alt="Kallas" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                  <img src="/trisul_logo.png" alt="Trisul" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                  <img src="/fraiha_logo.png" alt="Fraiha" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                  <img src="/amy_logo.png" alt="Amy" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
-                  <img src="/constrak_logo.png" alt="Constrak" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
-                  <img src="/cemek_logo.png" alt="Cemek" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-8 lg:border-l lg:border-[#d4d4d8] lg:pl-16">
-              <div>
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d97706] mb-2 block">Seguradoras Parceiras</span>
-                <p className="text-zinc-500 text-sm font-light mb-8">Trabalhamos com as melhores e mais confiáveis seguradoras do mercado.</p>
-                <div className="grid grid-cols-3 gap-x-8 gap-y-12 items-center">
-                  <img src="/image_1772669913406.png" alt="Bradesco Seguros" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  <img src="/porto_seguro_logo.png" alt="Porto Seguro" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  <img src="/allianz_logo.png" alt="Allianz" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  <img src="/itau_logo.png" alt="Itaú" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  <img src="/azul_logo.png" alt="Azul Seguros" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  <img src="/sulamerica_logo.png" alt="SulAmérica" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  <img src="/tokiomarine_logo.png" alt="Tokio Marine" className="h-10 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  <img src="/chubb_logo.png" alt="Chubb" className="h-4 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  <img src="/liberty_logo.png" alt="Liberty" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  <img src="/zurich_logo.png" alt="Zurich" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  <img src="/fairfax_logo.png" alt="Fairfax" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  <img src="/mapfre_logo.png" alt="Mapfre" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                </div>
+          <div className="space-y-8 max-w-6xl">
+            <div>
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d97706] mb-2 block">Seguradoras Parceiras</span>
+              <p className="text-zinc-500 text-sm font-light mb-12">Trabalhamos com as melhores e mais confiáveis seguradoras do mercado.</p>
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-x-8 gap-y-12 items-center">
+                <img src="/image_1772669913406.png" alt="Bradesco Seguros" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+                <img src="/porto_seguro_logo.png" alt="Porto Seguro" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+                <img src="/allianz_logo.png" alt="Allianz" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+                <img src="/itau_logo.png" alt="Itaú" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+                <img src="/azul_logo.png" alt="Azul Seguros" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+                <img src="/sulamerica_logo.png" alt="SulAmérica" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+                <img src="/tokiomarine_logo.png" alt="Tokio Marine" className="h-10 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+                <img src="/chubb_logo.png" alt="Chubb" className="h-4 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+                <img src="/liberty_logo.png" alt="Liberty" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+                <img src="/zurich_logo.png" alt="Zurich" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+                <img src="/fairfax_logo.png" alt="Fairfax" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+                <img src="/mapfre_logo.png" alt="Mapfre" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
               </div>
             </div>
           </div>
         </div>
       </section>
+
       {/* 
-        Slide 4: Lines of Business & Portfolio
+        Slide 4: Lines of Business
       */}
-      <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#e4e9dc]">
+      <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#e4e9dc] border-b border-[#d4d4d8]">
         <header className="mb-12">
         </header>
 
@@ -237,8 +211,7 @@ export default function Home() {
           {/* Category 1 */}
           <div>
             <img src="/icon_folder.png" alt="Empresas e Operações" className="w-[250px] h-[251px] mb-6 object-contain -ml-10 animate-float" />
-            <h4 className="text-black font-medium mb-2 text-[21px]">Empresas e Operações
-</h4>
+            <h4 className="text-black font-medium mb-2 text-[21px]">Empresas e Operações</h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Estruturação técnica de seguros para proteção patrimonial, operacional e contratual.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 font-extrabold text-[18px]">
               <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Empresarial (Multirriscos)</li>
@@ -255,10 +228,8 @@ export default function Home() {
           {/* Category 2 */}
           <div>
             <img src="/icon_patrimonio.png" alt="Patrimônio e Estrutura Familiar" className="w-[250px] h-[251px] mb-6 object-contain -ml-10 animate-float" style={{ animationDelay: "1s" }} />
-            <h4 className="text-black font-medium mb-2 text-[21px]"> Patrimônio e Estrutura Familiar
-</h4>
-            <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Proteção personalizada para preservação patrimonial e planejamento familiar.
-</p>
+            <h4 className="text-black font-medium mb-2 text-[21px]">Patrimônio e Estrutura Familiar</h4>
+            <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Proteção personalizada para preservação patrimonial e planejamento familiar.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 font-extrabold text-[18px]">
               <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Residencial e Condomínio</li>
               <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Automóvel</li>
@@ -273,8 +244,7 @@ export default function Home() {
           {/* Category 3 */}
           <div>
             <img src="/icon_contrato.png" alt="Riscos Específicos e Patrimônio de Alta Complexidade" className="w-[250px] h-[251px] mb-6 object-contain -ml-10 animate-float" style={{ animationDelay: "2s" }} />
-            <h4 className="text-black font-medium mb-2 text-[21px]"> Riscos Específicos e Patrimônio de Alta Complexidade
-</h4>
+            <h4 className="text-black font-medium mb-2 text-[21px]">Riscos Específicos e Patrimônio de Alta Complexidade</h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Soluções estruturadas para situações que exigem análise técnica aprofundada.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 font-extrabold text-[18px]">
               <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Responsabilidade Civil Familiar</li>
@@ -288,8 +258,7 @@ export default function Home() {
           {/* Category 4 */}
           <div>
             <img src="/icon_obras.png" alt="Engenharia e Grandes Obras" className="w-[250px] h-[251px] mb-6 object-contain -ml-10 animate-float" style={{ animationDelay: "3s" }} />
-            <h4 className="text-black font-medium mb-2 text-[21px]">Engenharia e Grandes Obras
-</h4>
+            <h4 className="text-black font-medium mb-2 text-[21px]">Engenharia e Grandes Obras</h4>
             <p className="text-zinc-600 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Especialização histórica da RA Poliseg, com atuação técnica na análise e estruturação de riscos complexos.</p>
             <ul className="space-y-3 border-t border-[#d97706]/40 pt-4 text-black font-extrabold text-[18px]">
               <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro de Riscos de Engenharia</li>
@@ -300,63 +269,48 @@ export default function Home() {
             </ul>
           </div>
         </div>
+      </section>
 
-        {/* 
-          Slide 3: Portfolio
-        */}
-        <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#e4e9dc] pt-[15px] pb-[15px]">
-          <div className="pt-16 mt-auto border-t border-[#d4d4d8]">
-            
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-16 pt-16">
-              <div className="lg:col-span-6">
-                <p className="text-black lg:text-2xl mb-6 text-[21px] font-medium leading-relaxed">
-                  Atendemos pessoas físicas e jurídicas, com soluções que acompanham a evolução de cada cliente ao longo do tempo.
-                </p>
-              </div>
+      {/* 
+        Slide 5: Portfolio
+      */}
+      <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#edf1e6]">
+        <div className="pt-16 mt-auto">
+          <div className="mb-12">
+            <div className="flex items-center gap-4">
+              <div className="w-8 h-[2px] bg-[#d97706]"></div>
+              <h2 className="text-[#d97706] text-xs uppercase tracking-[0.2em] font-semibold">Portfolio</h2>
             </div>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-16">
+            <div className="lg:col-span-6">
+              <p className="text-black lg:text-2xl mb-6 text-[21px] font-medium leading-relaxed">
+                Atendemos pessoas físicas e jurídicas, com soluções que acompanham a evolução de cada cliente ao longo do tempo.
+              </p>
+            </div>
+          </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 pt-16">
-              <div className="space-y-8">
-                <div>
-                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d97706] mb-2 block">Construtoras</span>
-                  <p className="text-zinc-500 text-sm font-light mb-8">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-12 items-center">
-                    <img src="/eztec_logo.png" alt="Eztec" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                    <img src="/kallas_logo.png" alt="Kallas" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                    <img src="/trisul_logo.png" alt="Trisul" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                    <img src="/fraiha_logo.png" alt="Fraiha" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                    <img src="/amy_logo.png" alt="Amy" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
-                    <img src="/constrak_logo.png" alt="Constrak" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
-                    <img src="/cemek_logo.png" alt="Cemek" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-8 lg:border-l lg:border-[#d4d4d8] lg:pl-16">
-                <div>
-                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d97706] mb-2 block">Seguradoras Parceiras</span>
-                  <p className="text-zinc-500 text-sm font-light mb-8">Trabalhamos com as melhores e mais confiáveis seguradoras do mercado.</p>
-                  <div className="grid grid-cols-3 gap-x-8 gap-y-12 items-center">
-                    <img src="/image_1772669913406.png" alt="Bradesco Seguros" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                    <img src="/porto_seguro_logo.png" alt="Porto Seguro" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                    <img src="/allianz_logo.png" alt="Allianz" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                    <img src="/itau_logo.png" alt="Itaú" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                    <img src="/azul_logo.png" alt="Azul Seguros" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                    <img src="/sulamerica_logo.png" alt="SulAmérica" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                    <img src="/tokiomarine_logo.png" alt="Tokio Marine" className="h-10 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                    <img src="/chubb_logo.png" alt="Chubb" className="h-4 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                    <img src="/liberty_logo.png" alt="Liberty" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                    <img src="/zurich_logo.png" alt="Zurich" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                    <img src="/fairfax_logo.png" alt="Fairfax" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                    <img src="/mapfre_logo.png" alt="Mapfre" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 pt-8">
+            <div className="space-y-8">
+              <div>
+                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d97706] mb-2 block">Construtoras</span>
+                <p className="text-zinc-500 text-sm font-light mb-8">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-12 items-center">
+                  <img src="/eztec_logo.png" alt="Eztec" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
+                  <img src="/kallas_logo.png" alt="Kallas" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
+                  <img src="/trisul_logo.png" alt="Trisul" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
+                  <img src="/fraiha_logo.png" alt="Fraiha" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
+                  <img src="/amy_logo.png" alt="Amy" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
+                  <img src="/constrak_logo.png" alt="Constrak" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
+                  <img src="/cemek_logo.png" alt="Cemek" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
                 </div>
               </div>
             </div>
           </div>
-        </section>
-
+        </div>
       </section>
+
     </div>
   );
 }
