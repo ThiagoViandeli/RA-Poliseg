@@ -126,7 +126,7 @@ export default function Home() {
             <p>
               Estruturamos coberturas sob medida para cada projeto e empreendimento, para todos os tipos riscos.
             </p>
-            <p className="text-[#d97706] font-normal text-lg lg:text-xl">
+            <p className="text-[#d97706] text-lg lg:text-xl font-bold">
               Seguros tailor made, com análise técnica e visão de longo prazo.
             </p>
             <div className="pt-2">
