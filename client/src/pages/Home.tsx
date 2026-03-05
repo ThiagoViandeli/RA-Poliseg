@@ -177,7 +177,6 @@ export default function Home() {
       */}
       <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#e4e9dc]">
         <header className="mb-12">
-          <img src="/ra_poliseg_logo.png" alt="RA Poliseg" className="h-8 md:h-10 object-contain" />
         </header>
 
         <div className="mb-16">
