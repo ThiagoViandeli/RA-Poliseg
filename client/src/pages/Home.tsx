@@ -222,7 +222,7 @@ export default function Home() {
             <h4 className="text-black font-medium text-[15px] mb-2"> Riscos Específicos e Patrimônio de Alta Complexidade
 </h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Soluções estruturadas para situações que exigem análise técnica aprofundada.</p>
-            <ul className="space-y-3 border-t border-[#d4d4d8] pt-4">
+            <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 font-extrabold">
               <li>Responsabilidade Civil Familiar</li>
               <li>Seguro para Equipamentos e Bens de Alto Valor</li>
               <li>Seguro para Administradores (D&O)</li>
