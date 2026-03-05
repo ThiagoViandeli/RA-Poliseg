@@ -375,9 +375,6 @@ export default function Home() {
             <p className="text-white/40 text-xs">
               © {new Date().getFullYear()} RA Poliseg Seguros. Todos os direitos reservados.
             </p>
-            <p className="text-white/40 text-xs">
-              SUSEP — Corretora de Seguros habilitada
-            </p>
           </div>
         </div>
       </footer>
