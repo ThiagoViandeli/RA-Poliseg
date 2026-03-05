@@ -187,7 +187,7 @@ export default function Home() {
           <div>
             <h4 className="text-black font-medium text-[15px] mb-2">Empresas e Operações
 </h4>
-            <p className="text-[11px] text-zinc-500 mb-6 min-h-[40px] leading-relaxed uppercase tracking-wider">Technical structuring of insurance for asset, operational and contractual protection.</p>
+            <p className="text-[11px] text-zinc-500 mb-6 min-h-[40px] leading-relaxed uppercase tracking-wider">Estruturação técnica de seguros para proteção patrimonial, operacional e contratual.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4">
               <li>Seguro Empresarial (Multirriscos)</li>
               <li>Responsabilidade Civil Geral e Profissional</li>
