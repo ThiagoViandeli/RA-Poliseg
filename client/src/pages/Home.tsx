@@ -11,15 +11,13 @@ export default function Home() {
       {/* 
         Slide 1: Hero
       */}
-      <section className="min-h-screen flex flex-col border-b border-[#d4d4d8] relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full lg:w-1/2 h-full bg-[#096679]"></div>
-        <div className="relative z-10 flex flex-col flex-1 p-8 md:p-12 lg:p-16">
+      <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 border-b border-[#d4d4d8] pt-[0px] pb-[0px]">
         <header className="mb-auto">
         </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-12">
           {/* Left Column */}
-          <div className="lg:col-span-6 flex flex-col justify-end">
+          <div className="lg:col-span-6 flex flex-col justify-end bg-[#096679] rounded-2xl p-8 md:p-12">
             <div className="text-white/70 text-sm md:text-base leading-relaxed mb-16 max-w-sm">
               <p>Fundada em 1988.</p>
               <p className="text-[18px]">Hoje somos referência em soluções securitárias.</p>
@@ -49,7 +47,6 @@ export default function Home() {
               Proteção personalizada para cada fase, cada obra, cada empresa, cada familia, em suas decisões mais importantes.
             </p>
           </div>
-        </div>
         </div>
       </section>
       {/* 
