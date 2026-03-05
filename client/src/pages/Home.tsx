@@ -287,7 +287,7 @@ export default function Home() {
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-3 text-zinc-600 font-light text-[13px] tracking-wide">
                   <img src="/image_1772669913406.png" alt="Bradesco Seguros" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
                   <img src="/porto_seguro_logo.png" alt="Porto Seguro" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  <span>ALLIANZ</span>
+                  <img src="/allianz_logo.png" alt="Allianz" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
                   <span>ITAU</span>
                   <span>AZUL</span>
                   <span>SULAMERICA</span>
