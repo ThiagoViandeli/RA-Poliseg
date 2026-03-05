@@ -294,7 +294,7 @@ export default function Home() {
                   <img src="/tokiomarine_logo.png" alt="Tokio Marine" className="h-10 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
                   <img src="/chubb_logo.png" alt="Chubb" className="h-4 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
                   <img src="/liberty_logo.png" alt="Liberty" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  <span>ZURICH</span>
+                  <img src="/zurich_logo.png" alt="Zurich" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
                   <span>FAIRFAX</span>
                   <span>MAPFRE</span>
                 </div>
