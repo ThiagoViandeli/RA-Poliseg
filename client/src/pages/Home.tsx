@@ -11,7 +11,7 @@ export default function Home() {
       {/* 
         Slide 1: Hero
       */}
-      <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 border-b border-[#d4d4d8] pt-[15px] pb-[15px]">
+      <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 border-b border-[#d4d4d8] pt-[0px] pb-[0px]">
         <header className="mb-auto">
         </header>
 
