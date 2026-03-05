@@ -204,7 +204,7 @@ export default function Home() {
           {/* Category 2 */}
           <div>
             <img src="/icon_patrimonio.png" alt="Patrimônio e Estrutura Familiar" className="w-[250px] h-[251px] mb-6 object-contain -ml-10 animate-float" style={{ animationDelay: "1s" }} />
-            <h4 className="text-black font-medium mb-2 text-[18px]"> Patrimônio e Estrutura Familiar
+            <h4 className="text-black font-medium mb-2 text-[21px]"> Patrimônio e Estrutura Familiar
 </h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Proteção personalizada para preservação patrimonial e planejamento familiar.
 </p>
