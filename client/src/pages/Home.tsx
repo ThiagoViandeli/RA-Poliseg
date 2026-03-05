@@ -65,7 +65,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 text-zinc-800 text-[15px] md:text-[17px] font-light leading-relaxed mb-12">
           {/* Left Column */}
-          <div className="space-y-6 max-w-2xl">
+          <div className="space-y-6 max-w-2xl text-[18px]">
             <p>
               A RA Poliseg foi fundada em 1988, por Rogério Abinader.
             </p>
