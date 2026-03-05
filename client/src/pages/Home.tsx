@@ -188,7 +188,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-[#d97706] mt-1.5 text-[8px]">■</span>
-                  <span>exigências legais e regulatórias</span>
+                  <span>Exigências legais e regulatórias</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-[#d97706] mt-1.5 text-[8px]">■</span>
