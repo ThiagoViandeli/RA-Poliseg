@@ -297,7 +297,7 @@ export default function Home() {
         {/* 
           Slide 3: Portfolio
         */}
-        <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#e4e9dc] pt-[15px] pb-[15px]">
+        <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#e4e9dc] pt-[0px] pb-[0px]">
           <div className="pt-16 mt-auto border-t border-[#d4d4d8]">
             
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-16 pt-16">
