@@ -226,11 +226,11 @@ export default function Home() {
 </h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Soluções estruturadas para situações que exigem análise técnica aprofundada.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 font-extrabold text-[16px]">
-              <li>Responsabilidade Civil Familiar</li>
-              <li>Seguro para Equipamentos e Bens de Alto Valor</li>
-              <li>Seguro para Administradores (D&O)</li>
-              <li>Seguro para Embarcações e Aeronaves</li>
-              <li>Programas personalizados para patrimônio relevante</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Responsabilidade Civil Familiar</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro para Equipamentos e Bens de Alto Valor</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro para Administradores (D&O)</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Seguro para Embarcações e Aeronaves</li>
+              <li className="flex gap-3"><span className="text-[#d4d4d8] mt-1.5 text-[8px]">*</span> Programas personalizados para patrimônio relevante</li>
             </ul>
           </div>
 
