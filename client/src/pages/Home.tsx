@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
+import { useEffect } from "react";
 
 export default function Home() {
+  const [emblaRef] = useEmblaCarousel({ loop: true, align: "center" }, [Autoplay()]);
+
   return (
     <div className="min-h-screen bg-[#edf1e6] text-black font-sans selection:bg-[#FACC15] selection:text-black">
       {/* 
@@ -184,14 +189,26 @@ export default function Home() {
               <div>
                 <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d97706] mb-2 block">Construtoras</span>
                 <p className="text-zinc-500 text-sm font-light mb-8">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-12 items-center">
-                  <img src="/eztec_logo.png" alt="Eztec" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                  <img src="/kallas_logo.png" alt="Kallas" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                  <img src="/trisul_logo.png" alt="Trisul" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                  <img src="/fraiha_logo.png" alt="Fraiha" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                  <img src="/amy_logo.png" alt="Amy" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
-                  <img src="/constrak_logo.png" alt="Constrak" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
-                  <img src="/cemek_logo.png" alt="Cemek" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
+                <div className="overflow-hidden" ref={emblaRef}>
+                  <div className="flex -ml-4 touch-pan-y">
+                    {[
+                      { src: "/eztec_logo.png", alt: "Eztec" },
+                      { src: "/kallas_logo.png", alt: "Kallas" },
+                      { src: "/trisul_logo.png", alt: "Trisul" },
+                      { src: "/fraiha_logo.png", alt: "Fraiha" },
+                      { src: "/amy_logo.png", alt: "Amy", className: "mix-blend-multiply" },
+                      { src: "/constrak_logo.png", alt: "Constrak", className: "mix-blend-multiply" },
+                      { src: "/cemek_logo.png", alt: "Cemek", className: "mix-blend-multiply h-8", defaultH: false },
+                    ].map((logo, i) => (
+                      <div className="flex-[0_0_50%] sm:flex-[0_0_33.33%] min-w-0 pl-4 flex justify-center items-center" key={i}>
+                        <img 
+                          src={logo.src} 
+                          alt={logo.alt} 
+                          className={`${logo.defaultH === false ? logo.className : `h-6 ${logo.className || ''}`} object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100`} 
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
