@@ -192,7 +192,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-[#d97706] mt-1.5 text-[8px]">■</span>
-                  <span>visão patrimonial e financeira</span>
+                  <span>Visão patrimonial e financeira</span>
                 </li>
               </ul>
             </div>
