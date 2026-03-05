@@ -187,8 +187,7 @@ export default function Home() {
           <div className="grid grid-cols-1">
             <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
               <div>
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d97706] mb-2 block">Construtoras</span>
-                <p className="text-zinc-500 font-light mb-8 text-[21px]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
+                <p className="mb-8 text-[21px] font-semibold text-[#000000]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
                 <div className="embla" ref={emblaRef}>
                   <div className="embla__container">
                     {[
