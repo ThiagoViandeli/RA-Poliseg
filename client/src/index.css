@@ -49,6 +49,7 @@
 /* Embla Carousel Base Styles */
 .embla {
   overflow: hidden;
+  width: 100%;
 }
 .embla__container {
   display: flex;

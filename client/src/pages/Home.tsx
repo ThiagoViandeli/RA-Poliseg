@@ -184,11 +184,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
-            <div className="space-y-8">
+          <div className="grid grid-cols-1">
+            <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
               <div>
                 <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d97706] mb-2 block">Construtoras</span>
-                <p className="text-zinc-500 text-sm font-light mb-8">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
+                <p className="text-zinc-500 font-light mb-8 text-[21px]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
                 <div className="embla" ref={emblaRef}>
                   <div className="embla__container">
                     {[
@@ -204,7 +204,7 @@ export default function Home() {
                         <img 
                           src={logo.src} 
                           alt={logo.alt} 
-                          className={`${logo.defaultH === false ? logo.className : `h-6 ${logo.className || ''}`} object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100`} 
+                          className={`${logo.defaultH === false ? logo.className : `h-6 ${logo.className || ''}`} object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mx-auto`} 
                         />
                       </div>
                     ))}
