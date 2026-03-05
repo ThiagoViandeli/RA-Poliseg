@@ -176,7 +176,7 @@ export default function Home() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="text-[#d97706] mt-1.5 text-[8px]">■</span>
-                  <span>riscos específicos</span>
+                  <span>Riscos específicos</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-[#d97706] mt-1.5 text-[8px]">■</span>
