@@ -102,7 +102,7 @@ export default function Home() {
         <div className="mb-12">
           <div className="flex items-center gap-4">
             <div className="w-8 h-[2px] bg-[#d97706]"></div>
-            <h2 className="text-[#d97706] text-xs uppercase tracking-[0.2em] font-semibold">Expertise e modo de atuação</h2>
+            <h2 className="text-[#d97706] text-xs uppercase tracking-[0.2em] font-semibold">Especialidade e modo de trabalhar</h2>
           </div>
         </div>
 
