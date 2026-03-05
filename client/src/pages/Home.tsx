@@ -180,18 +180,35 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
-            <div className="space-y-8">
-              <div>
+            <div className="space-y-8 lg:col-span-2">
+              <div className="text-center">
                 <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d97706] mb-2 block">Construtoras</span>
-                <p className="text-zinc-500 text-sm font-light mb-8">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-12 items-center">
-                  <img src="/eztec_logo.png" alt="Eztec" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                  <img src="/kallas_logo.png" alt="Kallas" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                  <img src="/trisul_logo.png" alt="Trisul" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                  <img src="/fraiha_logo.png" alt="Fraiha" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                  <img src="/amy_logo.png" alt="Amy" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
-                  <img src="/constrak_logo.png" alt="Constrak" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
-                  <img src="/cemek_logo.png" alt="Cemek" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
+                <p className="text-zinc-500 text-sm font-light mb-12">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
+                
+                <div className="w-full overflow-hidden relative" style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}>
+                  <motion.div 
+                    className="flex items-center gap-16 min-w-max"
+                    animate={{
+                      x: ["0%", "-50%"]
+                    }}
+                    transition={{
+                      ease: "linear",
+                      duration: 30,
+                      repeat: Infinity,
+                    }}
+                  >
+                    {[1, 2].map((set) => (
+                      <div key={set} className="flex items-center gap-16">
+                        <img src="/eztec_logo.png" alt="Eztec" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
+                        <img src="/kallas_logo.png" alt="Kallas" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
+                        <img src="/trisul_logo.png" alt="Trisul" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
+                        <img src="/fraiha_logo.png" alt="Fraiha" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
+                        <img src="/amy_logo.png" alt="Amy" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
+                        <img src="/constrak_logo.png" alt="Constrak" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
+                        <img src="/cemek_logo.png" alt="Cemek" className="h-10 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mix-blend-multiply" />
+                      </div>
+                    ))}
+                  </motion.div>
                 </div>
               </div>
             </div>
