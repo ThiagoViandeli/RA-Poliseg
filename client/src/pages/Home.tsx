@@ -290,7 +290,7 @@ export default function Home() {
                   <img src="/allianz_logo.png" alt="Allianz" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
                   <img src="/itau_logo.png" alt="Itaú" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
                   <img src="/azul_logo.png" alt="Azul Seguros" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  <span>SULAMERICA</span>
+                  <img src="/sulamerica_logo.png" alt="SulAmérica" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
                   <span>TOKIO MARINE</span>
                   <span>CHUBB</span>
                   <span>LIBERTY</span>
