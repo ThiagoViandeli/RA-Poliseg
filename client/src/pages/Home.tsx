@@ -288,7 +288,7 @@ export default function Home() {
                   <img src="/image_1772669913406.png" alt="Bradesco Seguros" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
                   <img src="/porto_seguro_logo.png" alt="Porto Seguro" className="h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
                   <img src="/allianz_logo.png" alt="Allianz" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
-                  <span>ITAU</span>
+                  <img src="/itau_logo.png" alt="Itaú" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
                   <span>AZUL</span>
                   <span>SULAMERICA</span>
                   <span>TOKIO MARINE</span>
