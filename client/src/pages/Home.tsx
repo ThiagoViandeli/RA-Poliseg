@@ -15,7 +15,7 @@ export default function Home() {
           <div className="lg:col-span-6 flex flex-col justify-end">
             <div className="text-zinc-600 text-sm md:text-base leading-relaxed mb-16 max-w-sm">
               <p>Fundada em 1988.</p>
-              <p>Hoje somos referência em soluções securitárias.</p>
+              <p className="text-[18px]">Hoje somos referência em soluções securitárias.</p>
             </div>
             
             <h1 className="text-[2.5rem] md:text-5xl lg:text-[4.5rem] leading-[1.05] font-medium tracking-tight">
