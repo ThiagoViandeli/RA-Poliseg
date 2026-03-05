@@ -204,7 +204,7 @@ export default function Home() {
           <div>
             <h4 className="text-black font-medium text-[15px] mb-2"> Patrimônio e Estrutura Familiar
 </h4>
-            <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px]">Proteção personalizada para preservação patrimonial e planejamento familiar.
+            <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Proteção personalizada para preservação patrimonial e planejamento familiar.
 </p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4">
               <li>Seguro Residencial e Condomínio</li>
