@@ -202,7 +202,8 @@ export default function Home() {
 
           {/* Category 2 */}
           <div>
-            <h4 className="text-black font-medium text-[15px] mb-2">Assets and Family Structure</h4>
+            <h4 className="text-black font-medium text-[15px] mb-2"> Patrimônio e Estrutura Familiar
+</h4>
             <p className="text-[11px] text-zinc-500 mb-6 min-h-[40px] leading-relaxed uppercase tracking-wider">Personalized protection for asset preservation and family planning.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4">
               <li>Seguro Residencial e Condomínio</li>
