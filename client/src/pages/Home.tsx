@@ -27,7 +27,6 @@ export default function Home() {
           </ul>
         </div>
       </nav>
-
       {/* 
         Slide 1: Hero
       */}
@@ -81,7 +80,7 @@ export default function Home() {
             <div className="w-8 h-[2px] bg-[#d97706]"></div>
             <h2 className="text-[#d97706] text-xs uppercase tracking-[0.2em] font-semibold">Nossa história</h2>
           </div>
-          <h3 className="text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">Our History</h3>
+          <h3 className="text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">NOSSA HISTÓRIA</h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 text-zinc-800 text-[15px] md:text-[17px] font-light leading-relaxed mb-12">
@@ -349,7 +348,6 @@ export default function Home() {
         </section>
 
       </section>
-
       <footer className="bg-[#096679] text-white py-16 px-8 md:px-12 lg:px-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-16">
@@ -393,7 +391,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-
       <a
         href="https://wa.me/551130443355"
         target="_blank"
