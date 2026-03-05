@@ -233,7 +233,8 @@ export default function Home() {
 
           {/* Category 4 */}
           <div>
-            <h4 className="text-black font-medium text-[15px] mb-2">Engineering and Large-Scale Projects</h4>
+            <h4 className="text-black font-medium text-[15px] mb-2">Engenharia e Grandes Obras
+</h4>
             <p className="text-[11px] text-zinc-600 mb-6 min-h-[40px] leading-relaxed uppercase tracking-wider">RA Poliseg's historical specialty, with technical expertise in the analysis and structuring of complex risks.</p>
             <ul className="space-y-3 border-t border-[#d97706]/40 pt-4 text-black">
               <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[6px]">■</span> Seguro de Riscos de Engenharia</li>
