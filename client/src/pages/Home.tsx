@@ -14,6 +14,20 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#edf1e6] text-black font-sans selection:bg-[#FACC15] selection:text-black">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#edf1e6]/80 backdrop-blur-md border-b border-[#d4d4d8]/30">
+        <div className="flex items-center justify-between px-8 md:px-12 lg:px-16 py-4">
+          <a href="#inicio" data-testid="link-logo-home">
+            <img src="/ra_poliseg_header_logo.png" alt="RA Poliseg" className="h-8" />
+          </a>
+          <ul className="hidden md:flex items-center gap-8 text-xs uppercase tracking-[0.15em] font-medium text-zinc-600">
+            <li><a href="#inicio" className="hover:text-black transition-colors" data-testid="nav-home">Início</a></li>
+            <li><a href="#historia" className="hover:text-black transition-colors" data-testid="nav-history">Nossa História</a></li>
+            <li><a href="#especialidade" className="hover:text-black transition-colors" data-testid="nav-specialty">Especialidade</a></li>
+            <li><a href="#linhas" className="hover:text-black transition-colors" data-testid="nav-lines">Linhas de Negócio</a></li>
+          </ul>
+        </div>
+      </nav>
+
       {/* 
         Slide 1: Hero
       */}
