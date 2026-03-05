@@ -254,7 +254,7 @@ export default function Home() {
 </h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Proteção personalizada para preservação patrimonial e planejamento familiar.
 </p>
-            <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 font-extrabold text-[18px]">
+            <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 text-[18px] font-medium">
               <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Residencial e Condomínio</li>
               <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Automóvel</li>
               <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro de Vida</li>
