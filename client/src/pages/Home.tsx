@@ -56,13 +56,13 @@ export default function Home() {
             <p className="text-[22px]">
               Acreditamos e praticamos um atendimento próximo, super personalizado, com visão técnica e soluções estratégicas consagradas.
             </p>
-            <p className="text-black font-normal">
+            <p className="text-black font-normal text-[22px]">
               Conhecemos nossos clientes de verdade — suas histórias, seus negócios e seus riscos.
             </p>
             <p className="text-[22px]">
               Oferecemos Seguros de todos os ramos, com as melhores Seguradoras do mercado mundial.
             </p>
-            <p className="text-black pt-4 text-lg">
+            <p className="text-black pt-4 text-[22px]">
               Proteção personalizada para cada fase, cada obra, cada empresa, cada familia, em suas decisões mais importantes.
             </p>
           </div>
