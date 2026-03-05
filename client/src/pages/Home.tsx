@@ -235,7 +235,7 @@ export default function Home() {
           <div>
             <h4 className="text-black font-medium text-[15px] mb-2">Engenharia e Grandes Obras
 </h4>
-            <p className="text-[11px] text-zinc-600 mb-6 min-h-[40px] leading-relaxed uppercase tracking-wider">RA Poliseg's historical specialty, with technical expertise in the analysis and structuring of complex risks.</p>
+            <p className="text-[11px] text-zinc-600 mb-6 min-h-[40px] leading-relaxed uppercase tracking-wider">Especialização histórica da RA Poliseg, com atuação técnica na análise e estruturação de riscos complexos.</p>
             <ul className="space-y-3 border-t border-[#d97706]/40 pt-4 text-black">
               <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[6px]">■</span> Seguro de Riscos de Engenharia</li>
               <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[6px]">■</span> Seguro Garantia para Obras</li>
