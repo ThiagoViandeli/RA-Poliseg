@@ -9,6 +9,7 @@ export default function Home() {
       */}
       <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 border-b border-[#d4d4d8]">
         <header className="mb-auto">
+          <img src="/ra_poliseg_header_logo.png" alt="RA Poliseg Seguros" className="h-10 md:h-12 object-contain" />
         </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-12">
@@ -51,6 +52,7 @@ export default function Home() {
       */}
       <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#e4e9dc] border-b border-[#d4d4d8]">
         <header className="mb-auto">
+          <img src="/ra_poliseg_header_logo.png" alt="RA Poliseg Seguros" className="h-10 md:h-12 object-contain" />
         </header>
 
         <div className="mb-16">
@@ -100,6 +102,7 @@ export default function Home() {
       */}
       <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#edf1e6] border-b border-[#d4d4d8]">
         <header className="mb-auto">
+          <img src="/ra_poliseg_header_logo.png" alt="RA Poliseg Seguros" className="h-10 md:h-12 object-contain" />
         </header>
 
         <div className="mb-12">
@@ -177,6 +180,7 @@ export default function Home() {
       */}
       <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#e4e9dc]">
         <header className="mb-12">
+          <img src="/ra_poliseg_header_logo.png" alt="RA Poliseg Seguros" className="h-10 md:h-12 object-contain" />
         </header>
 
         <div className="mb-16">
