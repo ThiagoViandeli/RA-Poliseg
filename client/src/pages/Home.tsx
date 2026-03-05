@@ -221,6 +221,7 @@ export default function Home() {
 
           {/* Category 3 */}
           <div>
+            <img src="/icon_contrato.png" alt="Riscos Específicos e Patrimônio de Alta Complexidade" className="w-[250px] h-[251px] mb-6 object-contain -ml-10 animate-float" style={{ animationDelay: "2s" }} />
             <h4 className="text-black font-medium text-[15px] mb-2"> Riscos Específicos e Patrimônio de Alta Complexidade
 </h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Soluções estruturadas para situações que exigem análise técnica aprofundada.</p>
