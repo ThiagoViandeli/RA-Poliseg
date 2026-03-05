@@ -6,22 +6,22 @@
 @theme inline {
   --font-sans: "Inter", system-ui, sans-serif;
   
-  --color-background: #0a0a0a;
-  --color-foreground: #ffffff;
+  /* Update variables for light theme */
+  --color-background: #edf1e6;
+  --color-foreground: #000000;
   
-  /* Primary color: Yellow from the PDF */
   --color-primary: #facc15; 
-  --color-primary-foreground: #0a0a0a;
+  --color-primary-foreground: #000000;
 
-  --color-muted: #171717;
-  --color-muted-foreground: #a3a3a3;
+  --color-muted: #e0e5d8;
+  --color-muted-foreground: #52525b;
   
-  --color-border: #262626;
+  --color-border: #d4d4d8;
 }
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ffffff;
+  --background: #edf1e6;
+  --foreground: #000000;
 }
 
 @layer base {
