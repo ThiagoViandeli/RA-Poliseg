@@ -185,6 +185,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-24 text-sm font-light text-zinc-800">
           {/* Category 1 */}
           <div>
+            <img src="/icon_empresas.png" alt="Empresas e Operações" className="h-14 mb-4 object-contain" />
             <h4 className="text-black font-medium text-[15px] mb-2">Empresas e Operações
 </h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Estruturação técnica de seguros para proteção patrimonial, operacional e contratual.</p>
