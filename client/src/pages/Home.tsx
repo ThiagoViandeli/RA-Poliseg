@@ -172,7 +172,7 @@ export default function Home() {
               Seguros tailor made, com análise técnica e visão de longo prazo.
             </p>
             <div className="pt-2 bg-[#09667933] rounded-2xl p-6 sm:p-8">
-              <p className="mb-4 text-black">Desenvolvemos seguros personalizados, considerando:</p>
+              <p className="mb-4 text-black font-semibold">Desenvolvemos seguros personalizados, considerando:</p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="text-[#d97706] mt-1.5 text-[8px]">■</span>
@@ -403,7 +403,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-
       <a
         href="https://wa.me/551130443355"
         target="_blank"
