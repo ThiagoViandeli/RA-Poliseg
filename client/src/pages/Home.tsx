@@ -264,9 +264,7 @@ export default function Home() {
               <p className="text-black lg:text-xl mb-4 text-[21px]">
                 Atendemos pessoas físicas e jurídicas, com soluções que acompanham a evolução de cada cliente ao longo do tempo.
               </p>
-              <p className="text-zinc-600 text-sm font-light">
-                Our main clients are well-established construction companies in São Paulo, such as:
-              </p>
+              <p className="text-zinc-600 text-sm font-light">Nossos principais clientes são consolidadas construtoras em São Paulo, tais como:</p>
             </div>
             
             <div className="lg:col-span-8 space-y-12 border-l border-[#d4d4d8] pl-0 lg:pl-12">
