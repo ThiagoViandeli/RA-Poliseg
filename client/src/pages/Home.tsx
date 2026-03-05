@@ -189,8 +189,8 @@ export default function Home() {
               <div>
                 <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d97706] mb-2 block">Construtoras</span>
                 <p className="text-zinc-500 text-sm font-light mb-8">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
-                <div className="overflow-hidden" ref={emblaRef}>
-                  <div className="flex -ml-4 touch-pan-y">
+                <div className="embla" ref={emblaRef}>
+                  <div className="embla__container">
                     {[
                       { src: "/eztec_logo.png", alt: "Eztec" },
                       { src: "/kallas_logo.png", alt: "Kallas" },
@@ -200,7 +200,7 @@ export default function Home() {
                       { src: "/constrak_logo.png", alt: "Constrak", className: "mix-blend-multiply" },
                       { src: "/cemek_logo.png", alt: "Cemek", className: "mix-blend-multiply h-8", defaultH: false },
                     ].map((logo, i) => (
-                      <div className="flex-[0_0_50%] sm:flex-[0_0_33.33%] min-w-0 pl-4 flex justify-center items-center" key={i}>
+                      <div className="embla__slide" key={i}>
                         <img 
                           src={logo.src} 
                           alt={logo.alt} 

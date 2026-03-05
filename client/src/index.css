@@ -45,3 +45,31 @@
 .animate-float {
   animation: float 4s ease-in-out infinite;
 }
+
+/* Embla Carousel Base Styles */
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+}
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 50%;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+}
+@media (min-width: 640px) {
+  .embla__slide {
+    flex: 0 0 33.333%;
+  }
+}
+@media (min-width: 1024px) {
+  .embla__slide {
+    flex: 0 0 25%;
+  }
+}
