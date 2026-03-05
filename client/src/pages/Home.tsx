@@ -81,7 +81,7 @@ export default function Home() {
           </div>
 
           {/* Right Column */}
-          <div className="space-y-6 max-w-2xl">
+          <div className="space-y-6 max-w-2xl text-[18px]">
             <p>
               A RA Poliseg conta também com Carina Abinader, filha do fundador, advogada especializada em Direito Empresarial, Contratual, Tributário e Administração de Empresas pela FVG - São Paulo/University of California- San Diego, garantindo que cada apólice esteja alinhada não só ao risco, mas também à estrutura e necessidade legal/ financeira do cliente.
             </p>
