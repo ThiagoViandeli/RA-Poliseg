@@ -274,7 +274,7 @@ export default function Home() {
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-3 text-black font-medium text-[15px] tracking-wide">
                   <img src="/eztec_logo.png" alt="Eztec" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
                   <img src="/kallas_logo.png" alt="Kallas" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                  <span>TRISUL</span>
+                  <img src="/trisul_logo.png" alt="Trisul" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
                   <span>FRAIHA</span>
                   <span>AMY</span>
                   <span>CONSTRAK</span>
