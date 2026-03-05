@@ -1,10 +1,16 @@
 import { motion } from "framer-motion";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
-import { useEffect } from "react";
+
+const constructorLogos = [
+  { src: "/eztec_logo.png", alt: "Eztec" },
+  { src: "/kallas_logo.png", alt: "Kallas" },
+  { src: "/trisul_logo.png", alt: "Trisul" },
+  { src: "/fraiha_logo.png", alt: "Fraiha" },
+  { src: "/amy_logo.png", alt: "Amy", className: "mix-blend-multiply" },
+  { src: "/constrak_logo.png", alt: "Constrak", className: "mix-blend-multiply" },
+  { src: "/cemek_logo.png", alt: "Cemek", className: "mix-blend-multiply h-8", defaultH: false },
+];
 
 export default function Home() {
-  const [emblaRef] = useEmblaCarousel({ loop: true, align: "center" }, [Autoplay()]);
 
   return (
     <div className="min-h-screen bg-[#edf1e6] text-black font-sans selection:bg-[#FACC15] selection:text-black">
@@ -188,22 +194,14 @@ export default function Home() {
             <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
               <div>
                 <p className="mb-8 text-[21px] font-semibold text-[#000000]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
-                <div className="embla" ref={emblaRef}>
-                  <div className="embla__container">
-                    {[
-                      { src: "/eztec_logo.png", alt: "Eztec" },
-                      { src: "/kallas_logo.png", alt: "Kallas" },
-                      { src: "/trisul_logo.png", alt: "Trisul" },
-                      { src: "/fraiha_logo.png", alt: "Fraiha" },
-                      { src: "/amy_logo.png", alt: "Amy", className: "mix-blend-multiply" },
-                      { src: "/constrak_logo.png", alt: "Constrak", className: "mix-blend-multiply" },
-                      { src: "/cemek_logo.png", alt: "Cemek", className: "mix-blend-multiply h-8", defaultH: false },
-                    ].map((logo, i) => (
-                      <div className="embla__slide" key={i}>
+                <div className="logo-ticker">
+                  <div className="logo-ticker__track">
+                    {[...constructorLogos, ...constructorLogos, ...constructorLogos].map((logo, i) => (
+                      <div className="logo-ticker__item" key={i}>
                         <img 
                           src={logo.src} 
                           alt={logo.alt} 
-                          className={`${logo.defaultH === false ? logo.className : `h-6 ${logo.className || ''}`} object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 mx-auto`} 
+                          className={`${logo.defaultH === false ? logo.className : `h-6 ${logo.className || ''}`} object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100`} 
                         />
                       </div>
                     ))}

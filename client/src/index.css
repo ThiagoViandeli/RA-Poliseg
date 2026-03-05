@@ -47,40 +47,42 @@
   animation: float 4s ease-in-out infinite;
 }
 
-/* Embla Carousel Base Styles */
-.embla {
+/* Logo Ticker — continuous smooth scroll */
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+.logo-ticker {
   overflow: hidden;
   width: 100vw;
   position: relative;
   left: 50%;
-  right: 50%;
   margin-left: -50vw;
-  margin-right: -50vw;
   padding: 2rem 0;
-  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
-.embla__container {
+
+.logo-ticker__track {
   display: flex;
-  touch-action: pan-y pinch-zoom;
+  width: max-content;
+  animation: ticker-scroll 25s linear infinite;
+  will-change: transform;
 }
-.embla__slide {
-  transform: translate3d(0, 0, 0);
-  flex: 0 0 50%;
-  min-width: 0;
+
+.logo-ticker:hover .logo-ticker__track {
+  animation-play-state: paused;
+}
+
+.logo-ticker__item {
+  flex-shrink: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-@media (min-width: 640px) {
-  .embla__slide {
-    flex: 0 0 33.333%;
-  }
-}
-@media (min-width: 1024px) {
-  .embla__slide {
-    flex: 0 0 15%;
-  }
+  justify-content: center;
+  padding: 0 3rem;
 }
