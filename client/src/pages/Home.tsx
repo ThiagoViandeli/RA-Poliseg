@@ -17,7 +17,7 @@ export default function Home() {
       {/* 
         Slide 1: Hero
       */}
-      <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 border-b border-[#d4d4d8] pt-[0px] pb-[0px]">
+      <section id="inicio" className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 border-b border-[#d4d4d8] pt-[0px] pb-[0px]">
         <header className="mb-auto">
         </header>
 
@@ -58,7 +58,7 @@ export default function Home() {
       {/* 
         Slide 2: History
       */}
-      <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#e4e9dc] border-b border-[#d4d4d8]">
+      <section id="historia" className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#e4e9dc] border-b border-[#d4d4d8]">
         <header className="mb-auto">
         </header>
 
@@ -106,7 +106,7 @@ export default function Home() {
       {/* 
         Slide 3: Portfolio & Specialty
       */}
-      <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#edf1e6] border-b border-[#d4d4d8]">
+      <section id="especialidade" className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#edf1e6] border-b border-[#d4d4d8]">
         <header className="mb-auto">
         </header>
 
@@ -215,7 +215,7 @@ export default function Home() {
       {/* 
         Slide 4: Lines of Business & Portfolio
       */}
-      <section className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#e4e9dc]">
+      <section id="linhas" className="min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-[#e4e9dc]">
         <header className="mb-12">
         </header>
 
@@ -363,10 +363,10 @@ export default function Home() {
             <div>
               <h5 className="text-xs uppercase tracking-[0.2em] font-semibold text-[#d97706] mb-6">Navegação</h5>
               <ul className="space-y-3 text-sm text-white/70">
-                <li><a href="#" className="hover:text-white transition-colors" data-testid="link-nav-home">Início</a></li>
-                <li><a href="#" className="hover:text-white transition-colors" data-testid="link-nav-history">Nossa História</a></li>
-                <li><a href="#" className="hover:text-white transition-colors" data-testid="link-nav-specialty">Especialidade</a></li>
-                <li><a href="#" className="hover:text-white transition-colors" data-testid="link-nav-lines">Linhas de Negócio</a></li>
+                <li><a href="#inicio" className="hover:text-white transition-colors" data-testid="link-nav-home">Início</a></li>
+                <li><a href="#historia" className="hover:text-white transition-colors" data-testid="link-nav-history">Nossa História</a></li>
+                <li><a href="#especialidade" className="hover:text-white transition-colors" data-testid="link-nav-specialty">Especialidade</a></li>
+                <li><a href="#linhas" className="hover:text-white transition-colors" data-testid="link-nav-lines">Linhas de Negócio</a></li>
               </ul>
             </div>
           </div>
