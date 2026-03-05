@@ -59,7 +59,7 @@ export default function Home() {
             <p className="text-black font-normal">
               Conhecemos nossos clientes de verdade — suas histórias, seus negócios e seus riscos.
             </p>
-            <p>
+            <p className="text-[22px]">
               Oferecemos Seguros de todos os ramos, com as melhores Seguradoras do mercado mundial.
             </p>
             <p className="text-black pt-4 text-lg">
