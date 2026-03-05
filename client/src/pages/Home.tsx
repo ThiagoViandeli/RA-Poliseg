@@ -362,7 +362,7 @@ export default function Home() {
               <h5 className="text-xs uppercase tracking-[0.2em] font-semibold text-[#d97706] mb-6">Contato</h5>
               <ul className="space-y-3 text-sm text-white/70">
                 <li>
-                  <a href="tel:+551130443355" className="hover:text-white transition-colors" data-testid="link-phone">(11) 3044-3355</a>
+                  <a href="tel:+551130443355" className="hover:text-white transition-colors" data-testid="link-phone">(11) 3887-8930</a>
                 </li>
                 <li>
                   <a href="mailto:contato@rapoliseg.com.br" className="hover:text-white transition-colors" data-testid="link-email">contato@rapoliseg.com.br</a>
