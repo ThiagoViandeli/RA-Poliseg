@@ -77,10 +77,11 @@ export default function Home() {
         </header>
 
         <div className="mb-16">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 mb-8">
             <div className="w-8 h-[2px] bg-[#d97706]"></div>
             <h2 className="text-[#d97706] text-xs uppercase tracking-[0.2em] font-semibold">Nossa história</h2>
           </div>
+          <h3 className="text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">Our History</h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 text-zinc-800 text-[15px] md:text-[17px] font-light leading-relaxed mb-12">
