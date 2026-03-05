@@ -36,7 +36,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-12">
           {/* Left Column */}
-          <div className="lg:col-span-6 flex flex-col justify-end bg-[#09667966] rounded-2xl p-8 md:p-12">
+          <div className="lg:col-span-6 flex flex-col justify-end bg-[#09667966] rounded-2xl p-8 md:p-12 pt-[22px] pb-[22px]">
             <div className="text-white/70 text-sm md:text-base leading-relaxed mb-16 max-w-sm">
               <p className="text-[#000000b3]">Fundada em 1988.</p>
               <p className="text-[18px] text-[#000000b3]">Hoje somos referência em soluções securitárias.</p>
