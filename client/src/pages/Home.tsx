@@ -273,7 +273,7 @@ export default function Home() {
                 <span className="text-[10px] uppercase tracking-[0.2em] text-zinc-600 bg-white/50 border border-[#d4d4d8] px-3 py-1 rounded-sm inline-block">Construtoras</span>
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-3 text-black font-medium text-[15px] tracking-wide">
                   <img src="/eztec_logo.png" alt="Eztec" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
-                  <span>KALLAS</span>
+                  <img src="/kallas_logo.png" alt="Kallas" className="h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" />
                   <span>TRISUL</span>
                   <span>FRAIHA</span>
                   <span>AMY</span>
