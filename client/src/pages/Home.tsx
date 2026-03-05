@@ -30,7 +30,7 @@ export default function Home() {
           </div>
 
           {/* Right Column */}
-          <div className="lg:col-span-6 flex flex-col justify-end space-y-6 text-zinc-800 text-[15px] md:text-[17px] font-light leading-relaxed max-w-2xl" style={{ fontSynthesis: "weight style" }}>
+          <div className="lg:col-span-6 flex flex-col justify-end space-y-6 text-zinc-800 text-[15px] md:text-[17px] font-light leading-relaxed max-w-2xl" style={{ fontFamily: "'Cormorant', serif", fontSynthesis: "weight style" }}>
             <p>
               Garantimos clareza para as informações relevantes, análise minuciosa com experiência e o suporte humano necessários para discussão e escolha decisiva para a proteção mais adequada à sua realidade.
             </p>
