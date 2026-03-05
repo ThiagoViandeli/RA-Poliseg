@@ -183,7 +183,7 @@ export default function Home() {
             <div className="space-y-8 lg:col-span-2">
               <div className="text-center">
                 <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d97706] mb-2 block">Construtoras</span>
-                <p className="text-zinc-500 text-sm font-light mb-12">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
+                <p className="text-zinc-500 mb-12 text-[21px] font-medium">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
                 
                 <div className="w-full overflow-hidden relative" style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}>
                   <motion.div 
