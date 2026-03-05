@@ -334,6 +334,53 @@ export default function Home() {
         </section>
 
       </section>
+
+      <footer className="bg-[#096679] text-white py-16 px-8 md:px-12 lg:px-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-16">
+            <div className="lg:col-span-2">
+              <img src="/ra_poliseg_header_logo.png" alt="RA Poliseg" className="h-10 mb-6 brightness-0 invert" />
+              <p className="text-white/70 text-sm leading-relaxed max-w-md">
+                Fundada em 1988, a RA Poliseg é referência em soluções securitárias estruturadas com precisão e rigor técnico para empresas e famílias.
+              </p>
+            </div>
+
+            <div>
+              <h5 className="text-xs uppercase tracking-[0.2em] font-semibold text-[#d97706] mb-6">Contato</h5>
+              <ul className="space-y-3 text-sm text-white/70">
+                <li>
+                  <a href="tel:+551130443355" className="hover:text-white transition-colors" data-testid="link-phone">(11) 3044-3355</a>
+                </li>
+                <li>
+                  <a href="mailto:contato@rapoliseg.com.br" className="hover:text-white transition-colors" data-testid="link-email">contato@rapoliseg.com.br</a>
+                </li>
+                <li className="pt-2 leading-relaxed">
+                  São Paulo — SP<br />Brasil
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 className="text-xs uppercase tracking-[0.2em] font-semibold text-[#d97706] mb-6">Navegação</h5>
+              <ul className="space-y-3 text-sm text-white/70">
+                <li><a href="#" className="hover:text-white transition-colors" data-testid="link-nav-home">Início</a></li>
+                <li><a href="#" className="hover:text-white transition-colors" data-testid="link-nav-history">Nossa História</a></li>
+                <li><a href="#" className="hover:text-white transition-colors" data-testid="link-nav-specialty">Especialidade</a></li>
+                <li><a href="#" className="hover:text-white transition-colors" data-testid="link-nav-lines">Linhas de Negócio</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-white/40 text-xs">
+              © {new Date().getFullYear()} RA Poliseg Seguros. Todos os direitos reservados.
+            </p>
+            <p className="text-white/40 text-xs">
+              SUSEP — Corretora de Seguros habilitada
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
