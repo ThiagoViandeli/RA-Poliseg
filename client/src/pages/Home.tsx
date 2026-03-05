@@ -237,7 +237,7 @@ export default function Home() {
           {/* Category 4 */}
           <div>
             <img src="/icon_obras.png" alt="Engenharia e Grandes Obras" className="w-[250px] h-[251px] mb-6 object-contain -ml-10 animate-float" style={{ animationDelay: "3s" }} />
-            <h4 className="text-black font-medium text-[15px] mb-2">Engenharia e Grandes Obras
+            <h4 className="text-black font-medium mb-2 text-[18px]">Engenharia e Grandes Obras
 </h4>
             <p className="text-zinc-600 mb-6 min-h-[40px] uppercase tracking-wider text-[12px] font-medium">Especialização histórica da RA Poliseg, com atuação técnica na análise e estruturação de riscos complexos.</p>
             <ul className="space-y-3 border-t border-[#d97706]/40 pt-4 text-black font-extrabold text-[16px]">
