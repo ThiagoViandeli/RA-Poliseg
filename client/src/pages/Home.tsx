@@ -261,7 +261,7 @@ export default function Home() {
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
             <div className="lg:col-span-4">
-              <p className="text-black text-lg lg:text-xl leading-snug mb-4">
+              <p className="text-black lg:text-xl mb-4 text-[21px]">
                 Atendemos pessoas físicas e jurídicas, com soluções que acompanham a evolução de cada cliente ao longo do tempo.
               </p>
               <p className="text-zinc-600 text-sm font-light">
