@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#edf1e6] text-black font-sans selection:bg-[#FACC15] selection:text-black">
-      
       {/* 
         Slide 1: Hero
       */}
@@ -45,7 +44,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* 
         Slide 2: History
       */}
@@ -94,7 +92,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* 
         Slide 3: Specialty
       */}
@@ -171,7 +168,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* 
         Slide 4: Lines of Business & Portfolio
       */}
@@ -189,7 +185,8 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-24 text-sm font-light text-zinc-800">
           {/* Category 1 */}
           <div>
-            <h4 className="text-black font-medium text-[15px] mb-2">Companies and Operations</h4>
+            <h4 className="text-black font-medium text-[15px] mb-2">Empresas e Operações
+</h4>
             <p className="text-[11px] text-zinc-500 mb-6 min-h-[40px] leading-relaxed uppercase tracking-wider">Technical structuring of insurance for asset, operational and contractual protection.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4">
               <li>Seguro Empresarial (Multirriscos)</li>
@@ -300,7 +297,6 @@ export default function Home() {
         </div>
 
       </section>
-
     </div>
   );
 }
