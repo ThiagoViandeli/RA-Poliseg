@@ -98,10 +98,6 @@ export default function Home() {
         </header>
 
         <div className="mb-8 md:mb-16">
-          <div className="flex items-center gap-4 mb-4 md:mb-8">
-            <div className="w-8 h-[2px] bg-[#d97706]"></div>
-            <h2 className="text-[#d97706] text-xs uppercase tracking-[0.2em] font-semibold">Nossa história</h2>
-          </div>
           <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">NOSSA HISTÓRIA</h3>
         </div>
 
