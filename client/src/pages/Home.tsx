@@ -375,7 +375,7 @@ export default function Home() {
                   <a href="tel:+551130443355" className="hover:text-white transition-colors" data-testid="link-phone">(11) 3887-8930</a>
                 </li>
                 <li>
-                  <a href="mailto:contato@rapoliseg.com.br" className="hover:text-white transition-colors" data-testid="link-email">rapoliseg@rapoliseg.com.br</a>
+                  <a href="mailto:contato@rapoliseg.com.br" className="hover:text-white transition-colors" data-testid="link-email">contato@rapoliseg.com.br</a>
                 </li>
                 <li className="pt-2 leading-relaxed">
                   <a href="https://maps.app.goo.gl/cRJpnrm19PBuxo9h8" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" data-testid="link-address">Rua Teixeira da Silva, 660<br />Cj. 84 — São Paulo - SP</a>
