@@ -105,6 +105,26 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* Slideshow duplicate — below customers ticker */}
+      <section className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] overflow-hidden">
+        {spPhotos.map((src, i) => (
+          <div
+            key={src}
+            className="absolute inset-0 bg-cover transition-opacity duration-1000"
+            style={{
+              backgroundImage: `url(${src})`,
+              backgroundPosition: src === "/sp4.jpg" ? "bottom center" : "center",
+              opacity: i === bgIndex ? 1 : 0,
+            }}
+          />
+        ))}
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 space-y-8 md:space-y-12 text-center max-w-5xl">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight text-white">
+            Soluções Securitárias estruturadas com precisão e rigor técnico.
+          </h2>
+        </div>
+      </section>
       {/* 
         Slide 2: History
       */}
