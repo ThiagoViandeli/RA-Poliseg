@@ -174,23 +174,22 @@ export default function Home() {
         </div>
       </section>
       {/* Constructor Logos Ticker */}
-      <div className="bg-zinc-950 border-b border-zinc-800 px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32">
-        <div className="max-w-4xl mx-auto w-full text-center">
-          <p className="text-[#d97706] text-xs uppercase tracking-[0.25em] font-semibold mb-4">Clientes</p>
-          <p className="mb-12 md:mb-16 text-2xl md:text-3xl lg:text-4xl font-medium text-white leading-snug">
-            Nossos principais clientes são consolidadas construtoras em São Paulo.
-          </p>
-          <div className="logo-ticker">
-            <div className="logo-ticker__track">
-              {[...constructorLogos, ...constructorLogos, ...constructorLogos].map((logo, i) => (
-                <div className="logo-ticker__item" key={i}>
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className={`${logo.defaultH === false ? logo.className : `h-8 ${logo.className || ''}`} object-contain brightness-0 invert opacity-50 hover:opacity-100 transition-all`}
-                  />
-                </div>
-              ))}
+      <div className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32">
+        <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
+          <div>
+            <p className="mb-6 md:mb-8 text-base md:text-[21px] font-semibold text-[#000000]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
+            <div className="logo-ticker">
+              <div className="logo-ticker__track">
+                {[...constructorLogos, ...constructorLogos, ...constructorLogos].map((logo, i) => (
+                  <div className="logo-ticker__item" key={i}>
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className={`${logo.defaultH === false ? logo.className : `h-6 ${logo.className || ''}`} object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100`}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
