@@ -293,7 +293,7 @@ export default function Home() {
             <p className="text-[#d97706] text-lg lg:text-xl font-bold">
               Seguros tailor made, com análise técnica e visão de longo prazo.
             </p>
-            <div className="pt-2 bg-[#09667933] rounded-2xl p-6 sm:p-8">
+            <div className="rounded-2xl p-6 sm:p-8 bg-[#000000]">
               <p className="mb-4 text-black font-semibold">Desenvolvemos seguros personalizados, considerando:</p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
