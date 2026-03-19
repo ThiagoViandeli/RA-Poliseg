@@ -125,6 +125,33 @@ export default function Home() {
 </h2>
         </div>
       </section>
+      {/* Brand Statement Section */}
+      <section className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24">
+        <div className="max-w-5xl">
+          <p className="text-[#d97706] text-xs uppercase tracking-[0.2em] font-semibold mb-10 md:mb-16">Quem somos</p>
+          <div className="space-y-8 md:space-y-10">
+            <p className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.1] font-medium tracking-tight text-black">
+              Fundada em 1988.
+            </p>
+            <p className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] leading-[1.15] font-medium tracking-tight text-black">
+              Hoje somos referência em soluções securitárias.
+            </p>
+            <div className="w-12 h-[2px] bg-[#d97706]" />
+            <p className="text-lg md:text-xl lg:text-2xl font-light text-zinc-700 leading-relaxed max-w-3xl">
+              Acreditamos e praticamos um atendimento próximo, super personalizado, com visão técnica e soluções estratégicas consagradas.
+            </p>
+            <p className="text-lg md:text-xl lg:text-2xl font-light text-zinc-700 leading-relaxed max-w-3xl">
+              Conhecemos nossos clientes de verdade — suas histórias, seus negócios e seus riscos.
+            </p>
+            <p className="text-lg md:text-xl lg:text-2xl font-light text-zinc-700 leading-relaxed max-w-3xl">
+              Oferecemos Seguros de todos os ramos, com as melhores Seguradoras do mercado mundial.
+            </p>
+            <p className="text-xl md:text-2xl lg:text-3xl font-medium text-black leading-snug max-w-3xl pt-2">
+              Proteção personalizada para cada fase, cada obra, cada empresa, cada família, em suas decisões mais importantes.
+            </p>
+          </div>
+        </div>
+      </section>
       {/* 
         Slide 2: History
       */}
