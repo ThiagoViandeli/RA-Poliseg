@@ -86,6 +86,27 @@ export default function Home() {
           </h2>
         </div>
       </section>
+      {/* Constructor Logos Ticker */}
+      <div className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-10 md:py-14">
+        <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
+          <div>
+            <p className="mb-6 md:mb-8 text-base md:text-[21px] font-semibold text-[#000000]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
+            <div className="logo-ticker">
+              <div className="logo-ticker__track">
+                {[...constructorLogos, ...constructorLogos, ...constructorLogos].map((logo, i) => (
+                  <div className="logo-ticker__item" key={i}>
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className={`${logo.defaultH === false ? logo.className : `h-6 ${logo.className || ''}`} object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100`}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* 
         Slide 2: History
       */}
@@ -207,38 +228,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Portfolio Section Moved Here */}
-        <div className="pt-8 md:pt-16 border-t border-[#d4d4d8]">
-          
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-24 mb-8 md:mb-16">
-            <div className="lg:col-span-6">
-              <p className="text-black text-lg md:text-[21px] lg:text-2xl font-medium leading-relaxed">
-                Atendemos pessoas físicas e jurídicas, com soluções que acompanham a evolução de cada cliente ao longo do tempo.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1">
-            <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
-              <div>
-                <p className="mb-6 md:mb-8 text-base md:text-[21px] font-semibold text-[#000000]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
-                <div className="logo-ticker">
-                  <div className="logo-ticker__track">
-                    {[...constructorLogos, ...constructorLogos, ...constructorLogos].map((logo, i) => (
-                      <div className="logo-ticker__item" key={i}>
-                        <img 
-                          src={logo.src} 
-                          alt={logo.alt} 
-                          className={`${logo.defaultH === false ? logo.className : `h-6 ${logo.className || ''}`} object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100`} 
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
       {/* 
         Slide 4: Lines of Business & Portfolio
