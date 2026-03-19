@@ -92,12 +92,12 @@ export default function Home() {
       {/*
         Key Phrases Section
       */}
-      <section className="min-h-screen flex flex-col justify-center px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 bg-white border-b border-[#d4d4d8]">
-        <div className="space-y-8 md:space-y-12">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl text-left">
+      <section className="min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 bg-white border-b border-[#d4d4d8]">
+        <div className="space-y-8 md:space-y-12 text-center max-w-5xl">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight">
             Soluções Securitárias estruturadas com precisão e rigor técnico.
           </h2>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl text-zinc-400">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight text-zinc-400">
             Atuamos em todos os ramos de seguros no Brasil, com expertise em riscos complexos e grandes obras civis.
           </h2>
         </div>
