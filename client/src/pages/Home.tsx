@@ -114,7 +114,7 @@ export default function Home() {
             }}
           />
         ))}
-        <div className="absolute inset-0 bg-black/55" />
+        <div className="absolute inset-0 bg-black/35" />
         <div className="relative z-10 space-y-8 md:space-y-12 text-center max-w-5xl">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight text-white">
             Soluções Securitárias estruturadas com precisão e rigor técnico.
