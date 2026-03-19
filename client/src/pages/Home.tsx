@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
+import Ra_logo_2026 from "@assets/Ra_logo_2026.jpg";
+
 const constructorLogos = [
   { src: "/eztec_logo.png", alt: "Eztec" },
   { src: "/kallas_logo.png", alt: "Kallas" },
@@ -360,7 +362,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16 mb-10 md:mb-16">
             <div className="sm:col-span-2">
-              <img src="/ra_poliseg_header_logo.png" alt="RA Poliseg" className="h-8 md:h-10 mb-4 md:mb-6 brightness-0 invert" />
+              <img src={Ra_logo_2026} alt="RA Poliseg" className="h-8 md:h-10 mb-4 md:mb-6 brightness-0 invert" />
               <p className="text-white/70 text-sm leading-relaxed max-w-md">
                 Fundada em 1988, a RA Poliseg é referência em soluções securitárias estruturadas com precisão e rigor técnico para empresas e famílias.
               </p>
