@@ -115,6 +115,76 @@ export default function Home() {
     return () => clearInterval(timer);
   }, []);
 
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const sectionConfigs = [
+        {
+          selector: "#historia",
+          targets: ["h3", "p", ".grid > div"],
+          stagger: 0.12,
+          y: 50,
+        },
+        {
+          selector: "#especialidade",
+          targets: ["h2", "h3", ".grid > div", "p"],
+          stagger: 0.1,
+          y: 45,
+        },
+        {
+          selector: "#linhas",
+          targets: ["h2", ".grid > div", ".border-t"],
+          stagger: 0.1,
+          y: 40,
+        },
+      ];
+
+      sectionConfigs.forEach(({ selector, targets, stagger, y }) => {
+        const section = document.querySelector(selector);
+        if (!section) return;
+
+        targets.forEach(target => {
+          const els = section.querySelectorAll(target);
+          if (!els.length) return;
+          gsap.timeline({
+            scrollTrigger: {
+              trigger: section,
+              start: "top 80%",
+              toggleActions: "play none none none",
+            },
+          }).fromTo(
+            els,
+            { opacity: 0, y },
+            {
+              opacity: 1,
+              y: 0,
+              duration: 0.85,
+              ease: "power3.out",
+              stagger,
+            }
+          );
+        });
+      });
+
+      // Footer animation
+      const footer = document.querySelector("footer");
+      if (footer) {
+        gsap.timeline({
+          scrollTrigger: {
+            trigger: footer,
+            start: "top 90%",
+            toggleActions: "play none none none",
+          },
+        }).fromTo(
+          footer.querySelectorAll("h5, li, p, img"),
+          { opacity: 0, y: 24 },
+          { opacity: 1, y: 0, duration: 0.7, ease: "power2.out", stagger: 0.06 }
+        );
+      }
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <div className="min-h-screen bg-white text-black font-sans selection:bg-[#FACC15] selection:text-black">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-[#d4d4d8]/30">
