@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#edf1e6] text-black font-sans selection:bg-[#FACC15] selection:text-black">
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#edf1e6]/80 backdrop-blur-md border-b border-[#d4d4d8]/30">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-[#d4d4d8]/30">
         <div className="flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-16 py-3 md:py-4">
           <a href="#inicio" data-testid="link-logo-home">
             <img src="/ra_poliseg_header_logo.png" alt="RA Poliseg" className="h-6 sm:h-8" />
@@ -39,7 +39,7 @@ export default function Home() {
           </button>
         </div>
         {mobileMenuOpen && (
-          <div className="md:hidden bg-[#edf1e6]/95 backdrop-blur-md border-t border-[#d4d4d8]/30 px-4 pb-4">
+          <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-[#d4d4d8]/30 px-4 pb-4">
             <ul className="flex flex-col gap-3 text-xs uppercase tracking-[0.15em] font-medium text-zinc-600 pt-3">
               <li><a href="#inicio" className="block py-2 hover:text-black transition-colors" onClick={() => setMobileMenuOpen(false)} data-testid="nav-mobile-home">Início</a></li>
               <li><a href="#historia" className="block py-2 hover:text-black transition-colors" onClick={() => setMobileMenuOpen(false)} data-testid="nav-mobile-history">Nossa História</a></li>
