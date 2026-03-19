@@ -324,7 +324,7 @@ export default function Home() {
           </div>
 
           {/* Right Column */}
-          <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px] bg-[#09667999] rounded-2xl p-6 sm:p-8 md:p-12 text-white/80 flex flex-col justify-center">
+          <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px] rounded-2xl p-6 sm:p-8 md:p-12 text-white/80 flex flex-col justify-center bg-[#000000e0]">
             <p className="text-white font-medium text-xl md:text-2xl lg:text-3xl leading-snug pb-4 border-b border-white/20">
               Atuação vai além da contratação.
             </p>
