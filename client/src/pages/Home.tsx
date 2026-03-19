@@ -174,7 +174,7 @@ export default function Home() {
         </div>
       </section>
       {/* Constructor Logos Ticker */}
-      <div className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-10 md:py-14">
+      <div className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32">
         <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
           <div>
             <p className="mb-6 md:mb-8 text-base md:text-[21px] font-semibold text-[#000000]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
