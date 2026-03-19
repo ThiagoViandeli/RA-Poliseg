@@ -61,48 +61,10 @@ export default function Home() {
           </div>
         )}
       </nav>
-      {/* 
-        Slide 1: Hero
-      */}
-      <section id="inicio" className="min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-8 md:pb-12 border-b border-[#d4d4d8] bg-white">
-        <header className="mb-auto">
-        </header>
-
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-24 mb-8 md:mb-12">
-          {/* Left Column */}
-          <div className="lg:col-span-6 flex flex-col justify-center bg-[#09667966] rounded-2xl p-6 sm:p-8 md:p-12">
-            <div className="text-white/70 text-sm md:text-base leading-relaxed mb-8 md:mb-16 max-w-sm">
-              <p className="text-[#000000b3]">Fundada em 1988.</p>
-              <p className="text-base md:text-[18px] text-[#000000b3]">Hoje somos referência em soluções securitárias.</p>
-            </div>
-            
-            <h1 className="text-[1.75rem] sm:text-[2.5rem] md:text-5xl lg:text-[4.5rem] leading-[1.05] font-medium tracking-tight">
-              <span className="text-[#d97706] block mb-2">Soluções Securitárias</span> 
-              <span className="text-white">estruturadas com precisão e rigor técnico.</span>
-            </h1>
-          </div>
-
-          {/* Right Column */}
-          <div className="lg:col-span-6 flex flex-col justify-end space-y-4 md:space-y-6 text-zinc-800 font-light max-w-2xl text-base md:text-lg lg:text-[22px] leading-relaxed" style={{ fontFamily: "'Raleway', sans-serif", fontSynthesis: "weight style" }}>
-            <p>
-              Acreditamos e praticamos um atendimento próximo, super personalizado, com visão técnica e soluções estratégicas consagradas.
-            </p>
-            <p className="text-black font-normal">
-              Conhecemos nossos clientes de verdade — suas histórias, seus negócios e seus riscos.
-            </p>
-            <p>
-              Oferecemos Seguros de todos os ramos, com as melhores Seguradoras do mercado mundial.
-            </p>
-            <p className="text-black pt-2 md:pt-4">
-              Proteção personalizada para cada fase, cada obra, cada empresa, cada familia, em suas decisões mais importantes.
-            </p>
-          </div>
-        </div>
-      </section>
       {/*
-        Key Phrases Section
+        Key Phrases Section — First / Hero
       */}
-      <section className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 border-b border-[#d4d4d8] overflow-hidden">
+      <section id="inicio" className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] overflow-hidden">
         {spPhotos.map((src, i) => (
           <div
             key={src}
