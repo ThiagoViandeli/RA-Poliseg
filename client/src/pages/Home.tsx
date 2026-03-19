@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-import Ra_logo_2026 from "@assets/Ra_logo_2026.jpg";
+import Ra_logo_2026 from "@assets/Ra_logo_2026_1773887463194.jpg";
 
 const constructorLogos = [
   { src: "/eztec_logo.png", alt: "Eztec" },
