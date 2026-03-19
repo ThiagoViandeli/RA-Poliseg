@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Ra_logo_2026 from "@assets/Ra_logo_2026.jpg";
 
@@ -13,8 +13,18 @@ const constructorLogos = [
   { src: "/cemek_logo.png", alt: "Cemek", className: "mix-blend-multiply h-8", defaultH: false },
 ];
 
+const spPhotos = ["/sp1.jpg", "/sp2.jpg", "/sp3.jpg", "/sp4.jpg", "/sp5.jpg", "/sp6.jpg"];
+
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [bgIndex, setBgIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setBgIndex(i => (i + 1) % spPhotos.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="min-h-screen bg-white text-black font-sans selection:bg-[#FACC15] selection:text-black">
@@ -92,12 +102,23 @@ export default function Home() {
       {/*
         Key Phrases Section
       */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 bg-white border-b border-[#d4d4d8]">
-        <div className="space-y-8 md:space-y-12 text-center max-w-5xl">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight">
+      <section className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 border-b border-[#d4d4d8] overflow-hidden">
+        {spPhotos.map((src, i) => (
+          <div
+            key={src}
+            className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
+            style={{
+              backgroundImage: `url(${src})`,
+              opacity: i === bgIndex ? 1 : 0,
+            }}
+          />
+        ))}
+        <div className="absolute inset-0 bg-black/55" />
+        <div className="relative z-10 space-y-8 md:space-y-12 text-center max-w-5xl">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight text-white">
             Soluções Securitárias estruturadas com precisão e rigor técnico.
           </h2>
-          <h2 className="sm:text-4xl md:text-5xl lg:text-[4rem] font-medium tracking-tight text-[#4d4d4d] text-[58px]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight text-white/50">
             Atuamos em todos os ramos de seguros no Brasil, com expertise em riscos complexos e grandes obras civis.
           </h2>
         </div>
