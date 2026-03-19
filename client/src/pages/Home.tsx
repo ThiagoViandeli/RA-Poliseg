@@ -1,5 +1,9 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 import Ra_logo_2026 from "@assets/Ra_logo_2026.jpg";
 
@@ -14,6 +18,91 @@ const constructorLogos = [
 ];
 
 const spPhotos = ["/sp1.jpg", "/sp2.jpg", "/sp3.jpg", "/sp4.jpg", "/sp5.jpg", "/sp6.jpg"];
+
+function BrandStatement() {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+    const items = el.querySelectorAll(".gsap-reveal");
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        items,
+        { opacity: 0, y: 52 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power3.out",
+          stagger: 0.13,
+          scrollTrigger: {
+            trigger: el,
+            start: "top 82%",
+            toggleActions: "play none none none",
+          },
+        }
+      );
+      const bar = el.querySelector(".gsap-bar");
+      if (bar) {
+        gsap.fromTo(
+          bar,
+          { scaleX: 0, transformOrigin: "left center" },
+          {
+            scaleX: 1,
+            duration: 0.9,
+            ease: "power2.out",
+            delay: 0.3,
+            scrollTrigger: {
+              trigger: el,
+              start: "top 80%",
+              toggleActions: "play none none none",
+            },
+          }
+        );
+      }
+    }, el);
+    return () => ctx.revert();
+  }, []);
+
+  return (
+    <section ref={sectionRef} className="bg-white border-b border-[#d4d4d8] overflow-hidden">
+      {/* Top band: year + headline */}
+      <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-24 pb-12 md:pb-20 border-b border-[#d4d4d8]">
+        <p className="gsap-reveal text-[#d97706] text-xs uppercase tracking-[0.25em] font-semibold mb-10 md:mb-14">Quem somos</p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24 items-end">
+          <div className="relative">
+            <p className="select-none pointer-events-none text-[7rem] sm:text-[9rem] md:text-[12rem] lg:text-[14rem] leading-none font-medium tracking-tight text-black/[0.05]">
+              1988
+            </p>
+            <p className="gsap-reveal absolute bottom-0 left-0 right-0 text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] leading-[1.08] font-medium tracking-tight text-black pb-2">
+              Fundada em 1988.<br />Hoje somos referência<br />em soluções securitárias.
+            </p>
+          </div>
+          <div className="space-y-6 md:space-y-8 pb-2 pt-6 lg:pt-0">
+            <div className="gsap-bar h-[2px] bg-[#d97706] w-10" />
+            <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
+              Acreditamos e praticamos um atendimento próximo, super personalizado, com visão técnica e soluções estratégicas consagradas.
+            </p>
+            <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
+              Conhecemos nossos clientes de verdade — suas histórias, seus negócios e seus riscos.
+            </p>
+            <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
+              Oferecemos Seguros de todos os ramos, com as melhores Seguradoras do mercado mundial.
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* Bottom band: closing statement */}
+      <div className="px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-20">
+        <p className="gsap-reveal text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] leading-[1.2] font-medium text-black max-w-4xl">
+          Proteção personalizada para cada fase, cada obra, cada empresa, cada família —{" "}
+          <span className="text-[#d97706]">em suas decisões mais importantes.</span>
+        </p>
+      </div>
+    </section>
+  );
+}
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -126,32 +215,7 @@ export default function Home() {
         </div>
       </section>
       {/* Brand Statement Section */}
-      <section className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24">
-        <div className="max-w-5xl">
-          <p className="text-[#d97706] text-xs uppercase tracking-[0.2em] font-semibold mb-10 md:mb-16">Quem somos</p>
-          <div className="space-y-8 md:space-y-10">
-            <p className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.1] font-medium tracking-tight text-black">
-              Fundada em 1988.
-            </p>
-            <p className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] leading-[1.15] font-medium tracking-tight text-black">
-              Hoje somos referência em soluções securitárias.
-            </p>
-            <div className="w-12 h-[2px] bg-[#d97706]" />
-            <p className="text-lg md:text-xl lg:text-2xl font-light text-zinc-700 leading-relaxed max-w-3xl">
-              Acreditamos e praticamos um atendimento próximo, super personalizado, com visão técnica e soluções estratégicas consagradas.
-            </p>
-            <p className="text-lg md:text-xl lg:text-2xl font-light text-zinc-700 leading-relaxed max-w-3xl">
-              Conhecemos nossos clientes de verdade — suas histórias, seus negócios e seus riscos.
-            </p>
-            <p className="text-lg md:text-xl lg:text-2xl font-light text-zinc-700 leading-relaxed max-w-3xl">
-              Oferecemos Seguros de todos os ramos, com as melhores Seguradoras do mercado mundial.
-            </p>
-            <p className="text-xl md:text-2xl lg:text-3xl font-medium text-black leading-snug max-w-3xl pt-2">
-              Proteção personalizada para cada fase, cada obra, cada empresa, cada família, em suas decisões mais importantes.
-            </p>
-          </div>
-        </div>
-      </section>
+      <BrandStatement />
       {/* 
         Slide 2: History
       */}
