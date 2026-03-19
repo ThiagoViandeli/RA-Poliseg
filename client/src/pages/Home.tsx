@@ -252,7 +252,7 @@ export default function Home() {
             <p>
               A combination do conhecimento técnico em — engenharia, seguros de todos os ramos e direito —, somados aos mais de 35 anos de prática, é o que sustenta nossa atuação e permeia nosso trabalho até hoje.
             </p>
-            <p className="text-[#d97706] font-medium text-xl md:text-2xl lg:text-3xl leading-snug pt-4 pb-2">
+            <p className="text-xl md:text-2xl lg:text-3xl leading-snug pt-4 pb-2 text-[#000000] font-bold">
               Nascemos da engenharia, crescemos com seguros e nos fortalecemos com o direito.
             </p>
             <p>
