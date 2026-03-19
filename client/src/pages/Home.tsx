@@ -118,7 +118,7 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight text-white">
             Soluções Securitárias estruturadas com precisão e rigor técnico.
           </h2>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight text-white/50">
+          <h2 className="sm:text-4xl md:text-5xl lg:text-[4rem] font-medium tracking-tight text-[#ffffff] text-[60px]">
             Atuamos em todos os ramos de seguros no Brasil, com expertise em riscos complexos e grandes obras civis.
           </h2>
         </div>
