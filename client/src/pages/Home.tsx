@@ -106,9 +106,10 @@ export default function Home() {
         {spPhotos.map((src, i) => (
           <div
             key={src}
-            className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
+            className="absolute inset-0 bg-cover transition-opacity duration-1000"
             style={{
               backgroundImage: `url(${src})`,
+              backgroundPosition: src === "/sp4.jpg" ? "bottom center" : "center",
               opacity: i === bgIndex ? 1 : 0,
             }}
           />
