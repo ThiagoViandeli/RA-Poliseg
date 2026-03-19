@@ -75,9 +75,6 @@ export default function Home() {
           {/* Right Column */}
           <div className="lg:col-span-6 flex flex-col justify-end space-y-4 md:space-y-6 text-zinc-800 font-light max-w-2xl text-base md:text-lg lg:text-[22px] leading-relaxed" style={{ fontFamily: "'Raleway', sans-serif", fontSynthesis: "weight style" }}>
             <p>
-              Garantimos clareza para as informações relevantes, análise minuciosa com experiência e o suporte humano necessários para discussão e escolha decisiva para a proteção mais adequada à sua realidade.
-            </p>
-            <p>
               Acreditamos e praticamos um atendimento próximo, super personalizado, com visão técnica e soluções estratégicas consagradas.
             </p>
             <p className="text-black font-normal">
