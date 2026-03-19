@@ -97,7 +97,7 @@ function BrandStatement() {
       <div className="px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-20">
         <p className="gsap-reveal text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] leading-[1.2] font-medium text-black max-w-4xl">
           Proteção personalizada para cada fase, cada obra, cada empresa, cada família —{" "}
-          <span className="text-[#d97706]">em suas decisões mais importantes.</span>
+          <span className="text-[#000000]">em suas decisões mais importantes.</span>
         </p>
       </div>
     </section>
