@@ -285,7 +285,7 @@ export default function Home() {
                     <img
                       src={logo.src}
                       alt={logo.alt}
-                      className={`${logo.defaultH === false ? logo.className : `h-10 ${logo.className || ''}`} object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100`}
+                      className={`${logo.defaultH === false ? logo.className : `h-10 ${logo.className || ''}`} object-contain brightness-0 transition-all opacity-70 hover:opacity-100`}
                     />
                   </div>
                 ))}
