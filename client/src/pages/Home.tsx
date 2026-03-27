@@ -220,7 +220,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-[#d4d4d8]/30">
         <div className="flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-16 py-3 md:py-4">
           <a href="#inicio" data-testid="link-logo-home">
-            <img src="/logo_cor_certa_1774637540783.png" alt="RA Poliseg" className="h-6 sm:h-8" />
+            <img src="/logo_cor_certa_1774637540783.png" alt="RA Poliseg" className="h-10 sm:h-14" />
           </a>
           <ul className="hidden md:flex items-center gap-4 lg:gap-8 text-[10px] lg:text-xs uppercase tracking-[0.15em] font-medium text-zinc-600">
             <li><a href="#inicio" className="hover:text-black transition-colors" data-testid="nav-home">Início</a></li>
