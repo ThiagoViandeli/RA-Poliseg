@@ -66,15 +66,15 @@ function BrandStatement() {
   }, []);
 
   return (
-    <section ref={sectionRef} data-stack className="bg-white border-b border-[#d4d4d8] overflow-hidden lg:sticky lg:top-0">
+    <section ref={sectionRef} data-stack className="bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
       {/* Top band: year + headline */}
       <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-24 pb-12 md:pb-20 border-b border-[#d4d4d8]">
         <h2 className="gsap-reveal text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight mb-10 md:mb-14">Quem somos</h2>
         <div className="relative mb-8 md:mb-12">
-          <p className="select-none pointer-events-none text-[5rem] sm:text-[7rem] md:text-[10rem] lg:text-[13rem] leading-none font-medium tracking-tight text-black/[0.05]">
+          <p className="select-none pointer-events-none text-[7rem] sm:text-[9rem] md:text-[12rem] lg:text-[14rem] leading-none font-medium tracking-tight text-black/[0.05]">
             1988
           </p>
-          <p className="gsap-reveal absolute bottom-0 left-0 right-0 text-2xl sm:text-3xl md:text-4xl lg:text-[3rem] leading-[1.1] font-medium tracking-tight text-black pb-1">
+          <p className="gsap-reveal absolute bottom-0 left-0 right-0 text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] leading-[1.08] font-medium tracking-tight text-black pb-2">
             Fundada em 1988.<br />Hoje somos referência<br />em soluções securitárias.
           </p>
         </div>
@@ -180,7 +180,6 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if (window.innerWidth < 1024) return;
     const ctx = gsap.context(() => {
       const sections = gsap.utils.toArray<HTMLElement>("[data-stack]");
 
@@ -199,8 +198,8 @@ export default function Home() {
               scrub: 0.6,
             },
           }).to(section, {
-            scale: 0.92,
-            borderRadius: "14px",
+            scale: 0.88,
+            borderRadius: "18px",
             ease: "none",
           });
         }
@@ -215,7 +214,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-[#d4d4d8]/30">
         <div className="flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-16 py-3 md:py-4">
           <a href="#inicio" data-testid="link-logo-home">
-            <img src="/logo_cor_certa_1774637540783.png" alt="RA Poliseg" className="h-12 sm:h-14 md:h-16" />
+            <img src="/logo_cor_certa_1774637540783.png" alt="RA Poliseg" className="h-16 sm:h-20" />
           </a>
           <ul className="hidden md:flex items-center gap-4 lg:gap-8 text-[10px] lg:text-xs uppercase tracking-[0.15em] font-medium text-zinc-600">
             <li><a href="#inicio" className="hover:text-black transition-colors" data-testid="nav-home">Início</a></li>
@@ -248,7 +247,7 @@ export default function Home() {
       {/*
         Key Phrases Section — First / Hero
       */}
-      <section id="inicio" data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] overflow-hidden lg:sticky lg:top-0">
+      <section id="inicio" data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] overflow-hidden sticky top-0">
         {spPhotos.map((src, i) => (
           <div
             key={src}
@@ -269,10 +268,10 @@ export default function Home() {
         </div>
       </section>
       {/* Constructor Logos Ticker */}
-      <div data-stack className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32 lg:sticky lg:top-0">
+      <div data-stack className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32 sticky top-0">
         <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
           <div>
-            <p className="mb-6 md:mb-8 text-xl sm:text-2xl md:text-3xl lg:text-[2.1rem] font-semibold text-[#000000]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
+            <p className="mb-6 md:mb-8 md:text-[21px] font-semibold text-[#000000] text-[38px]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
             <div className="logo-ticker">
               <div className="logo-ticker__track">
                 {[...constructorLogos, ...constructorLogos, ...constructorLogos].map((logo, i) => (
@@ -290,7 +289,7 @@ export default function Home() {
         </div>
       </div>
       {/* Slideshow duplicate — below customers ticker */}
-      <section data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] overflow-hidden lg:sticky lg:top-0">
+      <section data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] overflow-hidden sticky top-0">
         {spPhotos.map((src, i) => (
           <div
             key={src}
@@ -316,42 +315,55 @@ export default function Home() {
       {/* 
         Slide 2: History
       */}
-      <section id="historia" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-40 md:pt-64 pb-56 md:pb-96 bg-white border-b border-[#d4d4d8] lg:sticky lg:top-0">
+      <section id="historia" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
+        <header className="mb-auto">
+        </header>
+
         <div className="mb-8 md:mb-16">
           <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">NOSSA HISTÓRIA</h3>
         </div>
 
-        <div className="space-y-6 md:space-y-8 max-w-4xl text-xl md:text-[26px] text-zinc-800 font-normal leading-relaxed mb-8 md:mb-12">
-          <p>
-            A RA Poliseg foi fundada em 1988, por Rogério Abinader.
-          </p>
-          <p>
-            Rogerio Abinader, é engenheiro civil formado pela Escola Politécnica da USP, com pós-graduação e especializações em Seguros e Gerenciamento de Riscos.
-          </p>
-          <p>
-            Antes de iniciar as atividades da corretora, atuou por 20 anos como Superintendente de Sinistros na Bradesco Seguros, acompanhando de perto grandes obras, tais como a construção da hidroelétrica de Itaipu, riscos complexos e os impactos reais de um seguro bem estruturado quando ele realmente precisa funcionar.
-          </p>
-          <p className="text-black font-normal pt-2">
-            Essa trajetória é sustentada por valores que atravessam gerações.
-          </p>
-          <p>
-            A RA Poliseg conta também com Carina Abinader, filha do fundador, advogada especializada em Direito Empresarial, Contratual, Tributário e Administração de Empresas pela FVG - São Paulo/University of California- San Diego, garantindo que cada apólice esteja alinhada não só ao risco, mas também à estrutura e necessidade legal/ financeira do cliente.
-          </p>
-          <p>
-            A combination do conhecimento técnico em — engenharia, seguros de todos os ramos e direito —, somados aos mais de 35 anos de prática, é o que sustenta nossa atuação e permeia nosso trabalho até hoje.
-          </p>
-          <p className="text-2xl md:text-3xl lg:text-4xl leading-snug pt-4 pb-2 text-[#000000] font-bold">
-            Nascemos da engenharia, crescemos com seguros e nos fortalecemos com o direito.
-          </p>
-          <p>
-            Em nossa origem, há uma herança que valoriza a palavra, o cuidado nas relações e a construção paciente do que é duradouro.
-          </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-24 text-zinc-800 text-[15px] md:text-[17px] font-light leading-relaxed mb-8 md:mb-12">
+          {/* Left Column */}
+          <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px]">
+            <p>
+              A RA Poliseg foi fundada em 1988, por Rogério Abinader.
+            </p>
+            <p>
+              Rogerio Abinader, é engenheiro civil formado pela Escola Politécnica da USP, com pós-graduação e especializações em Seguros e Gerenciamento de Riscos.
+            </p>
+            <p>
+              Antes de iniciar as atividades da corretora, atuou por 20 anos como Superintendente de Sinistros na Bradesco Seguros, acompanhando de perto grandes obras, tais como a construção da hidroelétrica de Itaipu, riscos complexos e os impactos reais de um seguro bem estruturado quando ele realmente precisa funcionar.
+            </p>
+            <p className="text-black font-normal pt-2">
+              Essa trajetória é sustentada por valores que atravessam gerações.
+            </p>
+          </div>
+
+          {/* Right Column */}
+          <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px]">
+            <p>
+              A RA Poliseg conta também com Carina Abinader, filha do fundador, advogada especializada em Direito Empresarial, Contratual, Tributário e Administração de Empresas pela FVG - São Paulo/University of California- San Diego, garantindo que cada apólice esteja alinhada não só ao risco, mas também à estrutura e necessidade legal/ financeira do cliente.
+            </p>
+            <p>
+              A combination do conhecimento técnico em — engenharia, seguros de todos os ramos e direito —, somados aos mais de 35 anos de prática, é o que sustenta nossa atuação e permeia nosso trabalho até hoje.
+            </p>
+            <p className="text-xl md:text-2xl lg:text-3xl leading-snug pt-4 pb-2 text-[#000000] font-bold">
+              Nascemos da engenharia, crescemos com seguros e nos fortalecemos com o direito.
+            </p>
+            <p>
+              Em nossa origem, há uma herança que valoriza a palavra, o cuidado nas relações e a construção paciente do que é duradouro.
+            </p>
+          </div>
         </div>
       </section>
       {/* 
         Slide 3: Portfolio & Specialty
       */}
-      <section id="especialidade" className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 bg-white border-b border-[#d4d4d8]">
+      <section id="especialidade" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
+        <header className="mb-auto">
+        </header>
+
         <div className="mb-8 md:mb-12">
           <div className="flex items-center gap-4">
             <div className="w-8 h-[2px] bg-[#d97706]"></div>
@@ -365,9 +377,9 @@ export default function Home() {
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-24 text-zinc-800 font-light leading-relaxed mb-12 md:mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-24 text-zinc-800 text-[15px] md:text-[17px] font-light leading-relaxed mb-12 md:mb-24">
           {/* Left Column */}
-          <div className="space-y-4 md:space-y-6 max-w-2xl text-base sm:text-lg md:text-[18px]">
+          <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px]">
             <p>
               Entendemos o canteiro de obras, o cronograma, os contratos e riscos jurídicos.
             </p>
@@ -408,7 +420,7 @@ export default function Home() {
           </div>
 
           {/* Right Column */}
-          <div className="space-y-4 md:space-y-6 max-w-2xl text-base sm:text-lg md:text-[18px] rounded-2xl p-6 sm:p-8 md:p-12 text-white/80 flex flex-col justify-center bg-[#000000e0]">
+          <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px] rounded-2xl p-6 sm:p-8 md:p-12 text-white/80 flex flex-col justify-center bg-[#000000e0]">
             <p className="text-white font-medium text-xl md:text-2xl lg:text-3xl leading-snug pb-4 border-b border-white/20">
               Atuação vai além da contratação.
             </p>
@@ -425,13 +437,18 @@ export default function Home() {
       {/* 
         Slide 4: Lines of Business & Portfolio
       */}
-      <section id="linhas" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 bg-white lg:sticky lg:top-0">
+      <section id="linhas" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white overflow-hidden sticky top-0">
+        <header className="mb-8 md:mb-12">
+        </header>
+
         <div className="mb-8 md:mb-16">
-          <div className="w-8 h-[2px] bg-[#d97706] mb-4"></div>
-          <h2 className="text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight">Linhas de negócio</h2>
+          <div className="flex items-center gap-4">
+            <div className="w-8 h-[2px] bg-[#d97706]"></div>
+            <h2 className="text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight">Linhas de negócio</h2>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12 md:mb-24 font-light text-zinc-800">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12 md:mb-24 text-sm font-light text-zinc-800">
           {/* Category 1 */}
           <div>
             <img src="/icon_folder.png" alt="Empresas e Operações" className="w-[150px] h-[151px] sm:w-[200px] sm:h-[201px] lg:w-[250px] lg:h-[251px] mb-6 object-contain mx-auto block animate-float" />
