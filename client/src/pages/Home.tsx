@@ -94,45 +94,25 @@ export default function Home() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      ["#quem-somos", "#historia", "#especialidade", "#linhas"].forEach(selector => {
-        const section = document.querySelector(selector);
-        if (!section) return;
-        gsap.fromTo(
-          section,
+      ['#historia', '#especialidade', '#linhas'].forEach(selector => {
+        const el = document.querySelector(selector);
+        if (!el) return;
+        gsap.fromTo(el,
           { opacity: 0, y: 40 },
           {
             opacity: 1,
             y: 0,
-            duration: 0.8,
-            ease: "power2.out",
+            duration: 0.9,
+            ease: 'power3.out',
             scrollTrigger: {
-              trigger: section,
-              start: "top 85%",
-              toggleActions: "play none none none",
-            },
+              trigger: el,
+              start: 'top 85%',
+              toggleActions: 'play none none none'
+            }
           }
         );
       });
-
-      const footer = document.querySelector("footer");
-      if (footer) {
-        gsap.fromTo(
-          footer,
-          { opacity: 0 },
-          {
-            opacity: 1,
-            duration: 0.7,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: footer,
-              start: "top 90%",
-              toggleActions: "play none none none",
-            },
-          }
-        );
-      }
     });
-
     return () => ctx.revert();
   }, []);
 
