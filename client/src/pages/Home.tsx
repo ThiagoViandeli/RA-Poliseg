@@ -404,11 +404,10 @@ export default function Home() {
           </p>
         </div>
       </section>
-
       {/* 
         Slide 3b: Specialty — beyond the contract
       */}
-      <section id="especialidade-atuacao" data-stack className="min-h-[60vh] md:min-h-screen flex flex-col justify-center px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-black border-b border-white/10 overflow-hidden sticky top-0">
+      <section id="especialidade-atuacao" data-stack className="min-h-[60vh] md:min-h-screen flex flex-col justify-center px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 border-b border-white/10 overflow-hidden sticky top-0 text-[#000000] bg-[#ffffff]">
         <div className="max-w-3xl space-y-8 md:space-y-10">
           <p className="text-white font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-[1.15] tracking-tight pb-6 border-b border-white/20">
             Atuação vai além da contratação.
