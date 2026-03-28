@@ -249,7 +249,7 @@ export default function Home() {
           <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">NOSSA HISTÓRIA</h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-24 text-zinc-800 text-[15px] md:text-[17px] font-light leading-relaxed mb-8 md:mb-12">
+        <div className="flex flex-col gap-8 md:gap-12 lg:gap-24 text-zinc-800 text-[15px] md:text-[17px] font-light leading-relaxed mb-8 md:mb-12">
           {/* Left Column */}
           <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px]">
             <p>
@@ -293,7 +293,7 @@ export default function Home() {
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-24 text-zinc-800 text-[15px] md:text-[17px] font-light leading-relaxed mb-12 md:mb-24">
+        <div className="flex flex-col gap-8 md:gap-12 lg:gap-24 text-zinc-800 text-[15px] md:text-[17px] font-light leading-relaxed mb-12 md:mb-24">
           {/* Left Column */}
           <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px]">
             <p>
