@@ -323,7 +323,7 @@ export default function Home() {
           <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">NOSSA HISTÓRIA</h3>
         </div>
 
-        <div className="space-y-4 md:space-y-6 max-w-3xl text-base md:text-[18px] text-zinc-800 font-light leading-relaxed mb-8 md:mb-12">
+        <div className="space-y-4 md:space-y-6 max-w-3xl text-lg md:text-[22px] text-zinc-800 font-light leading-relaxed mb-8 md:mb-12">
           <p>
             A RA Poliseg foi fundada em 1988, por Rogério Abinader.
           </p>
@@ -342,7 +342,7 @@ export default function Home() {
           <p>
             A combination do conhecimento técnico em — engenharia, seguros de todos os ramos e direito —, somados aos mais de 35 anos de prática, é o que sustenta nossa atuação e permeia nosso trabalho até hoje.
           </p>
-          <p className="text-xl md:text-2xl lg:text-3xl leading-snug pt-4 pb-2 text-[#000000] font-bold">
+          <p className="text-2xl md:text-3xl lg:text-4xl leading-snug pt-4 pb-2 text-[#000000] font-bold">
             Nascemos da engenharia, crescemos com seguros e nos fortalecemos com o direito.
           </p>
           <p>
