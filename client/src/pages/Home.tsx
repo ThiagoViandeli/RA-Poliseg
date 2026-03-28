@@ -512,26 +512,24 @@ export default function Home() {
         </div>
 
         {/* Seguradoras Parceiras */}
-        <div className="pt-8 md:pt-16 mt-auto border-t border-[#d4d4d8]">
-          <div className="pt-8 md:pt-16">
-            <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
-              <div>
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d97706] mb-2 block">Seguradoras Parceiras</span>
-                <p className="text-zinc-500 text-base md:text-[21px] font-light mb-8 md:mb-16">Trabalhamos com as melhores e mais confiáveis seguradoras do mercado.</p>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 sm:gap-x-8 md:gap-x-12 gap-y-8 md:gap-y-16 items-center">
-                  <img src="/image_1772669913406.png" alt="Bradesco Seguros" className="h-5 md:h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 mx-auto" />
-                  <img src="/porto_seguro_logo.png" alt="Porto Seguro" className="h-6 md:h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 mx-auto" />
-                  <img src="/allianz_logo.png" alt="Allianz" className="h-5 md:h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 mx-auto" />
-                  <img src="/itau_logo.png" alt="Itaú" className="h-5 md:h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 mx-auto" />
-                  <img src="/azul_logo.png" alt="Azul Seguros" className="h-5 md:h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 mx-auto" />
-                  <img src="/sulamerica_logo.png" alt="SulAmérica" className="h-5 md:h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 mx-auto" />
-                  <img src="/tokiomarine_logo.png" alt="Tokio Marine" className="h-8 md:h-10 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 mx-auto" />
-                  <img src="/chubb_logo.png" alt="Chubb" className="h-3 md:h-4 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 mx-auto" />
-                  <img src="/liberty_logo.png" alt="Liberty" className="h-6 md:h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 mx-auto" />
-                  <img src="/zurich_logo.png" alt="Zurich" className="h-6 md:h-8 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 mx-auto" />
-                  <img src="/fairfax_logo.png" alt="Fairfax" className="h-5 md:h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 mx-auto" />
-                  <img src="/mapfre_logo.png" alt="Mapfre" className="h-5 md:h-6 object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 mx-auto" />
-                </div>
+        <div className="mt-auto -mx-4 sm:-mx-8 md:-mx-12 lg:-mx-16 bg-black px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-20">
+          <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
+            <div>
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d97706] mb-2 block">Seguradoras Parceiras</span>
+              <p className="text-white/50 text-base md:text-[21px] font-light mb-8 md:mb-16">Trabalhamos com as melhores e mais confiáveis seguradoras do mercado.</p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 sm:gap-x-8 md:gap-x-12 gap-y-8 md:gap-y-16 items-center">
+                <img src="/image_1772669913406.png" alt="Bradesco Seguros" className="h-5 md:h-6 object-contain brightness-0 invert transition-all opacity-40 hover:opacity-80 mx-auto" />
+                <img src="/porto_seguro_logo.png" alt="Porto Seguro" className="h-6 md:h-8 object-contain brightness-0 invert transition-all opacity-40 hover:opacity-80 mx-auto" />
+                <img src="/allianz_logo.png" alt="Allianz" className="h-5 md:h-6 object-contain brightness-0 invert transition-all opacity-40 hover:opacity-80 mx-auto" />
+                <img src="/itau_logo.png" alt="Itaú" className="h-5 md:h-6 object-contain brightness-0 invert transition-all opacity-40 hover:opacity-80 mx-auto" />
+                <img src="/azul_logo.png" alt="Azul Seguros" className="h-5 md:h-6 object-contain brightness-0 invert transition-all opacity-40 hover:opacity-80 mx-auto" />
+                <img src="/sulamerica_logo.png" alt="SulAmérica" className="h-5 md:h-6 object-contain brightness-0 invert transition-all opacity-40 hover:opacity-80 mx-auto" />
+                <img src="/tokiomarine_logo.png" alt="Tokio Marine" className="h-8 md:h-10 object-contain brightness-0 invert transition-all opacity-40 hover:opacity-80 mx-auto" />
+                <img src="/chubb_logo.png" alt="Chubb" className="h-3 md:h-4 object-contain brightness-0 invert transition-all opacity-40 hover:opacity-80 mx-auto" />
+                <img src="/liberty_logo.png" alt="Liberty" className="h-6 md:h-8 object-contain brightness-0 invert transition-all opacity-40 hover:opacity-80 mx-auto" />
+                <img src="/zurich_logo.png" alt="Zurich" className="h-6 md:h-8 object-contain brightness-0 invert transition-all opacity-40 hover:opacity-80 mx-auto" />
+                <img src="/fairfax_logo.png" alt="Fairfax" className="h-5 md:h-6 object-contain brightness-0 invert transition-all opacity-40 hover:opacity-80 mx-auto" />
+                <img src="/mapfre_logo.png" alt="Mapfre" className="h-5 md:h-6 object-contain brightness-0 invert transition-all opacity-40 hover:opacity-80 mx-auto" />
               </div>
             </div>
           </div>
