@@ -238,7 +238,7 @@ export default function Home() {
         </div>
       </div>
       {/* Slideshow duplicate — below customers ticker */}
-      <section className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8]">
+      <section data-card className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8]">
         {spPhotos.map((src, i) => (
           <div
             key={src}
