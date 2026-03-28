@@ -409,7 +409,7 @@ export default function Home() {
             <p className="font-medium text-xl md:text-2xl lg:text-3xl leading-snug pb-4 border-b border-white/20 text-[#000000]">
               Atuação vai além da contratação.
             </p>
-            <p>
+            <p className="text-[#000000cc]">
               Acompanhamos a regulação de possíveis sinistros com suporte técnico e estratégico, garantindo interlocução eficiente com a seguradora e defesa dos interesses do cliente.
             </p>
             <p>
