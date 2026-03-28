@@ -321,7 +321,7 @@ export default function Home() {
           <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">NOSSA HISTÓRIA</h3>
         </div>
 
-        <div className="space-y-4 md:space-y-6 max-w-3xl text-lg md:text-[22px] text-zinc-800 font-light leading-relaxed mb-8 md:mb-12">
+        <div className="space-y-6 md:space-y-8 max-w-4xl text-xl md:text-[26px] text-zinc-800 font-normal leading-relaxed mb-8 md:mb-12">
           <p>
             A RA Poliseg foi fundada em 1988, por Rogério Abinader.
           </p>
