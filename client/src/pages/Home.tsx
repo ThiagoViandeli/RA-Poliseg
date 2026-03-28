@@ -190,7 +190,7 @@ export default function Home() {
             scrollTrigger: {
               trigger: sections[i + 1],
               start: "top bottom",
-              end: "top 88px",
+              end: `top ${window.innerWidth >= 768 ? 112 : 88}px`,
               scrub: 0.6,
             },
           }).to(section, {
@@ -313,10 +313,7 @@ export default function Home() {
       {/* 
         Slide 2: History
       */}
-      <section id="historia" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-[88px] md:top-[112px]">
-        <header className="mb-auto">
-        </header>
-
+      <section id="historia" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-12 md:pb-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-[88px] md:top-[112px]">
         <div className="mb-8 md:mb-16">
           <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">NOSSA HISTÓRIA</h3>
         </div>
@@ -358,10 +355,7 @@ export default function Home() {
       {/* 
         Slide 3: Portfolio & Specialty
       */}
-      <section id="especialidade" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-[88px] md:top-[112px]">
-        <header className="mb-auto">
-        </header>
-
+      <section id="especialidade" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-12 md:pb-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-[88px] md:top-[112px]">
         <div className="mb-12 md:mb-24">
           <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">
             Atuamos em <span className="underline decoration-[#d97706] underline-offset-4 md:underline-offset-[8px] decoration-2 md:decoration-4">todos os ramos de seguros no Brasil</span>, com expertise em riscos complexos e grandes obras civis.
