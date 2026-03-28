@@ -69,7 +69,7 @@ function BrandStatement() {
     <section ref={sectionRef} data-stack className="bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
       {/* Top band: year + headline */}
       <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-24 pb-12 md:pb-20 border-b border-[#d4d4d8]">
-        <p className="gsap-reveal text-[#d97706] text-xs uppercase tracking-[0.25em] font-semibold mb-10 md:mb-14">Quem somos</p>
+        <h2 className="gsap-reveal text-[#d97706] text-xs uppercase tracking-[0.25em] font-semibold mb-10 md:mb-14">Quem somos</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24 items-end">
           <div className="relative">
             <p className="select-none pointer-events-none text-[7rem] sm:text-[9rem] md:text-[12rem] lg:text-[14rem] leading-none font-medium tracking-tight text-black/[0.05]">
