@@ -89,6 +89,9 @@ function BrandStatement() {
           <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
             Oferecemos Seguros de todos os ramos, com as melhores Seguradoras do mercado mundial.
           </p>
+          <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
+            Proteção personalizada para cada fase, cada obra, cada empresa, cada família — em suas decisões mais importantes.
+          </p>
         </div>
       </div>
     </section>
