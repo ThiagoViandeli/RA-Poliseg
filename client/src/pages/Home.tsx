@@ -366,13 +366,6 @@ export default function Home() {
         <header className="mb-auto">
         </header>
 
-        <div className="mb-8 md:mb-12">
-          <div className="flex items-center gap-4">
-            <div className="w-8 h-[2px] bg-[#d97706]"></div>
-            <h2 className="text-[#d97706] text-xs uppercase tracking-[0.2em] font-semibold">Especialidade e modo de trabalhar</h2>
-          </div>
-        </div>
-
         <div className="mb-12 md:mb-24">
           <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">
             Atuamos em <span className="underline decoration-[#d97706] underline-offset-4 md:underline-offset-[8px] decoration-2 md:decoration-4">todos os ramos de seguros no Brasil</span>, com expertise em riscos complexos e grandes obras civis.
