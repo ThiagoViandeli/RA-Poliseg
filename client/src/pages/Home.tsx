@@ -31,12 +31,11 @@ function BrandStatement() {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         items,
-        { opacity: 0, y: 52 },
+        { opacity: 0 },
         {
           opacity: 1,
-          y: 0,
           duration: 1,
-          ease: "power3.out",
+          ease: "power2.out",
           stagger: 0.13,
           scrollTrigger: {
             trigger: el,
@@ -45,24 +44,6 @@ function BrandStatement() {
           },
         }
       );
-      const bar = el.querySelector(".gsap-bar");
-      if (bar) {
-        gsap.fromTo(
-          bar,
-          { scaleX: 0, transformOrigin: "left center" },
-          {
-            scaleX: 1,
-            duration: 0.9,
-            ease: "power2.out",
-            delay: 0.3,
-            scrollTrigger: {
-              trigger: el,
-              start: "top 80%",
-              toggleActions: "play none none none",
-            },
-          }
-        );
-      }
     }, el);
     return () => ctx.revert();
   }, []);
@@ -113,61 +94,40 @@ export default function Home() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const sectionConfigs = [
-        {
-          selector: "#historia",
-          targets: ["h3", "p", ".grid > div"],
-          stagger: 0.12,
-          y: 50,
-        },
-        {
-          selector: "#especialidade",
-          targets: ["h2", "h3", ".grid > div", "p"],
-          stagger: 0.1,
-          y: 45,
-        },
-      ];
-
-      sectionConfigs.forEach(({ selector, targets, stagger, y }) => {
+      ["#historia", "#especialidade"].forEach(selector => {
         const section = document.querySelector(selector);
         if (!section) return;
-
-        targets.forEach(target => {
-          const els = section.querySelectorAll(target);
-          if (!els.length) return;
-          gsap.timeline({
+        gsap.fromTo(
+          section,
+          { opacity: 0 },
+          {
+            opacity: 1,
+            duration: 0.85,
+            ease: "power2.out",
             scrollTrigger: {
               trigger: section,
               start: "top 80%",
               toggleActions: "play none none none",
             },
-          }).fromTo(
-            els,
-            { opacity: 0, y },
-            {
-              opacity: 1,
-              y: 0,
-              duration: 0.85,
-              ease: "power3.out",
-              stagger,
-            }
-          );
-        });
+          }
+        );
       });
 
-      // Footer animation
       const footer = document.querySelector("footer");
       if (footer) {
-        gsap.timeline({
-          scrollTrigger: {
-            trigger: footer,
-            start: "top 90%",
-            toggleActions: "play none none none",
-          },
-        }).fromTo(
-          footer.querySelectorAll("h5, li, p, img"),
-          { opacity: 0, y: 24 },
-          { opacity: 1, y: 0, duration: 0.7, ease: "power2.out", stagger: 0.06 }
+        gsap.fromTo(
+          footer,
+          { opacity: 0 },
+          {
+            opacity: 1,
+            duration: 0.7,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: footer,
+              start: "top 90%",
+              toggleActions: "play none none none",
+            },
+          }
         );
       }
     });
@@ -211,7 +171,7 @@ export default function Home() {
           </div>
         )}
       </nav>
-      {/* Navbar spacer — pushes sticky stack below the fixed nav */}
+      {/* Navbar spacer */}
       <div className="h-[88px] sm:h-[104px] md:h-[112px]" aria-hidden="true" />
       {/*
         Key Phrases Section — First / Hero
