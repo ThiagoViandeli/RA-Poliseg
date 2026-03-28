@@ -7,6 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 import Ra_logo_2026 from "@assets/Ra_logo_2026_1773887463194.jpg";
 
+import logo_itau from "@assets/logo-itau.png";
+
 const constructorLogos = [
   { src: "/eztec_logo.png", alt: "Eztec" },
   { src: "/kallas_logo.png", alt: "Kallas" },
@@ -521,7 +523,7 @@ export default function Home() {
                 <img src="/image_1772669913406.png" alt="Bradesco Seguros" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
                 <img src="/porto_seguro_logo.png" alt="Porto Seguro" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
                 <img src="/allianz_logo.png" alt="Allianz" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
-                <img src="/itau_logo.png" alt="Itaú" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
+                <img src={logo_itau} alt="Itaú" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
                 <img src="/azul_logo.png" alt="Azul Seguros" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
                 <img src="/sulamerica_logo.png" alt="SulAmérica" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
                 <img src="/tokiomarine_logo.png" alt="Tokio Marine" className="h-8 md:h-10 object-contain brightness-0 invert mx-auto" />
