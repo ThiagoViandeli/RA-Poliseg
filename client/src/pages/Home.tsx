@@ -49,7 +49,7 @@ function BrandStatement() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-white border-b border-[#d4d4d8]">
+    <section id="quem-somos" ref={sectionRef} className="bg-white border-b border-[#d4d4d8]">
       {/* Top band: year + headline */}
       <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-12 md:pt-16 pb-12 md:pb-20 border-b border-[#d4d4d8]">
         <h2 className="gsap-reveal text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight mb-10 md:mb-14">Quem somos</h2>
@@ -94,19 +94,20 @@ export default function Home() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      ["#historia", "#especialidade"].forEach(selector => {
+      ["#quem-somos", "#historia", "#especialidade", "#linhas"].forEach(selector => {
         const section = document.querySelector(selector);
         if (!section) return;
         gsap.fromTo(
           section,
-          { opacity: 0 },
+          { opacity: 0, y: 40 },
           {
             opacity: 1,
-            duration: 0.85,
+            y: 0,
+            duration: 0.8,
             ease: "power2.out",
             scrollTrigger: {
               trigger: section,
-              start: "top 80%",
+              start: "top 85%",
               toggleActions: "play none none none",
             },
           }
@@ -132,6 +133,41 @@ export default function Home() {
       }
     });
 
+    return () => ctx.revert();
+  }, []);
+
+  useEffect(() => {
+    const cards = gsap.utils.toArray<HTMLElement>('[data-card]');
+    const ctx = gsap.context(() => {
+      cards.forEach((card, i) => {
+        ScrollTrigger.create({
+          trigger: card,
+          start: 'top top',
+          pin: true,
+          pinSpacing: true,
+          onEnter: () => {
+            if (i > 0) {
+              gsap.to(cards[i - 1], {
+                scale: 0.92,
+                borderRadius: '12px',
+                duration: 0.4,
+                ease: 'power2.out',
+              });
+            }
+          },
+          onLeaveBack: () => {
+            if (i > 0) {
+              gsap.to(cards[i - 1], {
+                scale: 1,
+                borderRadius: '0px',
+                duration: 0.4,
+                ease: 'power2.out',
+              });
+            }
+          },
+        });
+      });
+    });
     return () => ctx.revert();
   }, []);
 
@@ -175,7 +211,7 @@ export default function Home() {
       {/*
         Key Phrases Section — First / Hero
       */}
-      <section id="inicio" className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8]">
+      <section id="inicio" data-card style={{ position: 'relative', zIndex: 1 }} className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8]">
         {spPhotos.map((src, i) => (
           <div
             key={src}
@@ -196,7 +232,7 @@ export default function Home() {
         </div>
       </section>
       {/* Constructor Logos Ticker */}
-      <div className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32">
+      <div data-card style={{ position: 'relative', zIndex: 2, background: 'white' }} className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32">
         <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
           <div>
             <p className="mb-6 md:mb-8 md:text-[21px] font-semibold text-[#000000] text-[38px]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
@@ -217,7 +253,7 @@ export default function Home() {
         </div>
       </div>
       {/* Slideshow duplicate — below customers ticker */}
-      <section className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8]">
+      <section data-card style={{ position: 'relative', zIndex: 3 }} className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8]">
         {spPhotos.map((src, i) => (
           <div
             key={src}
