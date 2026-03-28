@@ -378,23 +378,23 @@ export default function Home() {
               <p className="mb-4 font-semibold text-[#000000]">Desenvolvemos seguros personalizados, considerando:</p>
               <ul className="space-y-3 text-[#000000]">
                 <li className="flex items-start gap-3">
-                  <span className="text-[#d97706] mt-1.5 text-[8px]">■</span>
+                  <span className="!text-[#d97706] mt-1.5 text-[8px]">■</span>
                   <span>Riscos específicos</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#d97706] mt-1.5 text-[8px]">■</span>
+                  <span className="!text-[#d97706] mt-1.5 text-[8px]">■</span>
                   <span>Estrutura da empresa ou do projeto</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#d97706] mt-1.5 text-[8px]">■</span>
+                  <span className="!text-[#d97706] mt-1.5 text-[8px]">■</span>
                   <span>Contratos envolvidos</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#d97706] mt-1.5 text-[8px]">■</span>
+                  <span className="!text-[#d97706] mt-1.5 text-[8px]">■</span>
                   <span>Exigências legais e regulatórias</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#d97706] mt-1.5 text-[8px]">■</span>
+                  <span className="!text-[#d97706] mt-1.5 text-[8px]">■</span>
                   <span>Visão patrimonial e financeira</span>
                 </li>
               </ul>
