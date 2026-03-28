@@ -71,10 +71,10 @@ function BrandStatement() {
       <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-24 pb-12 md:pb-20 border-b border-[#d4d4d8]">
         <h2 className="gsap-reveal text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight mb-10 md:mb-14">Quem somos</h2>
         <div className="relative mb-8 md:mb-12">
-          <p className="select-none pointer-events-none text-[7rem] sm:text-[9rem] md:text-[12rem] lg:text-[14rem] leading-none font-medium tracking-tight text-black/[0.05]">
+          <p className="select-none pointer-events-none text-[5rem] sm:text-[7rem] md:text-[10rem] lg:text-[13rem] leading-none font-medium tracking-tight text-black/[0.05]">
             1988
           </p>
-          <p className="gsap-reveal absolute bottom-0 left-0 right-0 text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] leading-[1.08] font-medium tracking-tight text-black pb-2">
+          <p className="gsap-reveal absolute bottom-0 left-0 right-0 text-2xl sm:text-3xl md:text-4xl lg:text-[3rem] leading-[1.1] font-medium tracking-tight text-black pb-1">
             Fundada em 1988.<br />Hoje somos referência<br />em soluções securitárias.
           </p>
         </div>
@@ -214,7 +214,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-[#d4d4d8]/30">
         <div className="flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-16 py-3 md:py-4">
           <a href="#inicio" data-testid="link-logo-home">
-            <img src="/logo_cor_certa_1774637540783.png" alt="RA Poliseg" className="h-16 sm:h-20" />
+            <img src="/logo_cor_certa_1774637540783.png" alt="RA Poliseg" className="h-12 sm:h-14 md:h-16" />
           </a>
           <ul className="hidden md:flex items-center gap-4 lg:gap-8 text-[10px] lg:text-xs uppercase tracking-[0.15em] font-medium text-zinc-600">
             <li><a href="#inicio" className="hover:text-black transition-colors" data-testid="nav-home">Início</a></li>
@@ -271,7 +271,7 @@ export default function Home() {
       <div data-stack className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32 sticky top-0">
         <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
           <div>
-            <p className="mb-6 md:mb-8 md:text-[21px] font-semibold text-[#000000] text-[38px]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
+            <p className="mb-6 md:mb-8 text-xl sm:text-2xl md:text-3xl lg:text-[2.1rem] font-semibold text-[#000000]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
             <div className="logo-ticker">
               <div className="logo-ticker__track">
                 {[...constructorLogos, ...constructorLogos, ...constructorLogos].map((logo, i) => (
@@ -315,10 +315,7 @@ export default function Home() {
       {/* 
         Slide 2: History
       */}
-      <section id="historia" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
-        <header className="mb-auto">
-        </header>
-
+      <section id="historia" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 bg-white border-b border-[#d4d4d8] sticky top-0">
         <div className="mb-8 md:mb-16">
           <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">NOSSA HISTÓRIA</h3>
         </div>
@@ -353,10 +350,7 @@ export default function Home() {
       {/* 
         Slide 3: Portfolio & Specialty
       */}
-      <section id="especialidade" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
-        <header className="mb-auto">
-        </header>
-
+      <section id="especialidade" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 bg-white border-b border-[#d4d4d8] sticky top-0">
         <div className="mb-8 md:mb-12">
           <div className="flex items-center gap-4">
             <div className="w-8 h-[2px] bg-[#d97706]"></div>
@@ -370,9 +364,9 @@ export default function Home() {
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-24 text-zinc-800 text-[15px] md:text-[17px] font-light leading-relaxed mb-12 md:mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-24 text-zinc-800 font-light leading-relaxed mb-12 md:mb-24">
           {/* Left Column */}
-          <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px]">
+          <div className="space-y-4 md:space-y-6 max-w-2xl text-base sm:text-lg md:text-[18px]">
             <p>
               Entendemos o canteiro de obras, o cronograma, os contratos e riscos jurídicos.
             </p>
@@ -413,7 +407,7 @@ export default function Home() {
           </div>
 
           {/* Right Column */}
-          <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px] rounded-2xl p-6 sm:p-8 md:p-12 text-white/80 flex flex-col justify-center bg-[#000000e0]">
+          <div className="space-y-4 md:space-y-6 max-w-2xl text-base sm:text-lg md:text-[18px] rounded-2xl p-6 sm:p-8 md:p-12 text-white/80 flex flex-col justify-center bg-[#000000e0]">
             <p className="text-white font-medium text-xl md:text-2xl lg:text-3xl leading-snug pb-4 border-b border-white/20">
               Atuação vai além da contratação.
             </p>
@@ -430,18 +424,13 @@ export default function Home() {
       {/* 
         Slide 4: Lines of Business & Portfolio
       */}
-      <section id="linhas" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white overflow-hidden sticky top-0">
-        <header className="mb-8 md:mb-12">
-        </header>
-
+      <section id="linhas" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 bg-white sticky top-0">
         <div className="mb-8 md:mb-16">
-          <div className="flex items-center gap-4">
-            <div className="w-8 h-[2px] bg-[#d97706]"></div>
-            <h2 className="text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight">Linhas de negócio</h2>
-          </div>
+          <div className="w-8 h-[2px] bg-[#d97706] mb-4"></div>
+          <h2 className="text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight">Linhas de negócio</h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12 md:mb-24 text-sm font-light text-zinc-800">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12 md:mb-24 font-light text-zinc-800">
           {/* Category 1 */}
           <div>
             <img src="/icon_folder.png" alt="Empresas e Operações" className="w-[150px] h-[151px] sm:w-[200px] sm:h-[201px] lg:w-[250px] lg:h-[251px] mb-6 object-contain mx-auto block animate-float" />
