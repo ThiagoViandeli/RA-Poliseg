@@ -120,6 +120,12 @@ export default function Home() {
           stagger: 0.12,
           y: 50,
         },
+        {
+          selector: "#especialidade",
+          targets: ["h2", "h3", ".grid > div", "p"],
+          stagger: 0.1,
+          y: 45,
+        },
       ];
 
       sectionConfigs.forEach(({ selector, targets, stagger, y }) => {
@@ -350,7 +356,7 @@ export default function Home() {
       {/* 
         Slide 3: Portfolio & Specialty
       */}
-      <section id="especialidade" className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white border-b border-[#d4d4d8] overflow-hidden">
+      <section id="especialidade" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
         <header className="mb-auto">
         </header>
 
