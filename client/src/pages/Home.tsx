@@ -351,7 +351,7 @@ export default function Home() {
       {/* 
         Slide 3: Portfolio & Specialty
       */}
-      <section id="especialidade" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 bg-white border-b border-[#d4d4d8] lg:sticky lg:top-0">
+      <section id="especialidade" className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 bg-white border-b border-[#d4d4d8]">
         <div className="mb-8 md:mb-12">
           <div className="flex items-center gap-4">
             <div className="w-8 h-[2px] bg-[#d97706]"></div>
