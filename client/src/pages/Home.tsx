@@ -107,7 +107,7 @@ export default function Home() {
             scrollTrigger: {
               trigger: el,
               start: 'top 85%',
-              toggleActions: 'play none none none'
+              toggleActions: 'play none none reverse'
             }
           }
         );
@@ -130,7 +130,7 @@ export default function Home() {
             scrollTrigger: {
               trigger: el,
               start: 'top 90%',
-              toggleActions: 'play none none none'
+              toggleActions: 'play none none reverse'
             }
           }
         );
