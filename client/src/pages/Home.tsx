@@ -415,7 +415,7 @@ export default function Home() {
           <p className="text-base md:text-[18px] font-light leading-relaxed text-[#000000b3]">
             Acompanhamos a regulação de possíveis sinistros com suporte técnico e estratégico, garantindo interlocução eficiente com a seguradora e defesa dos interesses do cliente.
           </p>
-          <p className="text-white/70 text-base md:text-[18px] font-light leading-relaxed">
+          <p className="text-base md:text-[18px] font-light leading-relaxed text-[#000000b3]">
             No pós-venda, realizamos acompanhamento contínuo das apólices, mantendo a proteção sempre alinhada à realidade de cada operação.
           </p>
         </div>
