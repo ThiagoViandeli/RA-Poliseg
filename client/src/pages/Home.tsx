@@ -316,7 +316,7 @@ export default function Home() {
       {/* 
         Slide 2: History
       */}
-      <section id="historia" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-24 md:py-36 bg-white border-b border-[#d4d4d8] lg:sticky lg:top-0">
+      <section id="historia" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-32 md:py-48 bg-white border-b border-[#d4d4d8] lg:sticky lg:top-0">
         <div className="mb-8 md:mb-16">
           <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">NOSSA HISTÓRIA</h3>
         </div>
