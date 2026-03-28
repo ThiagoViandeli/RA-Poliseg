@@ -68,7 +68,7 @@ function BrandStatement() {
   }, []);
 
   return (
-    <section ref={sectionRef} data-stack className="bg-white border-b border-[#d4d4d8] sticky top-[88px] md:top-[112px]">
+    <section ref={sectionRef} data-stack className="bg-white border-b border-[#d4d4d8] sticky top-[88px] sm:top-[104px] md:top-[112px]">
       {/* Top band: year + headline */}
       <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-12 md:pt-16 pb-12 md:pb-20 border-b border-[#d4d4d8]">
         <h2 className="gsap-reveal text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight mb-10 md:mb-14">Quem somos</h2>
@@ -190,7 +190,7 @@ export default function Home() {
             scrollTrigger: {
               trigger: sections[i + 1],
               start: "top bottom",
-              end: `top ${window.innerWidth >= 768 ? 112 : 88}px`,
+              end: `top ${window.innerWidth >= 768 ? 112 : window.innerWidth >= 640 ? 104 : 88}px`,
               scrub: 0.6,
             },
           }).to(section, {
@@ -241,11 +241,11 @@ export default function Home() {
         )}
       </nav>
       {/* Navbar spacer — pushes sticky stack below the fixed nav */}
-      <div className="h-[88px] md:h-[112px]" aria-hidden="true" />
+      <div className="h-[88px] sm:h-[104px] md:h-[112px]" aria-hidden="true" />
       {/*
         Key Phrases Section — First / Hero
       */}
-      <section id="inicio" data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] sticky top-[88px] md:top-[112px]">
+      <section id="inicio" data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] sticky top-[88px] sm:top-[104px] md:top-[112px]">
         {spPhotos.map((src, i) => (
           <div
             key={src}
@@ -266,7 +266,7 @@ export default function Home() {
         </div>
       </section>
       {/* Constructor Logos Ticker */}
-      <div data-stack className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32 sticky top-[88px] md:top-[112px]">
+      <div data-stack className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32 sticky top-[88px] sm:top-[104px] md:top-[112px]">
         <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
           <div>
             <p className="mb-6 md:mb-8 md:text-[21px] font-semibold text-[#000000] text-[38px]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
@@ -287,7 +287,7 @@ export default function Home() {
         </div>
       </div>
       {/* Slideshow duplicate — below customers ticker */}
-      <section data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] sticky top-[88px] md:top-[112px]">
+      <section data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] sticky top-[88px] sm:top-[104px] md:top-[112px]">
         {spPhotos.map((src, i) => (
           <div
             key={src}
@@ -313,7 +313,7 @@ export default function Home() {
       {/* 
         Slide 2: History
       */}
-      <section id="historia" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-12 md:pb-16 bg-white border-b border-[#d4d4d8] sticky top-[88px] md:top-[112px]">
+      <section id="historia" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-12 md:pb-16 bg-white border-b border-[#d4d4d8] sticky top-[88px] sm:top-[104px] md:top-[112px]">
         <div className="mb-8 md:mb-16">
           <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">NOSSA HISTÓRIA</h3>
         </div>
@@ -355,7 +355,7 @@ export default function Home() {
       {/* 
         Slide 3: Portfolio & Specialty
       */}
-      <section id="especialidade" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-12 md:pb-16 bg-white border-b border-[#d4d4d8] sticky top-[88px] md:top-[112px]">
+      <section id="especialidade" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-12 md:pb-16 bg-white border-b border-[#d4d4d8] sticky top-[88px] sm:top-[104px] md:top-[112px]">
         <div className="mb-12 md:mb-24">
           <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">
             Atuamos em <span className="text-black underline decoration-black underline-offset-4 md:underline-offset-[8px] decoration-2 md:decoration-4">todos os ramos de seguros no Brasil</span>, com expertise em riscos complexos e grandes obras civis.
@@ -422,7 +422,7 @@ export default function Home() {
       {/* 
         Slide 4: Lines of Business & Portfolio
       */}
-      <section id="linhas" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white sticky top-[88px] md:top-[112px]">
+      <section id="linhas" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white sticky top-[88px] sm:top-[104px] md:top-[112px]">
         <header className="mb-8 md:mb-12">
         </header>
 
