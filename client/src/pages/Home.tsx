@@ -66,7 +66,7 @@ function BrandStatement() {
   }, []);
 
   return (
-    <section ref={sectionRef} data-stack className="bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
+    <section ref={sectionRef} data-stack className="bg-white border-b border-[#d4d4d8] overflow-hidden lg:sticky lg:top-0">
       {/* Top band: year + headline */}
       <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-24 pb-12 md:pb-20 border-b border-[#d4d4d8]">
         <h2 className="gsap-reveal text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight mb-10 md:mb-14">Quem somos</h2>
@@ -180,6 +180,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    if (window.innerWidth < 1024) return;
     const ctx = gsap.context(() => {
       const sections = gsap.utils.toArray<HTMLElement>("[data-stack]");
 
@@ -198,8 +199,8 @@ export default function Home() {
               scrub: 0.6,
             },
           }).to(section, {
-            scale: 0.88,
-            borderRadius: "18px",
+            scale: 0.92,
+            borderRadius: "14px",
             ease: "none",
           });
         }
@@ -247,7 +248,7 @@ export default function Home() {
       {/*
         Key Phrases Section — First / Hero
       */}
-      <section id="inicio" data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] overflow-hidden sticky top-0">
+      <section id="inicio" data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] overflow-hidden lg:sticky lg:top-0">
         {spPhotos.map((src, i) => (
           <div
             key={src}
@@ -268,7 +269,7 @@ export default function Home() {
         </div>
       </section>
       {/* Constructor Logos Ticker */}
-      <div data-stack className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32 sticky top-0">
+      <div data-stack className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32 lg:sticky lg:top-0">
         <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
           <div>
             <p className="mb-6 md:mb-8 text-xl sm:text-2xl md:text-3xl lg:text-[2.1rem] font-semibold text-[#000000]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
@@ -289,7 +290,7 @@ export default function Home() {
         </div>
       </div>
       {/* Slideshow duplicate — below customers ticker */}
-      <section data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] overflow-hidden sticky top-0">
+      <section data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] overflow-hidden lg:sticky lg:top-0">
         {spPhotos.map((src, i) => (
           <div
             key={src}
@@ -315,7 +316,7 @@ export default function Home() {
       {/* 
         Slide 2: History
       */}
-      <section id="historia" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 bg-white border-b border-[#d4d4d8] sticky top-0">
+      <section id="historia" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 bg-white border-b border-[#d4d4d8] lg:sticky lg:top-0">
         <div className="mb-8 md:mb-16">
           <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">NOSSA HISTÓRIA</h3>
         </div>
@@ -350,7 +351,7 @@ export default function Home() {
       {/* 
         Slide 3: Portfolio & Specialty
       */}
-      <section id="especialidade" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 bg-white border-b border-[#d4d4d8] sticky top-0">
+      <section id="especialidade" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 bg-white border-b border-[#d4d4d8] lg:sticky lg:top-0">
         <div className="mb-8 md:mb-12">
           <div className="flex items-center gap-4">
             <div className="w-8 h-[2px] bg-[#d97706]"></div>
@@ -424,7 +425,7 @@ export default function Home() {
       {/* 
         Slide 4: Lines of Business & Portfolio
       */}
-      <section id="linhas" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 bg-white sticky top-0">
+      <section id="linhas" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-16 md:py-24 bg-white lg:sticky lg:top-0">
         <div className="mb-8 md:mb-16">
           <div className="w-8 h-[2px] bg-[#d97706] mb-4"></div>
           <h2 className="text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight">Linhas de negócio</h2>
