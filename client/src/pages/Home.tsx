@@ -183,6 +183,7 @@ export default function Home() {
         gsap.set(section, {
           zIndex: i + 1,
           transformOrigin: "top center",
+          clipPath: "inset(0px round 0px)",
         });
 
         if (i < sections.length - 1) {
@@ -195,7 +196,7 @@ export default function Home() {
             },
           }).to(section, {
             scale: 0.88,
-            borderRadius: "18px",
+            clipPath: "inset(0px round 18px)",
             ease: "none",
           });
         }
@@ -245,7 +246,7 @@ export default function Home() {
       {/*
         Key Phrases Section — First / Hero
       */}
-      <section id="inicio" data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] sticky top-[88px] sm:top-[104px] md:top-[112px]">
+      <section id="inicio" data-stack className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] sticky top-[88px] sm:top-[104px] md:top-[112px]">
         {spPhotos.map((src, i) => (
           <div
             key={src}
@@ -287,7 +288,7 @@ export default function Home() {
         </div>
       </div>
       {/* Slideshow duplicate — below customers ticker */}
-      <section data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] sticky top-[88px] sm:top-[104px] md:top-[112px]">
+      <section data-stack className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] sticky top-[88px] sm:top-[104px] md:top-[112px]">
         {spPhotos.map((src, i) => (
           <div
             key={src}
