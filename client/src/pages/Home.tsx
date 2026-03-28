@@ -49,7 +49,7 @@ function BrandStatement() {
   }, []);
 
   return (
-    <section id="quem-somos" ref={sectionRef} className="bg-white border-b border-[#d4d4d8]">
+    <section id="quem-somos" ref={sectionRef} data-card className="bg-white border-b border-[#d4d4d8]">
       {/* Top band: year + headline */}
       <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-12 md:pt-16 pb-12 md:pb-20 border-b border-[#d4d4d8]">
         <h2 className="gsap-reveal text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight mb-10 md:mb-14">Quem somos</h2>
