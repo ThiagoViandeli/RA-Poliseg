@@ -143,7 +143,7 @@ export default function Home() {
           trigger: card,
           start: 'top top',
           pin: true,
-          pinSpacing: false,
+          pinSpacing: true,
           onEnter: () => {
             if (i > 0) {
               gsap.to(cards[i - 1], {
