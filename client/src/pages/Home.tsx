@@ -122,13 +122,7 @@ export default function Home() {
         },
         {
           selector: "#especialidade",
-          targets: ["h3", "p", ".rounded-2xl"],
-          stagger: 0.1,
-          y: 45,
-        },
-        {
-          selector: "#especialidade-atuacao",
-          targets: ["p"],
+          targets: ["h2", "h3", ".grid > div", "p"],
           stagger: 0.1,
           y: 45,
         },
@@ -366,59 +360,74 @@ export default function Home() {
         </div>
       </section>
       {/* 
-        Slide 3a: Specialty — heading + body
+        Slide 3: Portfolio & Specialty
       */}
       <section id="especialidade" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
-        <header className="mb-auto" />
+        <header className="mb-auto">
+        </header>
 
-        <div className="max-w-3xl space-y-8 md:space-y-12">
-          <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight">
+        <div className="mb-12 md:mb-24">
+          <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">
             Atuamos em <span className="underline decoration-[#d97706] underline-offset-4 md:underline-offset-[8px] decoration-2 md:decoration-4">todos os ramos de seguros no Brasil</span>, com expertise em riscos complexos e grandes obras civis.
           </h3>
+        </div>
 
-          <div className="space-y-4 md:space-y-6 text-base md:text-[18px] text-zinc-700 font-light leading-relaxed">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-24 text-zinc-800 text-[15px] md:text-[17px] font-light leading-relaxed mb-12 md:mb-24">
+          {/* Left Column */}
+          <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px]">
             <p>
               Entendemos o canteiro de obras, o cronograma, os contratos e riscos jurídicos.
             </p>
             <p>
-              Estruturamos coberturas sob medida para cada projeto e empreendimento, para todos os tipos de riscos.
+              Estruturamos coberturas sob medida para cada projeto e empreendimento, para todos os tipos riscos.
             </p>
-            <p className="text-lg lg:text-xl font-semibold text-black">
+            <p className="text-lg lg:text-xl font-bold text-[#000000]">
               Seguros tailor made, com análise técnica e visão de longo prazo.
             </p>
+            <div className="rounded-2xl p-6 sm:p-8 bg-[#000000]">
+              <p className="mb-4 font-semibold text-[#ffffff]">Desenvolvemos seguros personalizados, considerando:</p>
+              <ul className="space-y-3 text-[#ffffff]">
+                <li className="flex items-start gap-3">
+                  <span className="text-[#d97706] mt-1.5 text-[8px]">■</span>
+                  <span>Riscos específicos</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#d97706] mt-1.5 text-[8px]">■</span>
+                  <span>Estrutura da empresa ou do projeto</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#d97706] mt-1.5 text-[8px]">■</span>
+                  <span>Contratos envolvidos</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#d97706] mt-1.5 text-[8px]">■</span>
+                  <span>Exigências legais e regulatórias</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#d97706] mt-1.5 text-[8px]">■</span>
+                  <span>Visão patrimonial e financeira</span>
+                </li>
+              </ul>
+            </div>
+            <p className="text-black font-normal pt-4">
+              Tudo com acompanhamento contínuo e relacionamento direto.
+            </p>
           </div>
 
-          <div className="rounded-2xl p-6 sm:p-8 bg-black text-white">
-            <p className="mb-5 font-semibold text-base md:text-lg">Desenvolvemos seguros personalizados, considerando:</p>
-            <ul className="space-y-3 text-base md:text-[17px] font-light">
-              <li className="flex items-start gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">■</span><span>Riscos específicos</span></li>
-              <li className="flex items-start gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">■</span><span>Estrutura da empresa ou do projeto</span></li>
-              <li className="flex items-start gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">■</span><span>Contratos envolvidos</span></li>
-              <li className="flex items-start gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">■</span><span>Exigências legais e regulatórias</span></li>
-              <li className="flex items-start gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">■</span><span>Visão patrimonial e financeira</span></li>
-            </ul>
+          {/* Right Column */}
+          <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px] rounded-2xl p-6 sm:p-8 md:p-12 text-white/80 flex flex-col justify-center bg-[#000000e0]">
+            <p className="text-white font-medium text-xl md:text-2xl lg:text-3xl leading-snug pb-4 border-b border-white/20">
+              Atuação vai além da contratação.
+            </p>
+            <p>
+              Acompanhamos a regulação de possíveis sinistros com suporte técnico e estratégico, garantindo interlocução eficiente com a seguradora e defesa dos interesses do cliente.
+            </p>
+            <p>
+              No pós-venda, realizamos acompanhamento contínuo das apólices, mantendo a proteção sempre alinhada à realidade de cada operação.
+            </p>
           </div>
+        </div>
 
-          <p className="text-base md:text-[18px] text-zinc-700 font-light leading-relaxed">
-            Tudo com acompanhamento contínuo e relacionamento direto.
-          </p>
-        </div>
-      </section>
-      {/* 
-        Slide 3b: Specialty — beyond the contract
-      */}
-      <section id="especialidade-atuacao" data-stack className="min-h-[60vh] md:min-h-screen flex flex-col justify-center px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 border-b border-white/10 overflow-hidden sticky top-0 text-[#000000] bg-[#ffffff]">
-        <div className="max-w-3xl space-y-8 md:space-y-10">
-          <p className="font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-[1.15] tracking-tight pb-6 border-b border-white/20 text-[#000000]">
-            Atuação vai além da contratação.
-          </p>
-          <p className="text-base md:text-[18px] font-light leading-relaxed text-[#000000b3]">
-            Acompanhamos a regulação de possíveis sinistros com suporte técnico e estratégico, garantindo interlocução eficiente com a seguradora e defesa dos interesses do cliente.
-          </p>
-          <p className="text-base md:text-[18px] font-light leading-relaxed text-[#000000b3]">
-            No pós-venda, realizamos acompanhamento contínuo das apólices, mantendo a proteção sempre alinhada à realidade de cada operação.
-          </p>
-        </div>
       </section>
       {/* 
         Slide 4: Lines of Business & Portfolio
