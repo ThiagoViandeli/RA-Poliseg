@@ -376,7 +376,7 @@ export default function Home() {
       {/* 
         Slide 4: Lines of Business & Portfolio
       */}
-      <section id="linhas" className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white">
+      <section id="linhas" className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-12 md:pt-16 bg-white">
         <header className="mb-8 md:mb-12">
         </header>
 
