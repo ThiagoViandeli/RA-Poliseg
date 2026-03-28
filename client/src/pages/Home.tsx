@@ -513,14 +513,6 @@ export default function Home() {
 
         {/* Seguradoras Parceiras */}
         <div className="pt-8 md:pt-16 mt-auto border-t border-[#d4d4d8]">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-24 mb-8 md:mb-16 pt-8 md:pt-16">
-            <div className="lg:col-span-6">
-              <p className="text-black text-lg md:text-[21px] lg:text-2xl font-medium leading-relaxed">
-                Atendemos pessoas físicas e jurídicas, com soluções que acompanham a evolução de cada cliente ao longo do tempo.
-              </p>
-            </div>
-          </div>
-
           <div className="pt-8 md:pt-16">
             <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
               <div>
