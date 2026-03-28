@@ -70,7 +70,7 @@ function BrandStatement() {
   return (
     <section ref={sectionRef} data-stack className="bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
       {/* Top band: year + headline */}
-      <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-24 pb-12 md:pb-20 border-b border-[#d4d4d8]">
+      <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-24 md:pt-28 pb-12 md:pb-20 border-b border-[#d4d4d8]">
         <h2 className="gsap-reveal text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight mb-10 md:mb-14">Quem somos</h2>
         <div className="relative mb-8 md:mb-12">
           <p className="select-none pointer-events-none text-[7rem] sm:text-[9rem] md:text-[12rem] lg:text-[14rem] leading-none font-medium tracking-tight text-black/[0.05]">
@@ -311,7 +311,7 @@ export default function Home() {
       {/* 
         Slide 2: History
       */}
-      <section id="historia" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
+      <section id="historia" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-24 pb-12 md:pt-28 md:pb-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
         <header className="mb-auto">
         </header>
 
@@ -356,7 +356,7 @@ export default function Home() {
       {/* 
         Slide 3: Portfolio & Specialty
       */}
-      <section id="especialidade" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
+      <section id="especialidade" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-24 pb-12 md:pt-28 md:pb-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
         <header className="mb-auto">
         </header>
 
@@ -426,7 +426,7 @@ export default function Home() {
       {/* 
         Slide 4: Lines of Business & Portfolio
       */}
-      <section id="linhas" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white overflow-hidden sticky top-0">
+      <section id="linhas" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-24 pb-12 md:pt-28 md:pb-16 bg-white overflow-hidden sticky top-0">
         <header className="mb-8 md:mb-12">
         </header>
 
