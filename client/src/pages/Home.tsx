@@ -126,12 +126,6 @@ export default function Home() {
           stagger: 0.1,
           y: 45,
         },
-        {
-          selector: "#linhas",
-          targets: ["h2", ".grid > div", ".border-t"],
-          stagger: 0.1,
-          y: 40,
-        },
       ];
 
       sectionConfigs.forEach(({ selector, targets, stagger, y }) => {
