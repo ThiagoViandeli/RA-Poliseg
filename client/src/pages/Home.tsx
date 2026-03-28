@@ -80,7 +80,7 @@ function BrandStatement() {
           </p>
         </div>
         <div className="space-y-6 md:space-y-8 pb-2">
-          <div className="gsap-bar h-[2px] bg-[#d97706] w-10" />
+          <div className="gsap-bar h-[2px] bg-black w-10" />
           <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
             Acreditamos e praticamos um atendimento próximo, super personalizado, com visão técnica e soluções estratégicas consagradas.
           </p>
@@ -350,23 +350,23 @@ export default function Home() {
               <p className="mb-4 font-semibold text-[#000000]">Desenvolvemos seguros personalizados, considerando:</p>
               <ul className="space-y-3 text-[#000000]">
                 <li className="flex items-start gap-3">
-                  <span className="!text-[#d97706] mt-1.5 text-[8px]">■</span>
+                  <span className="!text-black mt-1.5 text-[8px]">■</span>
                   <span>Riscos específicos</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="!text-[#d97706] mt-1.5 text-[8px]">■</span>
+                  <span className="!text-black mt-1.5 text-[8px]">■</span>
                   <span>Estrutura da empresa ou do projeto</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="!text-[#d97706] mt-1.5 text-[8px]">■</span>
+                  <span className="!text-black mt-1.5 text-[8px]">■</span>
                   <span>Contratos envolvidos</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="!text-[#d97706] mt-1.5 text-[8px]">■</span>
+                  <span className="!text-black mt-1.5 text-[8px]">■</span>
                   <span>Exigências legais e regulatórias</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="!text-[#d97706] mt-1.5 text-[8px]">■</span>
+                  <span className="!text-black mt-1.5 text-[8px]">■</span>
                   <span>Visão patrimonial e financeira</span>
                 </li>
               </ul>
@@ -400,7 +400,7 @@ export default function Home() {
 
         <div className="mb-8 md:mb-16">
           <div className="flex items-center gap-4">
-            <div className="w-8 h-[2px] bg-[#d97706]"></div>
+            <div className="w-8 h-[2px] bg-black"></div>
             <h2 className="text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight">Linhas de negócio</h2>
           </div>
         </div>
@@ -412,14 +412,14 @@ export default function Home() {
             <h4 className="text-black font-medium mb-2 text-lg md:text-[21px]">Empresas e Operações</h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[11px] md:text-[12px] font-medium">Estruturação técnica de seguros para proteção patrimonial, operacional e contratual.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 text-base md:text-[18px] font-medium">
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Empresarial (Multirriscos)</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Responsabilidade Civil Geral e Profissional</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Garantia</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro de Crédito</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Cibernético</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro de Riscos de Engenharia</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro para Grandes Obras Civis</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Acidentes de Trabalho</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro Empresarial (Multirriscos)</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Responsabilidade Civil Geral e Profissional</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro Garantia</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro de Crédito</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro Cibernético</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro de Riscos de Engenharia</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro para Grandes Obras Civis</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Acidentes de Trabalho</li>
             </ul>
           </div>
 
@@ -429,13 +429,13 @@ export default function Home() {
             <h4 className="text-black font-medium mb-2 text-lg md:text-[21px]">Patrimônio e Estrutura Familiar</h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[11px] md:text-[12px] font-medium">Proteção personalizada para preservação patrimonial e planejamento familiar.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 text-base md:text-[18px] font-medium">
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Residencial e Condomínio</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Automóvel</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro de Vida</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro de Acidentes Pessoais</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Viagem</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Saúde</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro para Obras e Reformas</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro Residencial e Condomínio</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro Automóvel</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro de Vida</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro de Acidentes Pessoais</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro Viagem</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro Saúde</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro para Obras e Reformas</li>
             </ul>
           </div>
 
@@ -445,11 +445,11 @@ export default function Home() {
             <h4 className="text-black font-medium mb-2 text-lg md:text-[21px]">Riscos Específicos e Patrimônio de Alta Complexidade</h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[11px] md:text-[12px] font-medium">Soluções estruturadas para situações que exigem análise técnica aprofundada.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 text-base md:text-[18px] font-medium">
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Responsabilidade Civil Familiar</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro para Equipamentos e Bens de Alto Valor</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro para Administradores (D&O)</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro para Embarcações e Aeronaves</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Programas personalizados para patrimônio relevante</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Responsabilidade Civil Familiar</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro para Equipamentos e Bens de Alto Valor</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro para Administradores (D&O)</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro para Embarcações e Aeronaves</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Programas personalizados para patrimônio relevante</li>
             </ul>
           </div>
 
@@ -458,12 +458,12 @@ export default function Home() {
             <img src="/icon_obras.png" alt="Engenharia e Grandes Obras" className="w-[150px] h-[151px] sm:w-[200px] sm:h-[201px] lg:w-[250px] lg:h-[251px] mb-6 object-contain mx-auto block animate-float" style={{ animationDelay: "3s" }} />
             <h4 className="text-black font-medium mb-2 text-lg md:text-[21px]">Engenharia e Grandes Obras</h4>
             <p className="text-zinc-600 mb-6 min-h-[40px] uppercase tracking-wider text-[11px] md:text-[12px] font-medium">Especialização histórica da RA Poliseg, com atuação técnica na análise e estruturação de riscos complexos.</p>
-            <ul className="space-y-3 border-t border-[#d97706]/40 pt-4 text-black text-base md:text-[18px] font-medium">
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro de Riscos de Engenharia</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Seguro Garantia para Obras</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Responsabilidade Civil Obras</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Análise contratual de riscos</li>
-              <li className="flex gap-3"><span className="text-[#d97706] mt-1.5 text-[8px]">*</span> Apoio técnico na regulação de sinistros</li>
+            <ul className="space-y-3 border-t border-black/40 pt-4 text-black text-base md:text-[18px] font-medium">
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro de Riscos de Engenharia</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro Garantia para Obras</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Responsabilidade Civil Obras</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Análise contratual de riscos</li>
+              <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Apoio técnico na regulação de sinistros</li>
             </ul>
           </div>
         </div>
@@ -503,7 +503,7 @@ export default function Home() {
             </div>
 
             <div>
-              <h5 className="text-xs uppercase tracking-[0.2em] font-semibold text-[#d97706] mb-4 md:mb-6">Contato</h5>
+              <h5 className="text-xs uppercase tracking-[0.2em] font-semibold text-black mb-4 md:mb-6">Contato</h5>
               <ul className="space-y-3 text-sm text-white/70">
                 <li>
                   <a href="tel:+551130443355" className="hover:text-white transition-colors" data-testid="link-phone">(11) 3887-8930</a>
@@ -518,7 +518,7 @@ export default function Home() {
             </div>
 
             <div>
-              <h5 className="text-xs uppercase tracking-[0.2em] font-semibold text-[#d97706] mb-4 md:mb-6">Navegação</h5>
+              <h5 className="text-xs uppercase tracking-[0.2em] font-semibold text-black mb-4 md:mb-6">Navegação</h5>
               <ul className="space-y-3 text-sm text-white/70">
                 <li><a href="#inicio" className="hover:text-white transition-colors" data-testid="link-nav-home">Início</a></li>
                 <li><a href="#historia" className="hover:text-white transition-colors" data-testid="link-nav-history">Nossa História</a></li>
