@@ -49,7 +49,7 @@ function BrandStatement() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-white border-b border-[#d4d4d8]">
+    <section ref={sectionRef} data-stack className="bg-white border-b border-[#d4d4d8]">
       {/* Top band: year + headline */}
       <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-12 md:pt-16 pb-12 md:pb-20 border-b border-[#d4d4d8]">
         <h2 className="gsap-reveal text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight mb-10 md:mb-14">Quem somos</h2>
@@ -93,24 +93,38 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    const nav = document.querySelector("nav");
+    const navH = nav ? nav.getBoundingClientRect().height : 80;
+
     const ctx = gsap.context(() => {
-      ["#historia", "#especialidade"].forEach(selector => {
-        const section = document.querySelector(selector);
-        if (!section) return;
-        gsap.fromTo(
-          section,
-          { opacity: 0 },
-          {
-            opacity: 1,
-            duration: 0.85,
-            ease: "power2.out",
+      const sections = gsap.utils.toArray<HTMLElement>("[data-stack]");
+
+      sections.forEach((section, i) => {
+        gsap.set(section, {
+          transformOrigin: "top center",
+          zIndex: i + 1,
+        });
+
+        if (i < sections.length - 1) {
+          ScrollTrigger.create({
+            trigger: section,
+            start: `top top+=${navH}`,
+            pin: true,
+            pinSpacing: false,
+          });
+
+          gsap.to(section, {
+            scale: 0.9,
+            borderRadius: "16px",
+            ease: "none",
             scrollTrigger: {
-              trigger: section,
-              start: "top 80%",
-              toggleActions: "play none none none",
+              trigger: sections[i + 1],
+              start: "top bottom",
+              end: `top top+=${navH}`,
+              scrub: 0.5,
             },
-          }
-        );
+          });
+        }
       });
 
       const footer = document.querySelector("footer");
@@ -176,7 +190,7 @@ export default function Home() {
       {/*
         Key Phrases Section — First / Hero
       */}
-      <section id="inicio" className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8]">
+      <section id="inicio" data-stack className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8]">
         {spPhotos.map((src, i) => (
           <div
             key={src}
@@ -197,7 +211,7 @@ export default function Home() {
         </div>
       </section>
       {/* Constructor Logos Ticker */}
-      <div className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32">
+      <div data-stack className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32">
         <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
           <div>
             <p className="mb-6 md:mb-8 md:text-[21px] font-semibold text-[#000000] text-[38px]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
@@ -218,7 +232,7 @@ export default function Home() {
         </div>
       </div>
       {/* Slideshow duplicate — below customers ticker */}
-      <section className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8]">
+      <section data-stack className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8]">
         {spPhotos.map((src, i) => (
           <div
             key={src}
@@ -244,7 +258,7 @@ export default function Home() {
       {/* 
         Slide 2: History
       */}
-      <section id="historia" className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-12 md:pb-16 bg-white border-b border-[#d4d4d8]">
+      <section id="historia" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-12 md:pb-16 bg-white border-b border-[#d4d4d8]">
         <div className="mb-8 md:mb-16">
           <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">NOSSA HISTÓRIA</h3>
         </div>
@@ -286,7 +300,7 @@ export default function Home() {
       {/* 
         Slide 3: Portfolio & Specialty
       */}
-      <section id="especialidade" className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-12 md:pb-16 bg-white border-b border-[#d4d4d8]">
+      <section id="especialidade" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-12 md:pb-16 bg-white border-b border-[#d4d4d8]">
         <div className="mb-12 md:mb-24">
           <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">
             Atuamos em <span className="text-black underline decoration-black underline-offset-4 md:underline-offset-[8px] decoration-2 md:decoration-4">todos os ramos de seguros no Brasil</span>, com expertise em riscos complexos e grandes obras civis.
@@ -353,7 +367,7 @@ export default function Home() {
       {/* 
         Slide 4: Lines of Business & Portfolio
       */}
-      <section id="linhas" className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white">
+      <section id="linhas" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white">
         <header className="mb-8 md:mb-12">
         </header>
 
