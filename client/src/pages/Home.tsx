@@ -117,6 +117,29 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    const ctx = gsap.context(() => {
+      const elements = document.querySelectorAll('#historia h3, #historia p, #especialidade h2, #especialidade h3, #especialidade p, #linhas h2, #linhas h4, #linhas p, #linhas li');
+      elements.forEach((el, i) => {
+        gsap.fromTo(el,
+          { opacity: 0, y: 30 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.7,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: el,
+              start: 'top 90%',
+              toggleActions: 'play none none none'
+            }
+          }
+        );
+      });
+    });
+    return () => ctx.revert();
+  }, []);
+
+  useEffect(() => {
     const cards = gsap.utils.toArray('[data-card]');
     cards.forEach((card, i) => {
       if (i === cards.length - 1) return;
