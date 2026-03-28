@@ -68,9 +68,9 @@ function BrandStatement() {
   }, []);
 
   return (
-    <section ref={sectionRef} data-stack className="bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
+    <section ref={sectionRef} data-stack className="bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-[88px] md:top-[112px]">
       {/* Top band: year + headline */}
-      <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-24 md:pt-28 pb-12 md:pb-20 border-b border-[#d4d4d8]">
+      <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-12 md:pt-16 pb-12 md:pb-20 border-b border-[#d4d4d8]">
         <h2 className="gsap-reveal text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight mb-10 md:mb-14">Quem somos</h2>
         <div className="relative mb-8 md:mb-12">
           <p className="select-none pointer-events-none text-[7rem] sm:text-[9rem] md:text-[12rem] lg:text-[14rem] leading-none font-medium tracking-tight text-black/[0.05]">
@@ -190,7 +190,7 @@ export default function Home() {
             scrollTrigger: {
               trigger: sections[i + 1],
               start: "top bottom",
-              end: "top top",
+              end: "top 88px",
               scrub: 0.6,
             },
           }).to(section, {
@@ -240,10 +240,12 @@ export default function Home() {
           </div>
         )}
       </nav>
+      {/* Navbar spacer — pushes sticky stack below the fixed nav */}
+      <div className="h-[88px] md:h-[112px]" aria-hidden="true" />
       {/*
         Key Phrases Section — First / Hero
       */}
-      <section id="inicio" data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] overflow-hidden sticky top-0">
+      <section id="inicio" data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] overflow-hidden sticky top-[88px] md:top-[112px]">
         {spPhotos.map((src, i) => (
           <div
             key={src}
@@ -264,7 +266,7 @@ export default function Home() {
         </div>
       </section>
       {/* Constructor Logos Ticker */}
-      <div data-stack className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32 sticky top-0">
+      <div data-stack className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32 sticky top-[88px] md:top-[112px]">
         <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
           <div>
             <p className="mb-6 md:mb-8 md:text-[21px] font-semibold text-[#000000] text-[38px]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
@@ -285,7 +287,7 @@ export default function Home() {
         </div>
       </div>
       {/* Slideshow duplicate — below customers ticker */}
-      <section data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] overflow-hidden sticky top-0">
+      <section data-stack className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8] overflow-hidden sticky top-[88px] md:top-[112px]">
         {spPhotos.map((src, i) => (
           <div
             key={src}
@@ -311,7 +313,7 @@ export default function Home() {
       {/* 
         Slide 2: History
       */}
-      <section id="historia" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-24 pb-12 md:pt-28 md:pb-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
+      <section id="historia" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-[88px] md:top-[112px]">
         <header className="mb-auto">
         </header>
 
@@ -356,7 +358,7 @@ export default function Home() {
       {/* 
         Slide 3: Portfolio & Specialty
       */}
-      <section id="especialidade" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-24 pb-12 md:pt-28 md:pb-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-0">
+      <section id="especialidade" data-stack className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white border-b border-[#d4d4d8] overflow-hidden sticky top-[88px] md:top-[112px]">
         <header className="mb-auto">
         </header>
 
@@ -426,7 +428,7 @@ export default function Home() {
       {/* 
         Slide 4: Lines of Business & Portfolio
       */}
-      <section id="linhas" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-24 pb-12 md:pt-28 md:pb-16 bg-white overflow-hidden sticky top-0">
+      <section id="linhas" data-stack className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-16 bg-white overflow-hidden sticky top-[88px] md:top-[112px]">
         <header className="mb-8 md:mb-12">
         </header>
 
