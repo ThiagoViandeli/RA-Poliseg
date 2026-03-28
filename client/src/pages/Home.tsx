@@ -120,12 +120,6 @@ export default function Home() {
           stagger: 0.12,
           y: 50,
         },
-        {
-          selector: "#especialidade",
-          targets: ["h2", "h3", ".grid > div", "p"],
-          stagger: 0.1,
-          y: 45,
-        },
       ];
 
       sectionConfigs.forEach(({ selector, targets, stagger, y }) => {
