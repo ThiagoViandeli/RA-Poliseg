@@ -323,38 +323,31 @@ export default function Home() {
           <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">NOSSA HISTÓRIA</h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-24 text-zinc-800 text-[15px] md:text-[17px] font-light leading-relaxed mb-8 md:mb-12">
-          {/* Left Column */}
-          <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px]">
-            <p>
-              A RA Poliseg foi fundada em 1988, por Rogério Abinader.
-            </p>
-            <p>
-              Rogerio Abinader, é engenheiro civil formado pela Escola Politécnica da USP, com pós-graduação e especializações em Seguros e Gerenciamento de Riscos.
-            </p>
-            <p>
-              Antes de iniciar as atividades da corretora, atuou por 20 anos como Superintendente de Sinistros na Bradesco Seguros, acompanhando de perto grandes obras, tais como a construção da hidroelétrica de Itaipu, riscos complexos e os impactos reais de um seguro bem estruturado quando ele realmente precisa funcionar.
-            </p>
-            <p className="text-black font-normal pt-2">
-              Essa trajetória é sustentada por valores que atravessam gerações.
-            </p>
-          </div>
-
-          {/* Right Column */}
-          <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px]">
-            <p>
-              A RA Poliseg conta também com Carina Abinader, filha do fundador, advogada especializada em Direito Empresarial, Contratual, Tributário e Administração de Empresas pela FVG - São Paulo/University of California- San Diego, garantindo que cada apólice esteja alinhada não só ao risco, mas também à estrutura e necessidade legal/ financeira do cliente.
-            </p>
-            <p>
-              A combination do conhecimento técnico em — engenharia, seguros de todos os ramos e direito —, somados aos mais de 35 anos de prática, é o que sustenta nossa atuação e permeia nosso trabalho até hoje.
-            </p>
-            <p className="text-xl md:text-2xl lg:text-3xl leading-snug pt-4 pb-2 text-[#000000] font-bold">
-              Nascemos da engenharia, crescemos com seguros e nos fortalecemos com o direito.
-            </p>
-            <p>
-              Em nossa origem, há uma herança que valoriza a palavra, o cuidado nas relações e a construção paciente do que é duradouro.
-            </p>
-          </div>
+        <div className="space-y-4 md:space-y-6 max-w-3xl text-base md:text-[18px] text-zinc-800 font-light leading-relaxed mb-8 md:mb-12">
+          <p>
+            A RA Poliseg foi fundada em 1988, por Rogério Abinader.
+          </p>
+          <p>
+            Rogerio Abinader, é engenheiro civil formado pela Escola Politécnica da USP, com pós-graduação e especializações em Seguros e Gerenciamento de Riscos.
+          </p>
+          <p>
+            Antes de iniciar as atividades da corretora, atuou por 20 anos como Superintendente de Sinistros na Bradesco Seguros, acompanhando de perto grandes obras, tais como a construção da hidroelétrica de Itaipu, riscos complexos e os impactos reais de um seguro bem estruturado quando ele realmente precisa funcionar.
+          </p>
+          <p className="text-black font-normal pt-2">
+            Essa trajetória é sustentada por valores que atravessam gerações.
+          </p>
+          <p>
+            A RA Poliseg conta também com Carina Abinader, filha do fundador, advogada especializada em Direito Empresarial, Contratual, Tributário e Administração de Empresas pela FVG - São Paulo/University of California- San Diego, garantindo que cada apólice esteja alinhada não só ao risco, mas também à estrutura e necessidade legal/ financeira do cliente.
+          </p>
+          <p>
+            A combination do conhecimento técnico em — engenharia, seguros de todos os ramos e direito —, somados aos mais de 35 anos de prática, é o que sustenta nossa atuação e permeia nosso trabalho até hoje.
+          </p>
+          <p className="text-xl md:text-2xl lg:text-3xl leading-snug pt-4 pb-2 text-[#000000] font-bold">
+            Nascemos da engenharia, crescemos com seguros e nos fortalecemos com o direito.
+          </p>
+          <p>
+            Em nossa origem, há uma herança que valoriza a palavra, o cuidado nas relações e a construção paciente do que é duradouro.
+          </p>
         </div>
       </section>
       {/* 
