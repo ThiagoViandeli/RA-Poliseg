@@ -136,6 +136,26 @@ export default function Home() {
     return () => ctx.revert();
   }, []);
 
+  useEffect(() => {
+    const cards = gsap.utils.toArray('[data-card]');
+    cards.forEach((card, i) => {
+      if (i === cards.length - 1) return;
+      ScrollTrigger.create({
+        trigger: cards[i + 1] as Element,
+        start: "top bottom",
+        end: "top top",
+        scrub: true,
+        onUpdate: (self) => {
+          gsap.set(card as Element, {
+            scale: 1 - (0.08 * self.progress),
+            borderRadius: 16 * self.progress + 'px',
+          });
+        }
+      });
+    });
+    return () => ScrollTrigger.getAll().forEach(t => t.kill());
+  }, []);
+
   return (
     <div className="min-h-screen bg-white text-black font-sans selection:bg-[#FACC15] selection:text-black">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-[#d4d4d8]/30">
@@ -176,7 +196,7 @@ export default function Home() {
       {/*
         Key Phrases Section — First / Hero
       */}
-      <section id="inicio" className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8]">
+      <section id="inicio" data-card className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24 border-b border-[#d4d4d8]">
         {spPhotos.map((src, i) => (
           <div
             key={src}
@@ -197,7 +217,7 @@ export default function Home() {
         </div>
       </section>
       {/* Constructor Logos Ticker */}
-      <div className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32">
+      <div data-card className="bg-white border-b border-[#d4d4d8] px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32">
         <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
           <div>
             <p className="mb-6 md:mb-8 md:text-[21px] font-semibold text-[#000000] text-[38px]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
