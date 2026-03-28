@@ -70,27 +70,25 @@ function BrandStatement() {
       {/* Top band: year + headline */}
       <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-24 pb-12 md:pb-20 border-b border-[#d4d4d8]">
         <h2 className="gsap-reveal text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight mb-10 md:mb-14">Quem somos</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24 items-end">
-          <div className="relative">
-            <p className="select-none pointer-events-none text-[7rem] sm:text-[9rem] md:text-[12rem] lg:text-[14rem] leading-none font-medium tracking-tight text-black/[0.05]">
-              1988
-            </p>
-            <p className="gsap-reveal absolute bottom-0 left-0 right-0 text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] leading-[1.08] font-medium tracking-tight text-black pb-2">
-              Fundada em 1988.<br />Hoje somos referência<br />em soluções securitárias.
-            </p>
-          </div>
-          <div className="space-y-6 md:space-y-8 pb-2 pt-6 lg:pt-0">
-            <div className="gsap-bar h-[2px] bg-[#d97706] w-10" />
-            <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
-              Acreditamos e praticamos um atendimento próximo, super personalizado, com visão técnica e soluções estratégicas consagradas.
-            </p>
-            <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
-              Conhecemos nossos clientes de verdade — suas histórias, seus negócios e seus riscos.
-            </p>
-            <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
-              Oferecemos Seguros de todos os ramos, com as melhores Seguradoras do mercado mundial.
-            </p>
-          </div>
+        <div className="relative mb-8 md:mb-12">
+          <p className="select-none pointer-events-none text-[7rem] sm:text-[9rem] md:text-[12rem] lg:text-[14rem] leading-none font-medium tracking-tight text-black/[0.05]">
+            1988
+          </p>
+          <p className="gsap-reveal absolute bottom-0 left-0 right-0 text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] leading-[1.08] font-medium tracking-tight text-black pb-2">
+            Fundada em 1988.<br />Hoje somos referência<br />em soluções securitárias.
+          </p>
+        </div>
+        <div className="space-y-6 md:space-y-8 pb-2">
+          <div className="gsap-bar h-[2px] bg-[#d97706] w-10" />
+          <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
+            Acreditamos e praticamos um atendimento próximo, super personalizado, com visão técnica e soluções estratégicas consagradas.
+          </p>
+          <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
+            Conhecemos nossos clientes de verdade — suas histórias, seus negócios e seus riscos.
+          </p>
+          <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
+            Oferecemos Seguros de todos os ramos, com as melhores Seguradoras do mercado mundial.
+          </p>
         </div>
       </div>
       {/* Bottom band: closing statement */}
