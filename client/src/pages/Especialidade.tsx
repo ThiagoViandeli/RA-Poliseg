@@ -68,7 +68,7 @@ export default function Especialidade() {
       <div className="h-[88px] sm:h-[104px] md:h-[112px]" aria-hidden="true" />
 
       <section className="px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-28 bg-white">
-        <h2 className="fade-in text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-snug font-medium mb-8">
+        <h2 className="fade-in text-4xl md:text-5xl font-medium mb-8">
           Atuamos em <span className="underline decoration-black underline-offset-4 md:underline-offset-[8px] decoration-2 md:decoration-4">todos os ramos de seguros no Brasil</span>, com expertise em riscos complexos e grandes obras civis.
         </h2>
 
@@ -99,7 +99,7 @@ export default function Especialidade() {
           </p>
 
           <div className="fade-in">
-            <h3 className="text-xl sm:text-2xl md:text-4xl leading-snug font-medium mb-6 text-black">
+            <h3 className="text-2xl md:text-3xl font-medium mb-6 text-black">
               Atuação vai além da contratação.
             </h3>
             <p className="text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">

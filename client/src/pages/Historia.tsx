@@ -68,7 +68,7 @@ export default function Historia() {
       <div className="h-[88px] sm:h-[104px] md:h-[112px]" aria-hidden="true" />
 
       <section className="px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-28 bg-white">
-        <h2 className="fade-in text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-snug font-medium mb-8">Nossa História</h2>
+        <h2 className="fade-in text-4xl md:text-5xl font-medium mb-8">Nossa História</h2>
 
         <div className="flex flex-col gap-8 md:gap-12 max-w-3xl">
           <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
@@ -89,7 +89,7 @@ export default function Historia() {
           <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
             A combination do conhecimento técnico em — engenharia, seguros de todos os ramos e direito —, somados aos mais de 35 anos de prática, é o que sustenta nossa atuação e permeia nosso trabalho até hoje.
           </p>
-          <p className="fade-in text-xl sm:text-2xl md:text-4xl font-medium mb-6 text-black leading-snug">
+          <p className="fade-in text-2xl md:text-3xl font-medium mb-6 text-black leading-snug">
             Nascemos da engenharia, crescemos com seguros e nos fortalecemos com o direito.
           </p>
           <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
