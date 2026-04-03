@@ -19,7 +19,7 @@ const constructorLogos = [
   { src: "/cemek_logo.png", alt: "Cemek", className: "mix-blend-multiply h-8", defaultH: false },
 ];
 
-const spPhotos = ["/sp1.jpg", "/sp2.jpg", "/sp3.jpg", "/sp4.jpg", "/sp5.jpg", "/sp6.jpg"];
+const spPhotos = ["/sp1.jpg", "/sp2.jpg", "/sp3.jpg", "/sp5.jpg", "/sp6.jpg"];
 
 function BrandStatement() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -71,16 +71,10 @@ function BrandStatement() {
       {/* Top band: year + headline */}
       <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-12 md:pt-16 pb-12 md:pb-20">
         <h2 className="gsap-reveal text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight mb-10 md:mb-14">Quem somos</h2>
-        <div className="relative mb-8 md:mb-12">
-          <p className="select-none pointer-events-none text-[7rem] sm:text-[9rem] md:text-[12rem] lg:text-[14rem] leading-none font-medium tracking-tight text-black/[0.05]">
-            1988
-          </p>
-          <p className="gsap-reveal absolute bottom-0 left-0 right-0 text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] leading-[1.08] font-medium tracking-tight text-black pb-2">
-            Fundada em 1988.<br />Hoje somos referência<br />em soluções securitárias.
-          </p>
-        </div>
+        <p className="gsap-reveal text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] leading-[1.08] font-medium tracking-tight text-black mb-8 md:mb-12">
+          Fundada em 1988.<br />Hoje somos referência<br />em soluções securitárias.
+        </p>
         <div className="space-y-6 md:space-y-8 pb-2">
-          <div className="gsap-bar h-[2px] bg-black w-10" />
           <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
             Acreditamos e praticamos um atendimento próximo, super personalizado, com visão técnica e soluções estratégicas consagradas.
           </p>
@@ -112,33 +106,26 @@ export default function Home() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      ['#historia', '#especialidade', '#linhas'].forEach(selector => {
-        const el = document.querySelector(selector);
-        if (!el) return;
-        gsap.fromTo(el,
-          { opacity: 0, y: 40 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.9,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: el,
-              start: 'top 85%',
-              toggleActions: 'play none none reverse'
-            }
+      const el = document.querySelector('#linhas');
+      if (!el) return;
+      gsap.fromTo(el,
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.9,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 85%',
+            toggleActions: 'play none none reverse'
           }
-        );
-      });
-    });
-    return () => ctx.revert();
-  }, []);
+        }
+      );
 
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const elements = document.querySelectorAll('#historia h3, #historia p, #especialidade h2, #especialidade h3, #especialidade p, #linhas h2, #linhas h4, #linhas p, #linhas li');
-      elements.forEach((el, i) => {
-        gsap.fromTo(el,
+      const elements = el.querySelectorAll('h2, h4, p, li');
+      elements.forEach((textEl) => {
+        gsap.fromTo(textEl,
           { opacity: 0, y: 30 },
           {
             opacity: 1,
@@ -146,7 +133,7 @@ export default function Home() {
             duration: 0.7,
             ease: 'power2.out',
             scrollTrigger: {
-              trigger: el,
+              trigger: textEl,
               start: 'top 90%',
               toggleActions: 'play none none reverse'
             }
@@ -186,8 +173,8 @@ export default function Home() {
           </a>
           <ul className="hidden md:flex items-center gap-4 lg:gap-8 text-[10px] lg:text-xs uppercase tracking-[0.15em] font-medium text-zinc-600">
             <li><a href="#inicio" className="hover:text-black transition-colors" data-testid="nav-home">Início</a></li>
-            <li><a href="#historia" className="hover:text-black transition-colors" data-testid="nav-history">Nossa História</a></li>
-            <li><a href="#especialidade" className="hover:text-black transition-colors" data-testid="nav-specialty">Especialidade</a></li>
+            <li><a href="/historia" className="hover:text-black transition-colors" data-testid="nav-history">Nossa História</a></li>
+            <li><a href="/especialidade" className="hover:text-black transition-colors" data-testid="nav-specialty">Especialidade</a></li>
             <li><a href="#linhas" className="hover:text-black transition-colors" data-testid="nav-lines">Linhas de Negócio</a></li>
           </ul>
           <button
@@ -205,8 +192,8 @@ export default function Home() {
           <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-[#d4d4d8]/30 px-4 pb-4">
             <ul className="flex flex-col gap-3 text-xs uppercase tracking-[0.15em] font-medium text-zinc-600 pt-3">
               <li><a href="#inicio" className="block py-2 hover:text-black transition-colors" onClick={() => setMobileMenuOpen(false)} data-testid="nav-mobile-home">Início</a></li>
-              <li><a href="#historia" className="block py-2 hover:text-black transition-colors" onClick={() => setMobileMenuOpen(false)} data-testid="nav-mobile-history">Nossa História</a></li>
-              <li><a href="#especialidade" className="block py-2 hover:text-black transition-colors" onClick={() => setMobileMenuOpen(false)} data-testid="nav-mobile-specialty">Especialidade</a></li>
+              <li><a href="/historia" className="block py-2 hover:text-black transition-colors" onClick={() => setMobileMenuOpen(false)} data-testid="nav-mobile-history">Nossa História</a></li>
+              <li><a href="/especialidade" className="block py-2 hover:text-black transition-colors" onClick={() => setMobileMenuOpen(false)} data-testid="nav-mobile-specialty">Especialidade</a></li>
               <li><a href="#linhas" className="block py-2 hover:text-black transition-colors" onClick={() => setMobileMenuOpen(false)} data-testid="nav-mobile-lines">Linhas de Negócio</a></li>
             </ul>
           </div>
@@ -224,7 +211,7 @@ export default function Home() {
             className="absolute inset-0 bg-cover transition-opacity duration-1000"
             style={{
               backgroundImage: `url(${src})`,
-              backgroundPosition: src === "/sp4.jpg" ? "bottom center" : "center",
+              backgroundPosition: "center",
               opacity: i === bgIndex ? 1 : 0,
             }}
           />
@@ -266,7 +253,7 @@ export default function Home() {
             className="absolute inset-0 bg-cover transition-opacity duration-1000"
             style={{
               backgroundImage: `url(${src})`,
-              backgroundPosition: src === "/sp4.jpg" ? "bottom center" : "center",
+              backgroundPosition: "center",
               opacity: i === bgIndex ? 1 : 0,
             }}
           />
@@ -282,127 +269,15 @@ export default function Home() {
       </section>
       {/* Brand Statement Section */}
       <BrandStatement />
-      {/* 
-        Slide 2: History
-      */}
-      <section id="historia" className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-12 md:pb-16 bg-white">
-        <div className="mb-8 md:mb-16">
-          <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">NOSSA HISTÓRIA</h3>
-        </div>
-
-        <div className="flex flex-col gap-8 md:gap-12 lg:gap-24 text-zinc-800 text-[15px] md:text-[17px] font-light leading-relaxed mb-8 md:mb-12">
-          {/* Left Column */}
-          <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px]">
-            <p>
-              A RA Poliseg foi fundada em 1988, por Rogério Abinader.
-            </p>
-            <p>
-              Rogerio Abinader, é engenheiro civil formado pela Escola Politécnica da USP, com pós-graduação e especializações em Seguros e Gerenciamento de Riscos.
-            </p>
-            <p>
-              Antes de iniciar as atividades da corretora, atuou por 20 anos como Superintendente de Sinistros na Bradesco Seguros, acompanhando de perto grandes obras, tais como a construção da hidroelétrica de Itaipu, riscos complexos e os impactos reais de um seguro bem estruturado quando ele realmente precisa funcionar.
-            </p>
-            <p className="text-black font-normal pt-2">
-              Essa trajetória é sustentada por valores que atravessam gerações.
-            </p>
-          </div>
-
-          {/* Right Column */}
-          <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px]">
-            <p>
-              A RA Poliseg conta também com Carina Abinader, filha do fundador, advogada especializada em Direito Empresarial, Contratual, Tributário e Administração de Empresas pela FVG - São Paulo/University of California- San Diego, garantindo que cada apólice esteja alinhada não só ao risco, mas também à estrutura e necessidade legal/ financeira do cliente.
-            </p>
-            <p>
-              A combination do conhecimento técnico em — engenharia, seguros de todos os ramos e direito —, somados aos mais de 35 anos de prática, é o que sustenta nossa atuação e permeia nosso trabalho até hoje.
-            </p>
-            <p className="text-xl md:text-2xl lg:text-3xl leading-snug pt-4 pb-2 text-[#000000] font-bold">
-              Nascemos da engenharia, crescemos com seguros e nos fortalecemos com o direito.
-            </p>
-            <p>
-              Em nossa origem, há uma herança que valoriza a palavra, o cuidado nas relações e a construção paciente do que é duradouro.
-            </p>
-          </div>
-        </div>
-      </section>
-      {/* 
-        Slide 3: Portfolio & Specialty
-      */}
-      <section id="especialidade" className="min-h-[80vh] md:min-h-screen flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-12 md:pb-16 bg-white">
-        <div className="mb-12 md:mb-24">
-          <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight max-w-5xl">
-            Atuamos em <span className="text-black underline decoration-black underline-offset-4 md:underline-offset-[8px] decoration-2 md:decoration-4">todos os ramos de seguros no Brasil</span>, com expertise em riscos complexos e grandes obras civis.
-          </h3>
-        </div>
-
-        <div className="flex flex-col gap-8 md:gap-12 lg:gap-24 text-zinc-800 text-[15px] md:text-[17px] font-light leading-relaxed mb-12 md:mb-24">
-          {/* Left Column */}
-          <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px]">
-            <p>
-              Entendemos o canteiro de obras, o cronograma, os contratos e riscos jurídicos.
-            </p>
-            <p>
-              Estruturamos coberturas sob medida para cada projeto e empreendimento, para todos os tipos riscos.
-            </p>
-            <p className="text-lg lg:text-xl font-bold text-[#000000]">
-              Seguros tailor made, com análise técnica e visão de longo prazo.
-            </p>
-            <div className="rounded-2xl p-6 sm:p-8 bg-[#ffffff]">
-              <p className="mb-4 font-semibold text-[#000000]">Desenvolvemos seguros personalizados, considerando:</p>
-              <ul className="space-y-3 text-[#000000]">
-                <li className="flex items-start gap-3">
-                  <span className="!text-black mt-1.5 text-[8px]">■</span>
-                  <span>Riscos específicos</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="!text-black mt-1.5 text-[8px]">■</span>
-                  <span>Estrutura da empresa ou do projeto</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="!text-black mt-1.5 text-[8px]">■</span>
-                  <span>Contratos envolvidos</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="!text-black mt-1.5 text-[8px]">■</span>
-                  <span>Exigências legais e regulatórias</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="!text-black mt-1.5 text-[8px]">■</span>
-                  <span>Visão patrimonial e financeira</span>
-                </li>
-              </ul>
-            </div>
-            <p className="text-black font-normal pt-4">
-              Tudo com acompanhamento contínuo e relacionamento direto.
-            </p>
-          </div>
-
-          {/* Right Column */}
-          <div className="space-y-4 md:space-y-6 max-w-2xl text-base md:text-[18px] rounded-2xl p-6 sm:p-8 md:p-12 text-white/80 flex flex-col justify-center bg-[#ffffffe0]">
-            <p className="font-medium text-xl md:text-2xl lg:text-3xl leading-snug pb-4 border-b border-white/20 text-[#000000]">
-              Atuação vai além da contratação.
-            </p>
-            <p className="text-[#000000cc]">
-              Acompanhamos a regulação de possíveis sinistros com suporte técnico e estratégico, garantindo interlocução eficiente com a seguradora e defesa dos interesses do cliente.
-            </p>
-            <p className="text-[#000000cc]">
-              No pós-venda, realizamos acompanhamento contínuo das apólices, mantendo a proteção sempre alinhada à realidade de cada operação.
-            </p>
-          </div>
-        </div>
-
-      </section>
-      {/* 
-        Slide 4: Lines of Business & Portfolio
+      {/*
+        Lines of Business & Portfolio
       */}
       <section id="linhas" className="flex flex-col px-4 sm:px-8 md:px-12 lg:px-16 pt-12 md:pt-16 bg-white">
         <header className="mb-8 md:mb-12">
         </header>
 
         <div className="mb-8 md:mb-16">
-          <div className="flex items-center gap-4">
-            <div className="w-8 h-[2px] bg-black"></div>
-            <h2 className="text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight">Linhas de negócio</h2>
-          </div>
+          <h2 className="text-black text-4xl md:text-5xl font-medium mb-8">Linhas de negócio</h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12 md:mb-24 text-sm font-light text-zinc-800">
@@ -442,7 +317,7 @@ export default function Home() {
           {/* Category 3 */}
           <div>
             <img src="/icon_contrato.png" alt="Riscos Específicos e Patrimônio de Alta Complexidade" className="w-[150px] h-[151px] sm:w-[200px] sm:h-[201px] lg:w-[250px] lg:h-[251px] mb-6 object-contain mx-auto block animate-float" style={{ animationDelay: "2s" }} />
-            <h4 className="text-black font-medium mb-2 text-lg md:text-[21px]">Riscos Específicos e Patrimônio de Alta Complexidade</h4>
+            <h4 className="text-black font-medium mb-2 text-lg md:text-[21px]">Riscos Específicos e Patrimônio</h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[11px] md:text-[12px] font-medium">Soluções estruturadas para situações que exigem análise técnica aprofundada.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 text-base md:text-[18px] font-medium">
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Responsabilidade Civil Familiar</li>
@@ -472,8 +347,7 @@ export default function Home() {
         <div className="mt-auto -mx-4 sm:-mx-8 md:-mx-12 lg:-mx-16 bg-black px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-20">
           <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
             <div>
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white mb-2 block">Seguradoras Parceiras</span>
-              <p className="text-white text-base md:text-[21px] font-light mb-8 md:mb-16">Trabalhamos com as melhores e mais confiáveis seguradoras do mercado.</p>
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white mb-8 block">Seguradoras Parceiras</span>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 sm:gap-x-8 md:gap-x-12 gap-y-8 md:gap-y-16 items-center">
                 <img src="/image_1772669913406.png" alt="Bradesco Seguros" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
                 <img src="/porto_seguro_logo.png" alt="Porto Seguro" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
@@ -521,8 +395,8 @@ export default function Home() {
               <h5 className="text-xs uppercase tracking-[0.2em] font-semibold text-black mb-4 md:mb-6">Navegação</h5>
               <ul className="space-y-3 text-sm text-white/70">
                 <li><a href="#inicio" className="hover:text-white transition-colors" data-testid="link-nav-home">Início</a></li>
-                <li><a href="#historia" className="hover:text-white transition-colors" data-testid="link-nav-history">Nossa História</a></li>
-                <li><a href="#especialidade" className="hover:text-white transition-colors" data-testid="link-nav-specialty">Especialidade</a></li>
+                <li><a href="/historia" className="hover:text-white transition-colors" data-testid="link-nav-history">Nossa História</a></li>
+                <li><a href="/especialidade" className="hover:text-white transition-colors" data-testid="link-nav-specialty">Especialidade</a></li>
                 <li><a href="#linhas" className="hover:text-white transition-colors" data-testid="link-nav-lines">Linhas de Negócio</a></li>
               </ul>
             </div>
