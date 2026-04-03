@@ -70,21 +70,21 @@ function BrandStatement() {
     <section id="quem-somos" ref={sectionRef} data-card className="bg-white">
       {/* Top band: year + headline */}
       <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-12 md:pt-16 pb-12 md:pb-20">
-        <h2 className="gsap-reveal text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight mb-10 md:mb-14">Quem somos</h2>
-        <p className="gsap-reveal text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] leading-[1.08] font-medium tracking-tight text-black mb-8 md:mb-12">
+        <h2 className="gsap-reveal text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-snug font-medium tracking-tight mb-10 md:mb-14">Quem somos</h2>
+        <p className="gsap-reveal text-2xl sm:text-3xl md:text-5xl leading-snug font-medium tracking-tight text-black mb-8 md:mb-12">
           Fundada em 1988.<br />Hoje somos referência<br />em soluções securitárias.
         </p>
         <div className="space-y-6 md:space-y-8 pb-2">
-          <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
+          <p className="gsap-reveal text-sm sm:text-base md:text-lg font-light text-zinc-600 leading-relaxed">
             Acreditamos e praticamos um atendimento próximo, super personalizado, com visão técnica e soluções estratégicas consagradas.
           </p>
-          <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
+          <p className="gsap-reveal text-sm sm:text-base md:text-lg font-light text-zinc-600 leading-relaxed">
             Conhecemos nossos clientes de verdade — suas histórias, seus negócios e seus riscos.
           </p>
-          <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
+          <p className="gsap-reveal text-sm sm:text-base md:text-lg font-light text-zinc-600 leading-relaxed">
             Oferecemos Seguros de todos os ramos, com as melhores Seguradoras do mercado mundial.
           </p>
-          <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
+          <p className="gsap-reveal text-sm sm:text-base md:text-lg font-light text-zinc-600 leading-relaxed">
             Proteção personalizada para cada fase, cada obra, cada empresa, cada família — em suas decisões mais importantes.
           </p>
         </div>
@@ -218,7 +218,7 @@ export default function Home() {
         ))}
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 space-y-8 md:space-y-12 text-center max-w-5xl">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight text-white">
+          <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl leading-snug font-medium tracking-tight text-white">
             Soluções Securitárias estruturadas com precisão e rigor técnico.
           </h2>
 
@@ -228,7 +228,7 @@ export default function Home() {
       <div data-card className="bg-white px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32">
         <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
           <div>
-            <p className="mb-6 md:mb-8 md:text-[21px] font-semibold text-[#000000] text-[38px]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
+            <p className="mb-6 md:mb-8 text-xl sm:text-2xl md:text-4xl font-semibold text-[#000000] leading-snug">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
             <div className="logo-ticker">
               <div className="logo-ticker__track">
                 {[...constructorLogos, ...constructorLogos, ...constructorLogos].map((logo, i) => (
@@ -260,7 +260,7 @@ export default function Home() {
         ))}
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 space-y-8 md:space-y-12 text-center max-w-5xl">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[3.5rem] leading-[1.1] font-medium tracking-tight text-white">
+          <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl leading-snug font-medium tracking-tight text-white">
             Atuamos em todos os ramos<br />
             de seguros no Brasil, com expertise<br />
             em riscos complexos e grandes obras civis.
@@ -277,16 +277,16 @@ export default function Home() {
         </header>
 
         <div className="mb-8 md:mb-16">
-          <h2 className="text-black text-4xl md:text-5xl font-medium mb-8">Linhas de negócio</h2>
+          <h2 className="text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-snug font-medium mb-8">Linhas de negócio</h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12 md:mb-24 text-sm font-light text-zinc-800">
           {/* Category 1 */}
           <div>
             <img src="/icon_folder.png" alt="Empresas e Operações" className="w-[150px] h-[151px] sm:w-[200px] sm:h-[201px] lg:w-[250px] lg:h-[251px] mb-6 object-contain mx-auto block animate-float" />
-            <h4 className="text-black font-medium mb-2 text-lg md:text-[21px] min-h-[4rem] md:min-h-[3rem]">Empresas e Operações</h4>
-            <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[11px] md:text-[12px] font-medium">Estruturação técnica de seguros para proteção patrimonial, operacional e contratual.</p>
-            <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 text-base md:text-[18px] font-medium">
+            <h4 className="text-black font-medium mb-2 text-lg sm:text-xl md:text-2xl leading-snug min-h-[4rem] md:min-h-[3rem]">Empresas e Operações</h4>
+            <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[10px] sm:text-xs font-medium">Estruturação técnica de seguros para proteção patrimonial, operacional e contratual.</p>
+            <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 text-sm sm:text-base md:text-lg font-medium">
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro Empresarial (Multirriscos)</li>
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Responsabilidade Civil Geral e Profissional</li>
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro Garantia</li>
@@ -301,9 +301,9 @@ export default function Home() {
           {/* Category 2 */}
           <div>
             <img src="/icon_patrimonio.png" alt="Patrimônio e Estrutura Familiar" className="w-[150px] h-[151px] sm:w-[200px] sm:h-[201px] lg:w-[250px] lg:h-[251px] mb-6 object-contain mx-auto block animate-float" style={{ animationDelay: "1s" }} />
-            <h4 className="text-black font-medium mb-2 text-lg md:text-[21px] min-h-[4rem] md:min-h-[3rem]">Patrimônio e Estrutura Familiar</h4>
-            <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[11px] md:text-[12px] font-medium">Proteção personalizada para preservação patrimonial e planejamento familiar.</p>
-            <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 text-base md:text-[18px] font-medium">
+            <h4 className="text-black font-medium mb-2 text-lg sm:text-xl md:text-2xl leading-snug min-h-[4rem] md:min-h-[3rem]">Patrimônio e Estrutura Familiar</h4>
+            <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[10px] sm:text-xs font-medium">Proteção personalizada para preservação patrimonial e planejamento familiar.</p>
+            <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 text-sm sm:text-base md:text-lg font-medium">
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro Residencial e Condomínio</li>
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro Automóvel</li>
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro de Vida</li>
@@ -317,9 +317,9 @@ export default function Home() {
           {/* Category 3 */}
           <div>
             <img src="/icon_contrato.png" alt="Riscos Específicos e Patrimônio de Alta Complexidade" className="w-[150px] h-[151px] sm:w-[200px] sm:h-[201px] lg:w-[250px] lg:h-[251px] mb-6 object-contain mx-auto block animate-float" style={{ animationDelay: "2s" }} />
-            <h4 className="text-black font-medium mb-2 text-lg md:text-[21px] min-h-[4rem] md:min-h-[3rem]">Riscos Específicos e Patrimônio</h4>
-            <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[11px] md:text-[12px] font-medium">Soluções estruturadas para situações que exigem análise técnica aprofundada.</p>
-            <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 text-base md:text-[18px] font-medium">
+            <h4 className="text-black font-medium mb-2 text-lg sm:text-xl md:text-2xl leading-snug min-h-[4rem] md:min-h-[3rem]">Riscos Específicos e Patrimônio</h4>
+            <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[10px] sm:text-xs font-medium">Soluções estruturadas para situações que exigem análise técnica aprofundada.</p>
+            <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 text-sm sm:text-base md:text-lg font-medium">
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Responsabilidade Civil Familiar</li>
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro para Equipamentos e Bens de Alto Valor</li>
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro para Administradores (D&O)</li>
@@ -331,9 +331,9 @@ export default function Home() {
           {/* Category 4 */}
           <div>
             <img src="/icon_obras.png" alt="Engenharia e Grandes Obras" className="w-[150px] h-[151px] sm:w-[200px] sm:h-[201px] lg:w-[250px] lg:h-[251px] mb-6 object-contain mx-auto block animate-float" style={{ animationDelay: "3s" }} />
-            <h4 className="text-black font-medium mb-2 text-lg md:text-[21px] min-h-[4rem] md:min-h-[3rem]">Engenharia e Grandes Obras</h4>
-            <p className="text-zinc-600 mb-6 min-h-[40px] uppercase tracking-wider text-[11px] md:text-[12px] font-medium">Especialização histórica da RA Poliseg, com atuação técnica na análise e estruturação de riscos complexos.</p>
-            <ul className="space-y-3 border-t border-black/40 pt-4 text-black text-base md:text-[18px] font-medium">
+            <h4 className="text-black font-medium mb-2 text-lg sm:text-xl md:text-2xl leading-snug min-h-[4rem] md:min-h-[3rem]">Engenharia e Grandes Obras</h4>
+            <p className="text-zinc-600 mb-6 min-h-[40px] uppercase tracking-wider text-[10px] sm:text-xs font-medium">Especialização histórica da RA Poliseg, com atuação técnica na análise e estruturação de riscos complexos.</p>
+            <ul className="space-y-3 border-t border-black/40 pt-4 text-black text-sm sm:text-base md:text-lg font-medium">
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro de Riscos de Engenharia</li>
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro Garantia para Obras</li>
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Responsabilidade Civil Obras</li>
