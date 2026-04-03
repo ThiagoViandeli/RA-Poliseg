@@ -284,7 +284,7 @@ export default function Home() {
           {/* Category 1 */}
           <div>
             <img src="/icon_folder.png" alt="Empresas e Operações" className="w-[150px] h-[151px] sm:w-[200px] sm:h-[201px] lg:w-[250px] lg:h-[251px] mb-6 object-contain mx-auto block animate-float" />
-            <h4 className="text-black font-medium mb-2 text-lg md:text-[21px]">Empresas e Operações</h4>
+            <h4 className="text-black font-medium mb-2 text-lg md:text-[21px] min-h-[4rem] md:min-h-[3rem]">Empresas e Operações</h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[11px] md:text-[12px] font-medium">Estruturação técnica de seguros para proteção patrimonial, operacional e contratual.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 text-base md:text-[18px] font-medium">
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro Empresarial (Multirriscos)</li>
@@ -301,7 +301,7 @@ export default function Home() {
           {/* Category 2 */}
           <div>
             <img src="/icon_patrimonio.png" alt="Patrimônio e Estrutura Familiar" className="w-[150px] h-[151px] sm:w-[200px] sm:h-[201px] lg:w-[250px] lg:h-[251px] mb-6 object-contain mx-auto block animate-float" style={{ animationDelay: "1s" }} />
-            <h4 className="text-black font-medium mb-2 text-lg md:text-[21px]">Patrimônio e Estrutura Familiar</h4>
+            <h4 className="text-black font-medium mb-2 text-lg md:text-[21px] min-h-[4rem] md:min-h-[3rem]">Patrimônio e Estrutura Familiar</h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[11px] md:text-[12px] font-medium">Proteção personalizada para preservação patrimonial e planejamento familiar.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 text-base md:text-[18px] font-medium">
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro Residencial e Condomínio</li>
@@ -317,7 +317,7 @@ export default function Home() {
           {/* Category 3 */}
           <div>
             <img src="/icon_contrato.png" alt="Riscos Específicos e Patrimônio de Alta Complexidade" className="w-[150px] h-[151px] sm:w-[200px] sm:h-[201px] lg:w-[250px] lg:h-[251px] mb-6 object-contain mx-auto block animate-float" style={{ animationDelay: "2s" }} />
-            <h4 className="text-black font-medium mb-2 text-lg md:text-[21px]">Riscos Específicos e Patrimônio</h4>
+            <h4 className="text-black font-medium mb-2 text-lg md:text-[21px] min-h-[4rem] md:min-h-[3rem]">Riscos Específicos e Patrimônio</h4>
             <p className="text-zinc-500 mb-6 min-h-[40px] uppercase tracking-wider text-[11px] md:text-[12px] font-medium">Soluções estruturadas para situações que exigem análise técnica aprofundada.</p>
             <ul className="space-y-3 border-t border-[#d4d4d8] pt-4 text-base md:text-[18px] font-medium">
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Responsabilidade Civil Familiar</li>
@@ -331,7 +331,7 @@ export default function Home() {
           {/* Category 4 */}
           <div>
             <img src="/icon_obras.png" alt="Engenharia e Grandes Obras" className="w-[150px] h-[151px] sm:w-[200px] sm:h-[201px] lg:w-[250px] lg:h-[251px] mb-6 object-contain mx-auto block animate-float" style={{ animationDelay: "3s" }} />
-            <h4 className="text-black font-medium mb-2 text-lg md:text-[21px]">Engenharia e Grandes Obras</h4>
+            <h4 className="text-black font-medium mb-2 text-lg md:text-[21px] min-h-[4rem] md:min-h-[3rem]">Engenharia e Grandes Obras</h4>
             <p className="text-zinc-600 mb-6 min-h-[40px] uppercase tracking-wider text-[11px] md:text-[12px] font-medium">Especialização histórica da RA Poliseg, com atuação técnica na análise e estruturação de riscos complexos.</p>
             <ul className="space-y-3 border-t border-black/40 pt-4 text-black text-base md:text-[18px] font-medium">
               <li className="flex gap-3"><span className="text-black mt-1.5 text-[8px]">*</span> Seguro de Riscos de Engenharia</li>
