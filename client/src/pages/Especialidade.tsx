@@ -83,7 +83,7 @@ export default function Especialidade() {
             Seguros tailor made, com análise técnica e visão de longo prazo.
           </p>
 
-          <div className="fade-in rounded-2xl p-6 sm:p-8 bg-zinc-50">
+          <div className="fade-in">
             <p className="mb-4 font-semibold text-black">Desenvolvemos seguros personalizados, considerando:</p>
             <ul className="space-y-3 text-black">
               <li className="flex items-start gap-3"><span className="mt-1.5 text-[8px]">■</span><span>Riscos específicos</span></li>
@@ -98,7 +98,7 @@ export default function Especialidade() {
             Tudo com acompanhamento contínuo e relacionamento direto.
           </p>
 
-          <div className="fade-in rounded-2xl p-6 sm:p-8 md:p-12 bg-zinc-50">
+          <div className="fade-in">
             <h3 className="text-2xl md:text-3xl font-medium mb-6 text-black">
               Atuação vai além da contratação.
             </h3>
