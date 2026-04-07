@@ -359,6 +359,7 @@ export default function Home() {
                 <img src="/zurich_logo.png" alt="Zurich" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
                 <img src="/fairfax_logo.png" alt="Fairfax" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
                 <img src="/mapfre_logo.png" alt="Mapfre" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
+                <img src="/Metlife-Seguradora-2-removebg-preview.png" alt="MetLife" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
               </div>
             </div>
           </div>
