@@ -346,22 +346,20 @@ export default function Home() {
           <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
             <div>
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white mb-8 block">Seguradoras Parceiras</span>
-              <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-8 mb-10">
-                <img src="/image_1772669913406.png" alt="Bradesco Seguros" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
-                <img src="/porto_seguro_logo.png" alt="Porto Seguro" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
-                <img src="/allianz_logo.png" alt="Allianz" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
-                <img src={logo_itau} alt="Itaú" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
-                <img src="/azul_logo.png" alt="Azul Seguros" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
-                <img src="/sulamerica_logo.png" alt="SulAmérica" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
-                <img src="/logo_metlife.webp" alt="MetLife" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
-              </div>
-              <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-8">
-                <img src="/tokiomarine_logo.png" alt="Tokio Marine" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
-                <img src="/chubb_logo.png" alt="Chubb" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
-                <img src="/liberty_logo.png" alt="Liberty Seguros" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
-                <img src="/zurich_logo.png" alt="Zurich" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
-                <img src="/fairfax_logo.png" alt="FF Seguros" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
-                <img src="/mapfre_logo.png" alt="Mapfre" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
+              <div className="grid grid-cols-4 md:grid-cols-7 gap-x-12 gap-y-10 items-center justify-items-center">
+                <img src="/image_1772669913406.png" alt="Bradesco Seguros" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
+                <img src="/porto_seguro_logo.png" alt="Porto Seguro" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
+                <img src="/allianz_logo.png" alt="Allianz" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
+                <img src={logo_itau} alt="Itaú" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
+                <img src="/azul_logo.png" alt="Azul Seguros" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
+                <img src="/sulamerica_logo.png" alt="SulAmérica" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
+                <img src="/logo_metlife.webp" alt="MetLife" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
+                <img src="/tokiomarine_logo.png" alt="Tokio Marine" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
+                <img src="/chubb_logo.png" alt="Chubb" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
+                <img src="/liberty_logo.png" alt="Liberty Seguros" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
+                <img src="/zurich_logo.png" alt="Zurich" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
+                <img src="/fairfax_logo.png" alt="FF Seguros" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
+                <img src="/mapfre_logo.png" alt="Mapfre" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
               </div>
             </div>
           </div>
