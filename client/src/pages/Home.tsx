@@ -219,7 +219,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 space-y-8 md:space-y-12 text-center max-w-5xl">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight text-white">
-            Soluções Securitárias estruturadas com precisão e rigor técnico.
+            Atuamos em todos os ramos de seguros no Brasil, com expertise em riscos complexos e grandes obras civis.
           </h2>
 
         </div>
@@ -261,9 +261,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 space-y-8 md:space-y-12 text-center max-w-5xl">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[3.5rem] leading-[1.1] font-medium tracking-tight text-white">
-            Atuamos em todos os ramos<br />
-            de seguros no Brasil, com expertise<br />
-            em riscos complexos e grandes obras civis.
+            Soluções Securitárias estruturadas com precisão e rigor técnico.
           </h2>
         </div>
       </section>
