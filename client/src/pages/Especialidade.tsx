@@ -74,13 +74,7 @@ export default function Especialidade() {
 
         <div className="flex flex-col gap-8 md:gap-12 max-w-3xl mt-12">
           <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
-            Entendemos o canteiro de obras, o cronograma, os contratos e riscos jurídicos.
-          </p>
-          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
-            Estruturamos coberturas sob medida para cada projeto e empreendimento, para todos os tipos riscos.
-          </p>
-          <p className="fade-in text-base md:text-lg font-medium mb-4 text-black leading-relaxed">
-            Seguros tailor made, com análise técnica e visão de longo prazo.
+            Entendemos e estruturamos as coberturas sob medida para cada projeto e empreendimento, pessoa física ou pessoa jurídica, analisando os canteiros de obras, os cronogramas, os contratos e os riscos jurídicos.
           </p>
 
           <div className="fade-in">
