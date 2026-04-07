@@ -100,6 +100,9 @@ export default function Historia() {
           <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
             Em nossa origem, há uma herança que valoriza a palavra, o cuidado nas relações e a construção paciente do que é duradouro.
           </p>
+          <p className="fade-in text-base md:text-lg font-light text-zinc-600 leading-relaxed mb-4">
+            Nosso time de funcionários e prestadores está conosco desde o início, uns desde a fundação e outros há mais de 20 anos. São parte da família RA Poliseg e cresceram profissionalmente junto da empresa.
+          </p>
         </div>
       </section>
 
