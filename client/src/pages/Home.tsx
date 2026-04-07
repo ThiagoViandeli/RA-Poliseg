@@ -350,10 +350,10 @@ export default function Home() {
                 <img src="/image_1772669913406.png" alt="Bradesco" className="h-6 md:h-8 object-contain brightness-0 invert" />
                 <img src="/porto_seguro_logo.png" alt="Porto Seguro" className="h-6 md:h-8 object-contain brightness-0 invert" />
                 <img src="/allianz_logo.png" alt="Allianz" className="h-6 md:h-8 object-contain brightness-0 invert" />
-                <img src="/logo-itau.png" alt="Itaú" className="h-6 md:h-8 object-contain brightness-0 invert" />
+                <img src="/itau_logo.png" alt="Itaú" className="h-6 md:h-8 object-contain brightness-0 invert" />
                 <img src="/azul_logo.png" alt="Azul" className="h-6 md:h-8 object-contain brightness-0 invert" />
                 <img src="/sulamerica_logo.png" alt="SulAmérica" className="h-6 md:h-8 object-contain brightness-0 invert" />
-                <img src="/metlife_logo.png" alt="MetLife" className="h-6 md:h-8 object-contain brightness-0 invert" />
+                <img src="/metlife_logo.png" alt="MetLife" className="h-6 md:h-8 object-contain brightness-0 invert" style={{ padding: '4px' }} />
                 <img src="/tokiomarine_logo.png" alt="Tokio Marine" className="h-6 md:h-8 object-contain brightness-0 invert" />
                 <img src="/chubb_logo.png" alt="Chubb" className="h-6 md:h-8 object-contain brightness-0 invert" />
                 <img src="/liberty_logo.png" alt="Liberty Seguros" className="h-6 md:h-8 object-contain brightness-0 invert" />
