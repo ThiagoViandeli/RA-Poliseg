@@ -92,7 +92,7 @@ export default function Historia() {
             A RA Poliseg conta também com Carina Abinader, filha do fundador, advogada especializada em Direito Empresarial, Contratual, Tributário e Administração de Empresas pela FVG - São Paulo/University of California- San Diego, garantindo que cada apólice esteja alinhada não só ao risco, mas também à estrutura e necessidade legal/ financeira do cliente.
           </p>
           <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
-            A combination do conhecimento técnico em — engenharia, seguros de todos os ramos e direito —, somados aos mais de 35 anos de prática, é o que sustenta nossa atuação e permeia nosso trabalho até hoje.
+            A combinação do conhecimento técnico em — engenharia, seguros de todos os ramos e direito —, somados aos mais de 35 anos de prática, é o que sustenta nossa atuação e permeia nosso trabalho até hoje.
           </p>
           <p className="fade-in text-2xl md:text-3xl font-medium mb-6 text-black leading-snug">
             Nascemos da engenharia, crescemos com seguros e nos fortalecemos com o direito.
