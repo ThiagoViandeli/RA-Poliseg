@@ -353,7 +353,7 @@ export default function Home() {
                 <img src="/itau_logo.png" alt="Itaú" className="h-6 md:h-8 object-contain brightness-0 invert" />
                 <img src="/azul_logo.png" alt="Azul" className="h-6 md:h-8 object-contain brightness-0 invert" />
                 <img src="/sulamerica_logo.png" alt="SulAmérica" className="h-6 md:h-8 object-contain brightness-0 invert" />
-                <img src="/logo_metlife.webp" alt="MetLife" className="h-6 md:h-8 object-contain brightness-0 invert" style={{ padding: '4px' }} />
+                <img src="/logo_metlife.webp" alt="MetLife" className="h-10 md:h-12 object-contain brightness-0 invert" style={{ padding: '4px' }} />
                 <img src="/tokiomarine_logo.png" alt="Tokio Marine" className="h-6 md:h-8 object-contain brightness-0 invert" />
                 <img src="/chubb_logo.png" alt="Chubb" className="h-6 md:h-8 object-contain brightness-0 invert" />
                 <img src="/liberty_logo.png" alt="Liberty Seguros" className="h-6 md:h-8 object-contain brightness-0 invert" />
