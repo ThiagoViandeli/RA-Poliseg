@@ -346,20 +346,20 @@ export default function Home() {
           <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
             <div>
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white mb-8 block">Seguradoras Parceiras</span>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 sm:gap-x-8 md:gap-x-12 gap-y-8 md:gap-y-16 items-center">
+              <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-7 gap-x-6 sm:gap-x-8 md:gap-x-12 gap-y-8 md:gap-y-16 items-center">
                 <img src="/image_1772669913406.png" alt="Bradesco Seguros" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
                 <img src="/porto_seguro_logo.png" alt="Porto Seguro" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
                 <img src="/allianz_logo.png" alt="Allianz" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
                 <img src={logo_itau} alt="Itaú" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
                 <img src="/azul_logo.png" alt="Azul Seguros" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
                 <img src="/sulamerica_logo.png" alt="SulAmérica" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
+                <img src="/Metlife-Seguradora-2-removebg-preview.png" alt="MetLife" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
                 <img src="/tokiomarine_logo.png" alt="Tokio Marine" className="h-8 md:h-10 object-contain brightness-0 invert mx-auto" />
                 <img src="/chubb_logo.png" alt="Chubb" className="h-3 md:h-4 object-contain brightness-0 invert mx-auto" />
                 <img src="/liberty_logo.png" alt="Liberty" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
                 <img src="/zurich_logo.png" alt="Zurich" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
                 <img src="/fairfax_logo.png" alt="Fairfax" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
                 <img src="/mapfre_logo.png" alt="Mapfre" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
-                <img src="/Metlife-Seguradora-2-removebg-preview.png" alt="MetLife" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
               </div>
             </div>
           </div>
