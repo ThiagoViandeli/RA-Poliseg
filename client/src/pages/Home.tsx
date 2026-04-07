@@ -353,7 +353,7 @@ export default function Home() {
                 <img src={logo_itau} alt="Itaú" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
                 <img src="/azul_logo.png" alt="Azul Seguros" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
                 <img src="/sulamerica_logo.png" alt="SulAmérica" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
-                <img src="/logo_metlife.webp" alt="MetLife" className="h-5 md:h-6 object-contain brightness-0 invert mx-auto" />
+                <img src="/logo_metlife.webp" alt="MetLife" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
                 <img src="/tokiomarine_logo.png" alt="Tokio Marine" className="h-8 md:h-10 object-contain brightness-0 invert mx-auto" />
                 <img src="/chubb_logo.png" alt="Chubb" className="h-3 md:h-4 object-contain brightness-0 invert mx-auto" />
                 <img src="/liberty_logo.png" alt="Liberty" className="h-6 md:h-8 object-contain brightness-0 invert mx-auto" />
