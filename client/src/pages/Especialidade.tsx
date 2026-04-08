@@ -69,7 +69,7 @@ export default function Especialidade() {
 
       <section className="px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-28 bg-white">
         <h2 className="fade-in text-4xl md:text-5xl font-medium mb-8">
-          Atuamos em <span className="underline decoration-black underline-offset-4 md:underline-offset-[8px] decoration-2 md:decoration-4">todos os ramos de seguros no Brasil</span>, com expertise em riscos complexos e grandes obras civis.
+          Atuamos em <span className="underline decoration-black underline-offset-4 md:underline-offset-[8px] decoration-2 md:decoration-4">todos os ramos de seguros no Brasil</span>,<br />com expertise em riscos complexos e grandes obras civis.
         </h2>
 
         <div className="flex flex-col gap-8 md:gap-12 max-w-3xl mt-12">
