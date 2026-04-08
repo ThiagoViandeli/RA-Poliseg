@@ -71,31 +71,31 @@ export default function Historia() {
         <h2 className="fade-in text-4xl md:text-5xl font-medium mb-8">Nossa História</h2>
 
         <div className="flex flex-col gap-8 md:gap-12 max-w-3xl">
-          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
+          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed text-justify">
             A RA Poliseg foi fundada em 1988, por Rogério Abinader.
           </p>
-          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
+          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed text-justify">
             Rogerio Abinader, é engenheiro civil formado pela Escola Politécnica da USP, com pós-graduação e especializações em Seguros e Gerenciamento de Riscos.
           </p>
-          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
+          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed text-justify">
             Antes de iniciar as atividades da corretora, atuou por 20 anos como Superintendente de Sinistros na Bradesco Seguros, acompanhando de perto grandes obras, tais como a construção da hidroelétrica de Itaipu, riscos complexos e os impactos reais de um seguro bem estruturado quando ele realmente precisa funcionar.
           </p>
-          <p className="fade-in text-base md:text-lg font-light mb-4 text-black font-normal leading-relaxed">
+          <p className="fade-in text-base md:text-lg font-light mb-4 text-black font-normal leading-relaxed text-justify">
             Essa trajetória é sustentada por valores que atravessam gerações.
           </p>
-          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
+          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed text-justify">
             A RA Poliseg conta também com Carina Abinader, filha do fundador, advogada especializada em Direito Empresarial, Contratual, Tributário e Administração de Empresas pela FVG - São Paulo/University of California- San Diego, garantindo que cada apólice esteja alinhada não só ao risco, mas também à estrutura e necessidade legal/ financeira do cliente.
           </p>
-          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
+          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed text-justify">
             A combinação do conhecimento técnico em — engenharia, seguros de todos os ramos e direito —, somados aos mais de 35 anos de prática, é o que sustenta nossa atuação e permeia nosso trabalho até hoje.
           </p>
-          <p className="fade-in text-2xl md:text-3xl font-medium mb-6 text-black leading-snug">
+          <p className="fade-in text-2xl md:text-3xl font-medium mb-6 text-black leading-snug text-justify">
             Nascemos da engenharia, crescemos com seguros e nos fortalecemos com o direito.
           </p>
-          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
+          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed text-justify">
             Em nossa origem, há uma herança que valoriza a palavra, o cuidado nas relações e a construção paciente do que é duradouro.
           </p>
-          <p className="fade-in text-base md:text-lg font-light text-zinc-600 leading-relaxed mb-4">
+          <p className="fade-in text-base md:text-lg font-light text-zinc-600 leading-relaxed mb-4 text-justify">
             Nosso time de funcionários e prestadores está conosco desde o início, uns desde a fundação e outros há mais de 20 anos. São parte da família RA Poliseg e cresceram profissionalmente junto da empresa.
           </p>
         </div>
