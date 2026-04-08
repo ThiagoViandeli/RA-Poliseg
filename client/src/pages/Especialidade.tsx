@@ -99,9 +99,6 @@ export default function Especialidade() {
             <p className="text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
               Acompanhamos a regulação de possíveis sinistros com suporte técnico e estratégico, garantindo interlocução eficiente com a seguradora e defesa dos interesses do cliente.
             </p>
-            <p className="text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
-              No pós-venda, realizamos acompanhamento contínuo das apólices, mantendo a proteção sempre alinhada à realidade de cada operação.
-            </p>
           </div>
         </div>
       </section>
