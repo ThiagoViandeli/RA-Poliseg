@@ -73,12 +73,12 @@ export default function Especialidade() {
         </h2>
 
         <div className="flex flex-col gap-8 md:gap-12 max-w-3xl mt-12">
-          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
+          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed text-justify">
             Entendemos e estruturamos as coberturas sob medida para cada projeto e empreendimento, pessoa física ou pessoa jurídica, analisando os canteiros de obras, os cronogramas, os contratos e os riscos jurídicos.
           </p>
 
           <div className="fade-in">
-            <p className="mb-4 font-semibold text-black">Desenvolvemos seguros personalizados, considerando:</p>
+            <p className="mb-4 font-semibold text-black text-justify">Desenvolvemos seguros personalizados, considerando:</p>
             <ul className="space-y-3 text-black">
               <li className="flex items-start gap-3"><span className="mt-1.5 text-[8px]">■</span><span>Riscos específicos</span></li>
               <li className="flex items-start gap-3"><span className="mt-1.5 text-[8px]">■</span><span>Estrutura da empresa ou do projeto</span></li>
@@ -88,7 +88,7 @@ export default function Especialidade() {
             </ul>
           </div>
 
-          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
+          <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed text-justify">
             Tudo com acompanhamento contínuo e relacionamento direto.
           </p>
 
@@ -96,7 +96,7 @@ export default function Especialidade() {
             <h3 className="text-2xl md:text-3xl font-medium mb-6 text-black">
               Atuação vai além da contratação.
             </h3>
-            <p className="text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
+            <p className="text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed text-justify">
               Acompanhamos a regulação de possíveis sinistros com suporte técnico e estratégico, garantindo interlocução eficiente com a seguradora e defesa dos interesses do cliente.
             </p>
           </div>
