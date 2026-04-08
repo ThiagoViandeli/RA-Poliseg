@@ -71,11 +71,6 @@ export default function Historia() {
         <h2 className="fade-in text-4xl md:text-5xl font-medium mb-8">Nossa História</h2>
 
         <div className="flex flex-col gap-8 md:gap-12 max-w-3xl">
-          <h2 className="fade-in text-xl md:text-2xl font-medium text-zinc-700 mb-6 mt-8">Fundada em 1988.</h2>
-          <p className="fade-in text-base md:text-lg font-light text-zinc-600 mb-8">Hoje somos referência no mercado de Corretagem de Seguros em São Paulo.</p>
-          <p className="fade-in text-2xl md:text-3xl font-medium text-black border-l-4 border-black pl-6 my-10">Soluções Securitárias estruturadas com precisão e rigor técnico.</p>
-          <p className="fade-in text-base md:text-lg font-light text-zinc-600 mb-4">A Consultoria e Corretagem de Seguros está sempre alinhada às necessidades mais específicas de cada cliente, na melhor versão tailor made.</p>
-          <p className="fade-in text-base md:text-lg font-light text-zinc-600 mb-8">Conhecemos nossos clientes de verdade — suas histórias, seus negócios e seus riscos.</p>
           <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed">
             A RA Poliseg foi fundada em 1988, por Rogério Abinader.
           </p>
