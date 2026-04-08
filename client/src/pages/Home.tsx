@@ -71,7 +71,7 @@ function BrandStatement() {
       {/* Top band: year + headline */}
       <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-12 md:pt-16 pb-12 md:pb-20">
         <h2 className="gsap-reveal text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight mb-10 md:mb-14">Quem somos</h2>
-        <p className="gsap-reveal text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] leading-[1.08] font-medium tracking-tight text-black mb-8 md:mb-12 max-w-lg">
+        <p className="gsap-reveal text-2xl sm:text-4xl md:text-5xl lg:text-[3.25rem] leading-[1.08] font-medium tracking-tight text-black mb-8 md:mb-12 max-w-lg">
           Fundada em 1988.<br />Hoje somos referência no mercado de Corretagem de Seguros em São Paulo.
         </p>
         <div className="space-y-6 md:space-y-8 pb-2">
@@ -218,7 +218,7 @@ export default function Home() {
         ))}
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 space-y-8 md:space-y-12 text-center max-w-5xl">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-[1.1] font-medium tracking-tight text-white">
+          <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl leading-[1.1] font-medium tracking-tight text-white">
             Soluções Securitárias estruturadas<br />com precisão e rigor técnico.
           </h2>
 
@@ -228,7 +228,7 @@ export default function Home() {
       <div data-card className="bg-white px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32">
         <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
           <div>
-            <p className="mb-6 md:mb-8 md:text-[21px] font-semibold text-[#000000] text-[38px]">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
+            <p className="mb-6 md:mb-8 md:text-[21px] font-semibold text-[#000000] text-lg">Nossos principais clientes são consolidadas construtoras em São Paulo.</p>
             <div className="logo-ticker">
               <div className="logo-ticker__track">
                 {[...constructorLogos, ...constructorLogos, ...constructorLogos].map((logo, i) => (
@@ -260,7 +260,7 @@ export default function Home() {
         ))}
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 space-y-8 md:space-y-12 text-center max-w-5xl">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[3.5rem] leading-[1.1] font-medium tracking-tight text-white">
+          <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[3.5rem] leading-[1.1] font-medium tracking-tight text-white">
             Atuamos em todos os ramos<br />de seguros no Brasil, com expertise<br />em riscos complexos e grandes obras civis.
           </h2>
         </div>
