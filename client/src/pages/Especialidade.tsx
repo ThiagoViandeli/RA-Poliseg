@@ -77,7 +77,7 @@ export default function Especialidade() {
             Entendemos e estruturamos as coberturas sob medida para cada projeto e empreendimento, pessoa física ou pessoa jurídica, analisando os canteiros de obras, os cronogramas, os contratos e os riscos jurídicos.
           </p>
 
-          <div className="fade-in">
+          <div className="fade-in font-sans">
             <p className="mb-4 font-semibold text-black text-justify">Desenvolvemos seguros personalizados, considerando:</p>
             <ul className="space-y-3 text-black">
               <li className="flex items-start gap-3"><span className="mt-1.5 text-[8px]">■</span><span>Riscos específicos</span></li>
