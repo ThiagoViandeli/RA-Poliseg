@@ -344,6 +344,7 @@ export default function Home() {
         <div className="mt-auto -mx-4 sm:-mx-8 md:-mx-12 lg:-mx-16 bg-black px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-20">
           <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
             <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white mb-2 block">Nossos principais clientes</p>
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white mb-8 block">Seguradoras Parceiras</span>
               <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-10">
                 <img src="/image_1772669913406.png" alt="Bradesco" className="h-6 md:h-8 object-contain brightness-0 invert" />
