@@ -72,7 +72,7 @@ export default function Historia() {
 
         <div className="flex flex-col gap-8 md:gap-12 max-w-3xl">
           <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed text-justify">
-            A RA Poliseg foi fundada em 1988, por Rogério Abinader.
+            A RA Poliseg foi fundada em 1988, por Rogerio Abinader.
           </p>
           <p className="fade-in text-base md:text-lg font-light mb-4 text-zinc-700 leading-relaxed text-justify">
             Rogerio Abinader, é engenheiro civil formado pela Escola Politécnica da USP, com pós-graduação e especializações em Seguros e Gerenciamento de Riscos.
