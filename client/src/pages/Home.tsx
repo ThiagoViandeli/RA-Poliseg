@@ -228,7 +228,7 @@ export default function Home() {
       <div data-card className="bg-white px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32">
         <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
           <div>
-<p className="text-sm font-semibold uppercase tracking-[0.2em] text-black mb-6 block">Nossos principais clientes</p>
+<p className="font-sans text-base font-normal text-black mb-2 block">Nossos principais clientes</p>
 <div className="logo-ticker">
               <div className="logo-ticker__track">
                 {[...constructorLogos, ...constructorLogos, ...constructorLogos].map((logo, i) => (
