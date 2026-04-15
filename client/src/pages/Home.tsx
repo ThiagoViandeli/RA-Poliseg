@@ -409,7 +409,7 @@ export default function Home() {
         </div>
       </footer>
       <a
-        href="https://wa.me/551130443355"
+        href="https://wa.me/5511968596373?text=Oi%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-[#25D366] hover:bg-[#1ebe57] text-white rounded-full w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-105"
