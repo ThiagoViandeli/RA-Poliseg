@@ -19,7 +19,7 @@ const constructorLogos = [
   { src: "/cemek_logo.png", alt: "Cemek", className: "mix-blend-multiply h-8", defaultH: false },
 ];
 
-const spPhotos = ["/sp1.jpg", "/sp2.jpg", "/sp3.jpg", "/sp5.jpg", "/sp6.jpg"];
+const spPhotos = ["/sp2.jpg", "/sp3.jpg", "/sp5.jpg", "/sp6.jpg"];
 
 function BrandStatement() {
   const sectionRef = useRef<HTMLElement>(null);
