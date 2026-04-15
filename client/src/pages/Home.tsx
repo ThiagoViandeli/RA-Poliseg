@@ -72,7 +72,7 @@ function BrandStatement() {
       <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-12 md:pt-16 pb-12 md:pb-20">
         <h2 className="gsap-reveal text-black text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] leading-[1.1] font-medium tracking-tight mb-10 md:mb-14">Quem somos</h2>
         <p className="gsap-reveal text-2xl sm:text-4xl md:text-5xl lg:text-[3.25rem] leading-[1.08] font-medium tracking-tight text-black mb-8 md:mb-12 max-w-lg">
-          Fundada em 1988.<br />Hoje somos referência no mercado de Corretagem de Seguros em São Paulo.
+          Fundada em 1988.<br />Hoje, somos referência no mercado de Corretagem de Seguros em São Paulo.
         </p>
         <div className="space-y-6 md:space-y-8 pb-2">
           <p className="gsap-reveal text-base md:text-lg lg:text-xl font-light text-zinc-600 leading-relaxed">
