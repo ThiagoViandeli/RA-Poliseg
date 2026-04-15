@@ -224,6 +224,28 @@ export default function Home() {
 
         </div>
       </section>
+      {/* Brand Statement Section */}
+      <BrandStatement />
+      {/* Slideshow duplicate — below customers ticker */}
+      <section data-card className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24">
+        {spPhotos.map((src, i) => (
+          <div
+            key={src}
+            className="absolute inset-0 bg-cover transition-opacity duration-1000"
+            style={{
+              backgroundImage: `url(${src})`,
+              backgroundPosition: "center",
+              opacity: i === bgIndex ? 1 : 0,
+            }}
+          />
+        ))}
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 space-y-8 md:space-y-12 text-center max-w-5xl">
+          <h2 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-[3.5rem] leading-[1.1] font-medium tracking-tight text-white">
+            Atuamos em todos os ramos<br />de seguros no Brasil, com expertise<br />em riscos complexos e grandes obras civis.
+          </h2>
+        </div>
+      </section>
       {/* Constructor Logos Ticker */}
       <div data-card className="bg-white px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32">
         <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
@@ -245,28 +267,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* Slideshow duplicate — below customers ticker */}
-      <section data-card className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24">
-        {spPhotos.map((src, i) => (
-          <div
-            key={src}
-            className="absolute inset-0 bg-cover transition-opacity duration-1000"
-            style={{
-              backgroundImage: `url(${src})`,
-              backgroundPosition: "center",
-              opacity: i === bgIndex ? 1 : 0,
-            }}
-          />
-        ))}
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 space-y-8 md:space-y-12 text-center max-w-5xl">
-          <h2 className="text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-[3.5rem] leading-[1.1] font-medium tracking-tight text-white">
-            Atuamos em todos os ramos<br />de seguros no Brasil, com expertise<br />em riscos complexos e grandes obras civis.
-          </h2>
-        </div>
-      </section>
-      {/* Brand Statement Section */}
-      <BrandStatement />
       {/*
         Lines of Business & Portfolio
       */}
