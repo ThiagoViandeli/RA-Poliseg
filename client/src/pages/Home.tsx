@@ -224,6 +224,27 @@ export default function Home() {
 
         </div>
       </section>
+      {/* Constructor Logos Ticker */}
+      <div data-card className="bg-white px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32">
+        <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
+          <div>
+<h3 className="font-sans text-2xl md:text-3xl font-medium text-black mb-16">Nossos principais clientes</h3>
+<div className="logo-ticker">
+              <div className="logo-ticker__track">
+                {[...constructorLogos, ...constructorLogos, ...constructorLogos].map((logo, i) => (
+                  <div className="logo-ticker__item" key={i}>
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className={`${logo.defaultH === false ? logo.className : `h-10 ${logo.className || ''}`} object-contain brightness-0 transition-all opacity-70 hover:opacity-100`}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* Slideshow duplicate — below customers ticker */}
       <section data-card className="relative min-h-[calc(100dvh-88px)] sm:min-h-[calc(100dvh-104px)] md:min-h-[calc(100dvh-112px)] flex flex-col justify-center items-center px-4 sm:px-8 md:px-12 lg:px-16 pt-16 md:pt-20 pb-16 md:pb-24">
         {spPhotos.map((src, i) => (
@@ -246,27 +267,6 @@ export default function Home() {
       </section>
       {/* Brand Statement Section */}
       <BrandStatement />
-      {/* Constructor Logos Ticker */}
-      <div data-card className="bg-white px-4 sm:px-8 md:px-12 lg:px-16 py-20 md:py-32">
-        <div className="space-y-8 max-w-4xl mx-auto w-full text-center">
-          <div>
-<h3 className="font-sans text-2xl md:text-3xl font-medium text-black mb-16">Nossos principais clientes</h3>
-<div className="logo-ticker">
-              <div className="logo-ticker__track">
-                {[...constructorLogos, ...constructorLogos, ...constructorLogos].map((logo, i) => (
-                  <div className="logo-ticker__item" key={i}>
-                    <img
-                      src={logo.src}
-                      alt={logo.alt}
-                      className={`${logo.defaultH === false ? logo.className : `h-10 ${logo.className || ''}`} object-contain brightness-0 transition-all opacity-70 hover:opacity-100`}
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       {/*
         Lines of Business & Portfolio
       */}
