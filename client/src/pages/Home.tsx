@@ -356,8 +356,8 @@ export default function Home() {
                 <img src="/logo_metlife.webp" alt="MetLife" className="h-10 md:h-12 object-contain brightness-0 invert" style={{ padding: '4px' }} />
                 <img src="/tokiomarine_logo.png" alt="Tokio Marine" className="h-6 md:h-8 object-contain brightness-0 invert" />
                 <img src="/chubb_logo.png" alt="Chubb" className="h-6 md:h-8 object-contain brightness-0 invert" />
-                <img src="/HDI_Seguros_Brasil_-_Logo_2020-removebg-preview.png" alt="HDI Seguros" className="h-6 md:h-8 object-contain brightness-0 invert" />
-                <img src="/Yelum-removebg-preview.png" alt="Yelum Seguradora" className="h-6 md:h-8 object-contain brightness-0 invert" />
+                <img src="/HDI_Seguros_Brasil_-_Logo_2020-removebg-preview.png" alt="HDI Seguros" className="h-8 md:h-10 object-contain brightness-0 invert" />
+                <img src="/Yelum-removebg-preview.png" alt="Yelum Seguradora" className="h-8 md:h-10 object-contain brightness-0 invert" />
                 <img src="/zurich_logo.png" alt="Zurich" className="h-6 md:h-8 object-contain brightness-0 invert" />
                 <img src="/fairfax_logo.png" alt="FF Seguros" className="h-6 md:h-8 object-contain brightness-0 invert" />
                 <img src="/mapfre_logo.png" alt="Mapfre" className="h-6 md:h-8 object-contain brightness-0 invert" />
